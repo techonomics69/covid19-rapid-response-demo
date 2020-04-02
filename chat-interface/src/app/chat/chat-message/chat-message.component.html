@@ -15,14 +15,18 @@
 -->
 
 <ng-container *ngFor="let message of messages | async">
-      <div class="bot-avatar" *ngIf="message.sentBy === 'bot' && message.display"><img src="assets/headset.svg"></div>
+      <div class="bot-avatar" *ngIf="(message.sentBy === 'bot' || message.sentBy === 'list') && message.display"><img src="assets/headset.svg"></div>
       <div class="message" *ngIf="message.display" 
             [attr.data-responseid]="message.responseID"
-            [ngClass]="{ 'from': message.sentBy === 'bot','to':   message.sentBy === 'user' ,'temp':   message.sentBy === 'temp'}">
-            
-
+            [ngClass]="{ 
+                        'to':   message.sentBy === 'user' ,
+                        'temp':   message.sentBy === 'temp',
+                        'from': message.sentBy === 'bot',
+                        'list':   message.sentBy === 'list'
+                  }">
             <div *ngIf="message.rich; else elseBlock" class="text-holder">
                   <p class="title">{{message.rich.title}}</p>
+                  <p class="subtitle">{{message.rich.subtitle}}</p>
                   <p *ngFor="let text of message.rich.text" >
                         <span class="eliminate" *ngIf="text.title" (click)="fireDFEvent(text)">{{text.title}}</span>
                         <span *ngIf="isString(text)" >{{text}}</span>

@@ -56,11 +56,20 @@
       cursor: pointer;
       display: block;
       background-color: #FFF;
-      border: 1px solid #ccc;
-      border-radius: 8px;  
-      padding: 5px;
-      margin: 2px 0;
+      box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+      padding: 15px 10px;
+      font-size: 14px;
+      color: #3C4043;
+      letter-spacing: 0.2px;
+      line-height: 20px;
+      font-family: "Roboto";
+      font-weight: 400;
+      margin:0;
+
     }
+    
+
+    
 
     .eliminate:hover, .eliminate:active{
         background-color: #F8F8F8;
@@ -78,6 +87,40 @@
     line-height: 20px;
     display: inline-block;
     margin-left: 100px;
+}
+
+.message.list {
+    border-radius: 8px 8px 8px 8px;
+    background: #fff;
+    color: #3C4043;
+    margin: 10px 40px 10px 50px;
+    padding: 0 0 0 0;
+    text-align: left;
+    border: 1px solid #979797;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+
+    p{
+        padding: 0;
+        margin:0;
+    }
+
+    p:last-child {
+        .eliminate{
+            box-shadow: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-bottom: none;
+            
+            
+        }
+    }
+
+    .title{
+        margin-left: 0;
+        padding: 10px 0 10px 10px;
+        box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+    }
+    
 }
 
 .message.to:after{

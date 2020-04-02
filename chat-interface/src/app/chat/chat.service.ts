@@ -34,7 +34,8 @@ export class Message {
                 public quick?:any,
                 public rich?:any,
                 public display?:boolean,
-                public accordian?:boolean,) {}
+                public accordian?:boolean,
+                public haslist?:boolean) {}
 }
 
 export class DFEvent {
@@ -123,6 +124,7 @@ export class ChatService {
     botMessage.quick = quick_replies;
     botMessage.display = true;
     botMessage.accordian = false;
+    botMessage.haslist = false;
 
     // if these are null, we need to use the rich message data. 
     if (typeof payload != "undefined") {
@@ -135,6 +137,10 @@ export class ChatService {
       if (Array.isArray(resp)) {
         botMessage.display = false;
         botMessage.accordian = true;
+      }
+      if (resp.text && resp.text[0] && resp.text[0].title){
+        botMessage.haslist = true;
+        botMessage.sentBy = "list";
       }
 
     } else {

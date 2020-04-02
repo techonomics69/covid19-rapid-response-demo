@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges,Pipe,PipeTransform } from '@angular/core';
+
 
 @Component({
   selector: 'app-chat-accordian',
   templateUrl: './chat-accordian.component.html',
   styleUrls: ['./chat-accordian.component.scss']
 })
-
 
 
 export class ChatAccordianComponent implements OnInit {
@@ -34,8 +34,9 @@ export class ChatAccordianComponent implements OnInit {
   
 
   ngOnInit(): void {
-    console.log("Fired");
   }
+
+
 
 }
 

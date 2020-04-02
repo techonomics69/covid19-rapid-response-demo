@@ -24,6 +24,7 @@ import { ChatInputComponent } from './chat-input/chat-input.component';
 import { ChatMessageComponent } from './chat-message/chat-message.component';
 import { ChatChoiceComponent } from './chat-choice/chat-choice.component';
 import { ChatAccordianComponent } from './chat-accordian/chat-accordian.component';
+import { DeclorateLinksPipe } from './declorate-links.pipe';
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { ChatAccordianComponent } from './chat-accordian/chat-accordian.componen
     ChatDialogComponent,
     ChatInputComponent,
     ChatMessageComponent, 
-    ChatChoiceComponent, ChatAccordianComponent
+    ChatChoiceComponent, ChatAccordianComponent, DeclorateLinksPipe
 
   ],
   exports: [ ChatDialogComponent ],

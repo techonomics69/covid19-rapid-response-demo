@@ -16,15 +16,33 @@
     
     .title{
         font-weight: 500; 
+        font-family: "Google Sans";
+        font-size: 14px;
+        color: #3C4043;
+        letter-spacing: 0.25px;
+        line-height: 20px;
     }
     .subtitle{
-        font-style: italic;
+        font-family: "Roboto";
+        font-size: 12px;
+        color: #5F6368;
+        letter-spacing: 0.3px;
+        text-align: left;
+        line-height: 16px;
     }
 
     .text{
         display:none;
         margin-top: 10px;
+        font-family: "Roboto";
+        font-size: 14px;
+        color: #3C4043;
+        letter-spacing: 0.2px;
+        text-align: left;
+        line-height: 20px;
+        
     }
+
 
     .text-holder{
         white-space: pre-wrap;
@@ -35,38 +53,56 @@
     }
 }
 
-.message.from:before{
-    content: "";
-    background: #E8F0FE;
-    width: 12px;
-    height: 24px;
-    position: absolute;
-    left:-10px;
-    top: 0;
-    display: block;
-    background-image: url("/assets/ellipse.svg");
-    background-position-x: -14px;
-    background-position-y: 0;
-    background-repeat: no-repeat;
-    background-size: 24px 48px;
+::ng-deep a:link, ::ng-deep a:visited, ::ng-deep a:hover, ::ng-deep a:active{
+    color: #1E88E5;
+    font-weight: 500;
+}
+::ng-deep a .material-icons{
+    vertical-align: middle;
+    font-size: 14px;
     display: inline-block;
+    margin-left: 3px;
 }
 
-
-.message.from {
-    border-radius: 0 8px 8px 8px;
-    background: #E8F0FE;
+.message.accordian-holder{
+    border-radius: 8px 8px 8px 8px;
+    background: #fff;
     color: #3C4043;
     margin: 10px 40px 10px 50px;
-    padding-bottom: 8px 16px;
+    padding: 8px 0 0 0;
     text-align: left;
+    border: 1px solid #979797;
+    
 }
 
-.message.to + .message.to,
-.message.from + .message.from {
-margin-top: -10px;
+
+
+p.accordian-title{
+    font-family: "Google Sans";
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: #202124;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 24px;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
 }
 
+
+.accordian{
+    padding: 10px;
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+    margin-bottom: 0;
+
+}
+
+.accordian:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 
 .bot-avatar{
     height: 0;
@@ -91,10 +127,11 @@ button{
     border: none;
     position: absolute;
     top: 0;
-    right: -5px;
+    right: 0;
 
     .material-icons{
         margin-top: 12px;
-        color: #333;
+        color: #757575;
+        font-size: 24px;
     }
 }
