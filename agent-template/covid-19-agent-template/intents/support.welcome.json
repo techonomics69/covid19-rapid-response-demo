@@ -1,0 +1,92 @@
+{
+  "id": "96d9c5b3-1246-4c96-833b-1849dc0f41b9",
+  "name": "support.welcome",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eHello! I am the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot! You can ask me questions related to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Hello! I am the COVID-19 Rapid Response Bot! You can ask me questions related to COVID-19. How can I help?",
+                  "type": "description",
+                  "text": [
+                    "As a disclaimer, I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
+                    "If you are experiencing a life threatening emergency, please call 911."
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Start screening",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "text": "What is covid-19?",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "text": "How many infected in US?",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "text": "How does it spread?",
+                      "link": "",
+                      "image": {}
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "condition": "",
+          "textToSpeech": "",
+          "ssml": "\u003cspeak\u003eHello! I am the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot! You can ask me questions related to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e",
+          "displayText": "Hello! I am the COVID-19 Rapid Response Bot! You can ask me questions related to COVID-19 and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="22px" height="18px" viewBox="0 0 22 18">
+	<defs>
+		<style>
+			.cls-1{fill:#4285f4;}
+		</style>
+	</defs>
+	<title>
+		speaker-pulse
+	</title>
+	<animateTransform  accumulate="none" additive="sum" attributeName="transform" begin="0s" calcMode="linear" dur="1s" fill="remove" repeatCount="indefinite" restart="always" type="scale" values="1;1.1;1">
+	</animateTransform>
+	<path id="Shape" class="cls-1" d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.47,4.47,0,0,0,13.5,9ZM11,.23V2.29a7,7,0,0,1,0,13.42v2.06A9,9,0,0,0,11,.23Z" transform="translate(0 -0.22)">
+	</path>
+	<path id="Shape-2" data-name="Shape" class="cls-1" d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.49,4.49,0,0,0,13.5,9ZM11,.22V2.28A7,7,0,0,1,11,15.7v2.07A9,9,0,0,0,11,.22Z" transform="translate(0 -0.22)">
+		
+	</path>
+</svg>

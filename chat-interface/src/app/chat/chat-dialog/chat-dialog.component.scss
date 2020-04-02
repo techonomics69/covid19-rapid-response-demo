@@ -1,0 +1,162 @@
+/*
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ :host {
+    width: 800px;
+}
+
+
+.main{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.30), 0 2px 6px 2px rgba(60,64,67,0.15);
+    border-radius: 8px;
+
+    header{
+        background: #F8F9FA;
+        margin-bottom: 0;
+        text-align: center;
+        padding-bottom: 20px;
+        
+        h1{
+            
+            font-family: "Google Sans";
+            font-size: 22px;
+            color: #3C4043;
+            letter-spacing: 0;
+            line-height: 28px;
+            padding-top: 20px;
+            margin-bottom: 4px;
+            color: #333;
+            text-align: center;
+        }
+
+        p{
+            font-family: "Roboto";
+            font-size: 12px;
+            color: #5F6368;
+            letter-spacing: 0.3px;
+            text-align: left;
+            line-height: 16px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 4px;
+
+            .product{
+                font-family: "Google Sans";
+                font-weight: 600;
+                font-size: 12px;
+                color: #5F6368;
+                letter-spacing: 0.21px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+.chat-area{
+    top: -10px;
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;  
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background: #fff;
+    padding: 10px 0;
+    margin: 0 0 0 0; 
+    overflow-y: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    
+    position: relative;
+    text-align: right;
+
+    /* Firefox */
+    height: -moz-calc(90vh - 120px);
+    /* WebKit */
+    height: -webkit-calc(90vh - 120px);
+    /* Opera */
+    height: -o-calc(90vh - 120px);
+    /* Standard */
+    height: calc(90vh - 120px);
+    min-height: 250px;
+
+    .df-icon{
+        margin-top: 10px;
+        height: 40px;
+        width: 40px;
+        position: relative;
+        bottom: 70px;
+        left: 5px;
+    }
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 4px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(150, 150, 150, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+      }
+
+}
+
+
+
+
+@media screen and (min-width: 699px) {
+    .main{
+        width: 500px;
+        min-height: 95vh;
+        margin: 20px auto;
+    }    
+
+    .interface{
+        bottom: -10px;
+    }
+
+    .chat-area{
+        height: -moz-calc(90vh - 150px);
+        /* WebKit */
+        height: -webkit-calc(90vh - 150px);
+        /* Opera */
+        height: -o-calc(90vh - 150px);
+        /* Standard */
+        height: calc(90vh - 150px);
+    }
+
+}    
+
+@media screen and (max-width: 499px) {
+   
+    .chat-area{
+        height: -moz-calc(90vh - 200px);
+        /* WebKit */
+        height: -webkit-calc(90vh - 200px);
+        /* Opera */
+        height: -o-calc(90vh - 200px);
+        /* Standard */
+        height: calc(90vh - 200px);
+    }
+
+}  

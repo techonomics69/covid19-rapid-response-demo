@@ -1,0 +1,161 @@
+{
+  "id": "5a2d625b-51d1-4048-9988-55ba63527596",
+  "name": "qus.p2-no",
+  "auto": true,
+  "contexts": [
+    "ctx-p2"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "ctx-p2",
+          "parameters": {},
+          "lifespan": 0
+        },
+        {
+          "name": "ctx-p3",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Do you have any of the following conditions?",
+                  "type": "description"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-lung",
+                    "languageCode": "en"
+                  },
+                  "type": "list",
+                  "title": "Chronic lung disease or moderate to severe asthma"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-cardio",
+                    "languageCode": "en"
+                  },
+                  "type": "list",
+                  "title": "Congestive heart failure"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Diabetes with complications",
+                  "subtitle": "",
+                  "event": {
+                    "languageCode": "en",
+                    "name": "event-health-condition-dm"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Neurologic conditions that weaken ability to cough",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Weakened immune system",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  },
+                  "type": "list",
+                  "title": "Dialysis"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "list",
+                  "title": "Cirrhosis of the liver",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Extreme obesity",
+                  "subtitle": "Body Mass Index [BMI] greater than or equal to 40",
+                  "event": {
+                    "languageCode": "en",
+                    "name": "event-health-condition-healtherisk"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "None of above",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-none",
+                    "languageCode": "en"
+                  },
+                  "type": "list"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
