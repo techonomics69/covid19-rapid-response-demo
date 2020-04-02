@@ -1,0 +1,37 @@
+{
+  "id": "24e5f64b-8fa5-4755-94ea-2b75ce60a2a8",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Sorry, I didn\u0027t get that. You can try that again or ask me something else.",
+            "I missed that, could you repeat?",
+            "Sorry, I missed it. Do you mind repeating it one more time?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

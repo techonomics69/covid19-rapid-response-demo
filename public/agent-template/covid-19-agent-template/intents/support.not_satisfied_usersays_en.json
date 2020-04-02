@@ -1,0 +1,98 @@
+[
+  {
+    "id": "bfd66222-9121-4772-8604-5cc2cf299e35",
+    "data": [
+      {
+        "text": "no satisfied",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ab8aa236-eb2d-4d00-8787-870567ba524d",
+    "data": [
+      {
+        "text": "not satisfied",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c7ed2352-484d-45cb-9c3e-923347f40aac",
+    "data": [
+      {
+        "text": "I do not have the information I need",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "952e1be3-081d-4438-a0c0-a8edabf8f4ca",
+    "data": [
+      {
+        "text": "I don\u0027t have the information I need",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c8124729-7a91-48f4-b887-e5b5b5b9f936",
+    "data": [
+      {
+        "text": "This was not helpful",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8a78c4d9-1cfe-4a44-8b75-6e902d7a0403",
+    "data": [
+      {
+        "text": "I am unhappy",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3df70efc-5ef4-44b3-88a3-51d8aff594d4",
+    "data": [
+      {
+        "text": "I am not satisfied",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b156801-8e5e-4660-bbf4-2e7fb6851886",
+    "data": [
+      {
+        "text": "I\u0027m not satisfied",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

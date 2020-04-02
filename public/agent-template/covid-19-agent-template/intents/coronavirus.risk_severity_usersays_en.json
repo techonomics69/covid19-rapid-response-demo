@@ -1,0 +1,344 @@
+[
+  {
+    "id": "7c7f40d4-70a1-4d92-b3f0-6b061b3e1612",
+    "data": [
+      {
+        "text": "How dangerous is ",
+        "userDefined": false
+      },
+      {
+        "text": "Covid",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff451cca-b162-4a5b-ae8c-2bbfbd77caaa",
+    "data": [
+      {
+        "text": "Who is most at risk?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5a6c5b2a-e2e9-4f06-aa3a-c7f6b6cd03b5",
+    "data": [
+      {
+        "text": "Who is most at risk for ",
+        "userDefined": false
+      },
+      {
+        "text": "coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aa819000-a28a-4cea-8f08-a43825e8c82f",
+    "data": [
+      {
+        "text": "is ",
+        "userDefined": false
+      },
+      {
+        "text": "corona",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": " more contagious than normal flu",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "841691d4-97f1-4e13-b970-d3ac78616797",
+    "data": [
+      {
+        "text": "am I at risk if i am 46?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cafd01cd-e471-4965-98bd-bcf27acd56af",
+    "data": [
+      {
+        "text": "who is most vulnerable?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f31b523c-ed14-4880-a211-59eada01d11c",
+    "data": [
+      {
+        "text": "Does a high potassium diet reduce risk of catching the virus?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d3b91b03-f195-4acb-aab4-37c5ad3acb49",
+    "data": [
+      {
+        "text": "Can young people die of ",
+        "userDefined": false
+      },
+      {
+        "text": "coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "d5a187c0-b1a8-49b2-ae51-3b979b706581",
+    "data": [
+      {
+        "text": "what are my odds of catching ",
+        "userDefined": false
+      },
+      {
+        "text": "Coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c826231b-2f93-4da5-860d-aa48043a63c4",
+    "data": [
+      {
+        "text": "how long does it take to recover?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eaf682ed-2344-4b80-b174-43629f1dae1b",
+    "data": [
+      {
+        "text": "how dangerous is ",
+        "userDefined": false
+      },
+      {
+        "text": "corona",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bdbd72e8-0cd6-4fda-b717-9cf941508ba1",
+    "data": [
+      {
+        "text": "how dangerous is it actually",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "86993ae8-f1ad-4c83-96ac-6d7dd5cc213f",
+    "data": [
+      {
+        "text": "who are the people at higher risk",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cfa51f35-b03d-4e8e-8bfd-e5bedf69b216",
+    "data": [
+      {
+        "text": "what age groups does the ",
+        "userDefined": false
+      },
+      {
+        "text": "coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": " affect?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5739af4b-32a5-4e18-b502-a8bb4076bcb0",
+    "data": [
+      {
+        "text": "why are elderly more at risk",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e5c55cda-936d-4849-bf01-a2ead0831412",
+    "data": [
+      {
+        "text": "what people are at higher risk?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b6e214bb-1c8a-4044-86ee-1a3c6231d7ec",
+    "data": [
+      {
+        "text": "Who is at risk?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e0c87325-4565-42cd-abf8-a114391df4d3",
+    "data": [
+      {
+        "text": "am I at risk",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "03137a65-0c5e-4a60-a58a-84ed8262a7ff",
+    "data": [
+      {
+        "text": "can i die?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4155367a-2c77-4653-8345-d3b6d84d3e15",
+    "data": [
+      {
+        "text": "Is ",
+        "userDefined": false
+      },
+      {
+        "text": "coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": " deadly?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7c2d4ea5-fd08-4d60-89a0-79b00eb6d10e",
+    "data": [
+      {
+        "text": "Are the symptoms in children different than in adults?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4fccd923-5be4-4140-aca8-7ad6c4f6ee95",
+    "data": [
+      {
+        "text": "How severe is ",
+        "userDefined": false
+      },
+      {
+        "text": "coronavirus",
+        "alias": "covid-19",
+        "meta": "@covid-19",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

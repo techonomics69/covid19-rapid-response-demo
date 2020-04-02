@@ -1,0 +1,86 @@
+{
+  "id": "cfa0bcfc-658b-47d1-aef0-294d73a8e5f8",
+  "name": "qus.e1-yes",
+  "auto": true,
+  "contexts": [
+    "ctx-e1"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "ctx-e2",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "ctx-e3",
+          "parameters": {},
+          "lifespan": 2
+        },
+        {
+          "name": "e1-yes-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 2,
+          "platform": "telegram",
+          "lang": "en",
+          "condition": "",
+          "title": "Have you travelled to any of the following areas in the last 14 days? Australia Brazil, Canada, Chile, China, Europe, Iran, Ireland, Israel, Japan, Malaysia, Pakistan, South Korea, Thailand,Turkey, United Kingdom.",
+          "replies": [
+            "yes",
+            "no"
+          ]
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "description",
+                  "title": "Have you traveled internationally in the last 14 days?"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Yes",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "image": {},
+                      "text": "No",
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
