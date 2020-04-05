@@ -152,7 +152,7 @@ func handleQueryEvent(w http.ResponseWriter, r *http.Request) {
 	e := r.FormValue("event")
 	sessionid := r.FormValue("session")
 
-	resp, err := callEvent(projectID, sessionid, e, "en")
+	resp, err := detectIntentEvent(projectID, sessionid, e, "en")
 	if err != nil {
 		writeError(w, err)
 		return
@@ -291,7 +291,7 @@ func detectIntentText(projectID, sessionID, text, languageCode string) (DFRespon
 	return result, nil
 }
 
-func callEvent(projectID, sessionID, eventName, languageCode string) (DFResponse, error) {
+func detectIntentEvent(projectID, sessionID, eventName, languageCode string) (DFResponse, error) {
 	result := DFResponse{}
 
 	if projectID == "" || sessionID == "" {
