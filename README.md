@@ -35,7 +35,7 @@ Dialogflow provides the [Dialogflow COVID-19 Agent Template](./agent-template/co
 1. Go to the Google Cloud Console and select Cloud Functions on the left panel.
 ![Cloud Function Screenshot](./resources/cloud-function.png)
 1. Under the "Source code" section, select "ZIP upload" and upload the fulfillment zip file downloaded at step 1.
-1. [Optional] Follow instructions at [Get an API Key](https://developers.google.com/places/web-service/get-api-key?hl=en_US) to get an API key for calling the Google Maps API. And then follow [Cloud Function Updating Environment Variable](https://cloud.google.com/functions/docs/env-var#updating_environment_variables) to set GOOGLE_MAPS_API_KEY environment variable to the API key.
+1. [Optional] Follow [Quickstart](https://developers.google.com/maps/gmp-get-started#quickstart) to enable Google Maps API if you haven't done so. Follow instructions at [Get an API Key](https://developers.google.com/places/web-service/get-api-key?hl=en_US) to get an API key for calling the Google Maps API. And then follow [Cloud Function Updating Environment Variable](https://cloud.google.com/functions/docs/env-var#updating_environment_variables) to set GOOGLE_MAPS_API_KEY environment variable to the API key.
 1. [Optional] To use metrics for COVID-19, Enable the [BigQuery API](https://console.cloud.google.com/flows/enableapi?apiid=bigquery) by selecting your project.
 
 # Integrate with Your Dialogflow Agent
@@ -99,3 +99,7 @@ Dialogflow has integrated with various text-based conversation platforms such as
 
 ## Integrate with Dialogflow phone Gateway
 Dialogflow provides a one-click integration for a telephone interface to your agent by selecting a phone number hosted by Google. See our [documentation](https://cloud.google.com/dialogflow/docs/integrations/phone-gateway) for detailed instructions. Please note that if you expect your virtual agent to have a high call volume, request a toll-free phone number during the set up.
+
+
+# Terms of service
+**The contents of the dataset used by coronavirus.confirmed_cases and coronavirus.death intents are provided to the public strictly for educational and academic purposes only. This data is from third party sources that may not be accurate, consistent and/or up-to-date. These datasets are provided “as is” without any warranties or representations of any kind. You are responsible for determining the suitability of this data for your purposes. See the [JHU CSSE GitHub page](https://github.com/CSSEGISandData/COVID-19) for more details.**
