@@ -15,7 +15,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eHello! I am the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot! You can ask me questions related to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eHi. This is the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Virtual Agent. I can answer questions about COVID-19 based on publicly available information. I\u0027m not a clinician and can\u0027t give medical advice, diagnosis or treatment.  If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e"
         },
         {
           "type": 4,
@@ -25,11 +25,11 @@
             "richContent": [
               [
                 {
-                  "title": "Hello! I am the COVID-19 Rapid Response Bot! You can ask me questions related to COVID-19. How can I help?",
+                  "title": "Hi.This is the COVID-19 Virtual Agent. You can ask me questions related to COVID-19. How can I help?",
                   "type": "description",
                   "text": [
-                    "As a disclaimer, I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
-                    "If you are experiencing a life threatening emergency, please call 911."
+                    "I will try to provide some answers based on publicly available information. I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
+                    "If you are experiencing a life threatening emergency, please call 911. For medical advice, please contact your healthcare provider."
                   ]
                 }
               ],
@@ -43,17 +43,17 @@
                       "image": {}
                     },
                     {
-                      "text": "What is covid-19?",
+                      "text": "What is COVID-19?",
                       "link": "",
                       "image": {}
                     },
                     {
-                      "text": "How many infected in US?",
+                      "text": "What are the symptoms?",
                       "link": "",
                       "image": {}
                     },
                     {
-                      "text": "How does it spread?",
+                      "text": "How many confirmed cases are there in the US?",
                       "link": "",
                       "image": {}
                     }
@@ -69,8 +69,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eHello! I am the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot! You can ask me questions related to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e",
-          "displayText": "Hello! I am the COVID-19 Rapid Response Bot! You can ask me questions related to COVID-19 and I will provide some answers based on publicly available information. Disclaimer: I do not provide medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, call 911. How can I help?"
+          "ssml": "\u003cspeak\u003eHi. This is the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Virtual Agent. I can answer questions about COVID-19 based on publicly available information. I\u0027m not a clinician and can\u0027t give medical advice, diagnosis or treatment.  If you are experiencing a life threatening emergency, call 911. How can I help?\u003c/speak\u003e",
+          "displayText": "Hi. This is the COVID-19 Virtual Agent. I can answer questions about COVID-19 based on publicly available information. I\u0027m not a clinician and can\u0027t give medical advice, diagnosis or treatment.  If you are experiencing a life threatening emergency, call 911  How can I help?"
         }
       ],
       "defaultResponsePlatforms": {},

@@ -1,6 +1,6 @@
 [
   {
-    "id": "9379494f-66c1-4cf5-8c46-f49c4b1769dc",
+    "id": "62818081-9ad8-4e90-b4a8-1737f5e57ce5",
     "data": [
       {
         "text": "what ",
@@ -22,10 +22,10 @@
     "updated": 0
   },
   {
-    "id": "19caccab-29cc-45af-ba02-8bea1954df0d",
+    "id": "6e8d724f-b2ea-40dd-b926-fb8eca7dc854",
     "data": [
       {
-        "text": "where\u0027s nearest hospital if I am suspect of corona virus victim.",
+        "text": "where\u0027s hospital if I am suspect of corona virus victim.",
         "userDefined": false
       }
     ],
@@ -34,50 +34,10 @@
     "updated": 0
   },
   {
-    "id": "ab5b2237-5428-463e-b3b1-68a9799e9644",
+    "id": "c9df085b-bd0e-4360-9960-2135b6a42ab7",
     "data": [
       {
-        "text": "where\u0027s nearest ",
-        "userDefined": false
-      },
-      {
-        "text": "hospital",
-        "alias": "organization",
-        "meta": "@sys.location",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "d20c5fa7-31dc-4280-bb2d-39d1cb9f780a",
-    "data": [
-      {
-        "text": "where\u0027s nearest ",
-        "userDefined": false
-      },
-      {
-        "text": "hospital",
-        "alias": "organization",
-        "meta": "@sys.location",
-        "userDefined": false
-      },
-      {
-        "text": " near downtown Mountain View, CA",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "0f6726e5-84c2-4429-a8ae-3e84987aea3b",
-    "data": [
-      {
-        "text": "What\u0027s the closest ",
+        "text": "What\u0027s the ",
         "userDefined": false
       },
       {
@@ -106,7 +66,7 @@
     "updated": 0
   },
   {
-    "id": "4153ccbc-5e2f-40c3-9a69-b71a74f79c50",
+    "id": "c00c6f79-d696-49c5-85f7-2aec114ef28b",
     "data": [
       {
         "text": "What ",
@@ -138,7 +98,7 @@
     "updated": 0
   },
   {
-    "id": "94834d84-69dc-4572-834d-1ab08ed9ec99",
+    "id": "439dfafe-ec64-43c6-87de-4a187037dc1f",
     "data": [
       {
         "text": "What ",
@@ -170,7 +130,7 @@
     "updated": 0
   },
   {
-    "id": "19245ff8-16d7-401c-901b-13a3c0bc0333",
+    "id": "59570f2d-5a47-4e96-929a-529571ef1535",
     "data": [
       {
         "text": "What\u0027s open ",
@@ -192,7 +152,7 @@
     "updated": 0
   },
   {
-    "id": "97e3051e-a1d2-43db-a66a-63e21836786f",
+    "id": "4b8af2e7-e721-4a9d-b5d1-a23685768345",
     "data": [
       {
         "text": "What ",
@@ -224,7 +184,7 @@
     "updated": 0
   },
   {
-    "id": "eee8c256-35ba-429e-8f2e-7da857d940f9",
+    "id": "87384bc9-d83d-4dd3-8243-04044dce03ff",
     "data": [
       {
         "text": "What fast food ",
@@ -246,7 +206,7 @@
     "updated": 0
   },
   {
-    "id": "1bfd575f-d87b-4b4b-9e89-86b11415f117",
+    "id": "fb704ec0-f472-4652-ab30-f91c3ddcb026",
     "data": [
       {
         "text": "What ",
@@ -278,7 +238,7 @@
     "updated": 0
   },
   {
-    "id": "94e84ba5-d021-49a8-82a9-4bf7c7d118c7",
+    "id": "0168f9d6-f7ce-4742-a3ac-59087590fc4a",
     "data": [
       {
         "text": "grocery stores",
@@ -302,7 +262,7 @@
     "updated": 0
   },
   {
-    "id": "ec6521fd-ba8d-4698-a05d-30a5df99eba4",
+    "id": "314cc797-13fb-4e8c-829f-0086a7ccd19c",
     "data": [
       {
         "text": "are there any ",
@@ -330,7 +290,7 @@
     "updated": 0
   },
   {
-    "id": "43870698-2022-454f-83a5-bbf4e23fbf57",
+    "id": "dc7c7084-9758-445d-a812-09da186008fb",
     "data": [
       {
         "text": "are there any ",
@@ -358,31 +318,7 @@
     "updated": 0
   },
   {
-    "id": "070058a2-e5ab-44f4-90d1-76154c5fdee7",
-    "data": [
-      {
-        "text": "hospital",
-        "alias": "organization",
-        "meta": "@sys.location",
-        "userDefined": false
-      },
-      {
-        "text": " near me ",
-        "userDefined": false
-      },
-      {
-        "text": "phoenix",
-        "alias": "geo-city",
-        "meta": "@sys.geo-city",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "255d7080-8962-407d-98f3-5eb97105c957",
+    "id": "7a641ab6-c23a-43d6-96de-9d700f28ed7f",
     "data": [
       {
         "text": "Pharmacy",
@@ -406,7 +342,7 @@
     "updated": 0
   },
   {
-    "id": "daaa5b29-4945-48d6-afb2-c71c82ba2e4f",
+    "id": "705b9f6c-14a3-499f-9592-9552ddfb2a72",
     "data": [
       {
         "text": "Hospital",
@@ -430,7 +366,7 @@
     "updated": 0
   },
   {
-    "id": "19de4a49-5c47-49b3-b077-f5aef9936555",
+    "id": "50488708-c86a-4902-9363-aef75747ea8d",
     "data": [
       {
         "text": "What ",
@@ -462,7 +398,7 @@
     "updated": 0
   },
   {
-    "id": "deb41ac4-3069-4795-bea8-0b14ccaf130b",
+    "id": "b6fbb911-daf0-45f1-8732-0fe32ee637b0",
     "data": [
       {
         "text": "What ",
@@ -494,7 +430,7 @@
     "updated": 0
   },
   {
-    "id": "be75455c-a88b-438f-ab90-2cc0283b4006",
+    "id": "82ee69eb-fb28-4d86-a023-69595aaac217",
     "data": [
       {
         "text": "What ",
@@ -526,7 +462,7 @@
     "updated": 0
   },
   {
-    "id": "d11e6472-74d2-4de0-9a6e-ad5d3e7f4ece",
+    "id": "81af9ffa-b3e2-4bc2-8030-af97c6408216",
     "data": [
       {
         "text": "What ",
@@ -548,7 +484,7 @@
     "updated": 0
   },
   {
-    "id": "37a5c989-f9dd-4883-9489-6c9833e67e1e",
+    "id": "6f0e44fc-04f1-454d-8a2b-a3803a2d4272",
     "data": [
       {
         "text": "new york",
@@ -562,7 +498,7 @@
     "updated": 0
   },
   {
-    "id": "2b65471c-3d9f-4f50-a683-7cc446e2e5f7",
+    "id": "38eba735-8cfa-45b0-983c-9ef0243e8fd3",
     "data": [
       {
         "text": "are the ",
@@ -584,7 +520,7 @@
     "updated": 0
   },
   {
-    "id": "073e233f-a985-4201-9027-0e3a9ea18e2b",
+    "id": "1d740035-9d48-44d1-a93d-7a4906927cff",
     "data": [
       {
         "text": "Are ",
@@ -606,7 +542,7 @@
     "updated": 0
   },
   {
-    "id": "1d2bbf5f-8dbd-4681-9a72-a62f6104da86",
+    "id": "b2447da1-fea4-454e-ae9c-655be4eb0c5f",
     "data": [
       {
         "text": "will ",
@@ -628,7 +564,7 @@
     "updated": 0
   },
   {
-    "id": "99f268f8-20e2-4591-8979-619b4b6239a0",
+    "id": "9b631e27-b47a-4c0c-ab88-ce331d26df79",
     "data": [
       {
         "text": "Will the ",
@@ -650,7 +586,7 @@
     "updated": 0
   },
   {
-    "id": "123b0e73-e6f7-43a4-83cd-53400c7cacd9",
+    "id": "6171f549-4c03-4e5d-8296-cc2b6ec845bd",
     "data": [
       {
         "text": "What are the open ",
@@ -663,7 +599,7 @@
         "userDefined": false
       },
       {
-        "text": " near me?",
+        "text": "?",
         "userDefined": false
       }
     ],
@@ -672,7 +608,7 @@
     "updated": 0
   },
   {
-    "id": "0fce4b3b-618d-440b-a846-a33c5d8eee10",
+    "id": "660a446b-7ecc-4e31-b08c-8750334c61a5",
     "data": [
       {
         "text": "What are the ",
@@ -685,7 +621,7 @@
         "userDefined": true
       },
       {
-        "text": " open near me?",
+        "text": " open?",
         "userDefined": false
       }
     ],
@@ -694,7 +630,7 @@
     "updated": 0
   },
   {
-    "id": "9c6f06e3-89aa-4aa6-aa1a-399dfd9e11cb",
+    "id": "9240cd56-f8ff-44ef-8874-6c18c7025399",
     "data": [
       {
         "text": "are ",
@@ -707,7 +643,17 @@
         "userDefined": true
       },
       {
-        "text": " closed in morgan hill ca?",
+        "text": " closed in ",
+        "userDefined": false
+      },
+      {
+        "text": "morgan hill",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
+        "userDefined": true
+      },
+      {
+        "text": " ca?",
         "userDefined": false
       }
     ],
@@ -716,7 +662,7 @@
     "updated": 0
   },
   {
-    "id": "98200d96-0975-4436-a7e3-076ddf64d7d0",
+    "id": "7e327f82-2d63-4d7d-b497-a2f37a50dac2",
     "data": [
       {
         "text": "Are ",
@@ -748,7 +694,7 @@
     "updated": 0
   },
   {
-    "id": "6c26bfa7-6533-4778-a0ef-153a04d0cd08",
+    "id": "d464a13c-dc60-4529-aa1f-40b445cc1c16",
     "data": [
       {
         "text": "Where can I find ",
@@ -770,7 +716,7 @@
     "updated": 0
   },
   {
-    "id": "c06a8dd8-d24c-40fa-8f86-0f2794e50717",
+    "id": "0afbded0-0998-41dd-b3a3-ff81979dd34c",
     "data": [
       {
         "text": "Are ",
@@ -792,7 +738,7 @@
     "updated": 0
   },
   {
-    "id": "508e438a-e113-4d79-8a2a-1596575903b0",
+    "id": "90733ee4-aa4f-4082-be9b-a76d7fa898f4",
     "data": [
       {
         "text": "Will ",
@@ -814,7 +760,7 @@
     "updated": 0
   },
   {
-    "id": "5d9523f7-7acd-4782-a829-000d2ab78bb2",
+    "id": "60c16a52-caaa-4fac-a630-aae93330f0a7",
     "data": [
       {
         "text": "Are ",
@@ -846,7 +792,7 @@
     "updated": 0
   },
   {
-    "id": "0c71cf78-bae4-4438-bac6-4fe6c250cac3",
+    "id": "5bd18d11-4b7c-4ff9-8d00-1ec38011e5c8",
     "data": [
       {
         "text": "Are ",

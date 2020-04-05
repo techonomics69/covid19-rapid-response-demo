@@ -78,42 +78,6 @@
           "lang": "en",
           "condition": "",
           "speech": "The virus enters your body through your eyes, nose and/or mouth, so it is important to avoid touching your face with unwashed hands. Wash hands with soap and water for at least 20 seconds. It is also recommended to practice social distancing by staying 6 feet or more away from other people."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What are the symptoms?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
         }
       ],
       "defaultResponsePlatforms": {},

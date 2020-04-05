@@ -1,21 +1,8 @@
-/**
- * Copyright 2020 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 // Webhook for the COVID-19 Bot.
 // See https://github.com/dialogflow/dialogflow-fulfillment-nodejs
 // for Dialogflow fulfillment library docs, samples, and to report issues.
+//
+// NOTE: the example code in this template will log user interactions.
 'use strict';
 
 const functions = require('firebase-functions');
@@ -26,19 +13,6 @@ const {BigQuery} = require('@google-cloud/bigquery');
 
 process.env.DEBUG = 'dialogflow:debug';  // enables lib debugging statements
 
-// Map from intents to the labels they should emit.
-// Note that the 'end-yes' intent emits the 'HCP' label which is handled in the
-// actionMapper function.
-const INTENT_TO_LABEL = {
-  'qus.e1-no': 'ASYMPTOMATIC',
-  'qus.e1-yes': 'SYMPTOMATIC',
-  'qus.e3-no': 'LOW',
-  'qus.e3-yes': 'HIGH',
-  'qus.p1-no': 'LOW',
-  'qus.p1-yes': 'HIGH',
-  'qus.p2-yes': 'AGE',
-};
-
 // Map from Event type to the labels they should emit.
 const HEALTH_CONDITION_EVENT_TYPE_TO_LABEL = {
   'event-health-condition-cardio': 'CARDIO',
@@ -47,27 +21,10 @@ const HEALTH_CONDITION_EVENT_TYPE_TO_LABEL = {
   'event-health-condition-healtherisk': 'HEALTHRISK'
 };
 
-const CARD_CUST1 = [{
-  'subtitle':
-      'For additional support, connect with the 24 hour nurse line at (555-867-5309)',
-  'type': 'accordion',
-  'text':
-      'Discuss your symptoms and health concerns,7 days a week, 365 days a year.',
-  'title': 'Get 24-7 nurse advice'
-}];
-
-const CARD_CUST2 = [{
-  'title': 'Help our health care providers',
-  'subtitle': 'Like many hospitals, we have a shortage of medical supplies.',
-  'type': 'accordion',
-  'text':
-      'We are asking the community for donations of new and unused:<ul><li>N95 Masks</li><li>Paper masks with ties or elastic</li><li>Paper protective gowns</li><li>Protective glasses/goggles</li><li>Digital thermometers</li></ul>'
-}];
-
 const CARD_G1 = [{
   'type': 'accordion',
   'text':
-      'Helpful websites:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">COVID-19 Resources For the Public</a> (Source: CDC)</li><li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Advice For the Public</a> (Source: WHO)</li><li><a href="https://www.google.com/search?q=coronavirus" target="_blank">Help & Info</a> (Source: Google)</li></ul>Twitter feeds:<ul><li><a href="https://twitter.com/CDCgov" target="_blank">@CDCgov</a></li><li><a href="https://twitter.com/CDCemergency" target="_blank">@CDCemergency</a></li><li><a href="https://twitter.com/WHO" target="_blank">@WHO</a></li></ul>',
+      'Helpful websites:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">COVID-19 Resources For the Public (CDC)</a></li><li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Advice For the Public (WHO)</a></li><li><a href="https://www.google.com/search?q=coronavirus" target="_blank">Help & Info (Google)</a></li></ul>Twitter feeds:<ul><li><a href="https://twitter.com/CDCgov" target="_blank">@CDCgov</a></li><li><a href="https://twitter.com/CDCemergency" target="_blank">@CDCemergency</a></li><li><a href="https://twitter.com/WHO" target="_blank">@WHO</a></li></ul>',
   'title': 'Stay informed',
   'subtitle': 'Keep current on the latest COVID-19 facts and recommendations.'
 }];
@@ -77,7 +34,7 @@ const CARD_G2 = [{
       'Help yourself and your family stay safe with current information.',
   'type': 'accordion',
   'text':
-      'Learn:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html" target="_blank">How to Protect Yourself</a> (Source: CDC)</li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/steps-when-sick.html" target="_blank">What to Do if Sick</a> (Source: CDC)</li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="_blank">Questions & Answers</a> (Source: CDC)</li></ul>Watch:<ul><li><a href="https://www.youtube.com/watch?v=9Ay4u7OYOhA" target="_blank">Steps to Prevent COVID-19</a> (Source: CDC)</li><li><a href="https://www.youtube.com/watch?v=d914EnpU4Fo" target="_blank">Hand-Washing</a> (Source: CDC)</li></ul>',
+      'Learn:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html" target="_blank">How to Protect Yourself (CDC)</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/steps-when-sick.html" target="_blank">What to Do if Sick (CDC)</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="_blank">Questions & Answers (CDC)</a></li></ul>Watch:<ul><li><a href="https://www.youtube.com/watch?v=9Ay4u7OYOhA" target="_blank">Steps to Prevent COVID-19 (CDC)</a></li><li><a href="https://www.youtube.com/watch?v=d914EnpU4Fo" target="_blank">Hand-Washing (CDC)</a></li><li><a href="https://www.youtube.com/watch?v=qPoptbtBjkg" target="_blank">Managing COVID-19 At Home (CDC)</a></li></ul>',
   'title': 'Browse these COVID-19 resources'
 }];
 
@@ -87,11 +44,11 @@ const CARD_HF1 = [{
   'type': 'accordion',
   'text':
       'Steps you can take:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies and prescription refills.</li><li>Be prepared to stay at home for a period of time by having enough household items and groceries on hand.</li><li>Call your doctor if you develop new symptoms such as fever, cough or shortness of breath. </li><li>If available, take advantage of telehealth options to meet with your doctor.</li></ul><a href="https://www.diabetes.org/diabetes/treatment-care/planning-sick-days/coronavirus" target="_blank">COVID-19 Resources</a> (Source: American Diabetes Association)',
-  'title': 'Be prepared with diabetes'
+  'title': 'Be prepared if you\'re diabetic'
 }];
 
 const CARD_HF2 = [{
-  'title': 'Be prepared with heart disease',
+  'title': 'Be prepared if you have heart disease',
   'subtitle':
       'Having a history of heart disease, hypertension or stroke, may put you at higher risk of getting very sick from COVID-19.',
   'type': 'accordion',
@@ -100,7 +57,7 @@ const CARD_HF2 = [{
 }];
 
 const CARD_HF3 = [{
-  'title': 'Manage your lung health risk',
+  'title': 'Be prepared if you have lung disease',
   'subtitle':
       'Your history of lung disease may put you at higher risk of getting very sick from COVID-19.',
   'type': 'accordion',
@@ -109,7 +66,7 @@ const CARD_HF3 = [{
 }];
 
 const CARD_HF4 = [{
-  'title': 'Check your risk for COVID-19',
+  'title': 'Steps to prevent getting sick',
   'subtitle':
       'Your age or health history may put you at higher risk of getting very sick from COVID-19.',
   'type': 'accordion',
@@ -130,8 +87,9 @@ const CARD_R3 = [{
   'type': 'accordion',
   'text':
       'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)',
-  'title': 'Watch out for symptoms',
-  'subtitle': 'Typical symptoms include fever, cough, or shortness of breath.'
+  'title': 'Watch for symptoms',
+  'subtitle':
+      'Check temperature twice a day. Typical symptoms include fever, cough, or shortness of breath.'
 }];
 
 const CARD_R4 = [{
@@ -156,7 +114,7 @@ const CARD_R6 = [{
   'subtitle': 'Track any symptoms you may develop.',
   'type': 'accordion',
   'text':
-      'Reported cases range from mild to severe. Symptoms include:<ul><li>Fever, with temperature above 100.4 F or 38 C</li><li>Cough</li><li>Shortness of breath</li></ul>By knowing the symptoms and when to stay home, you make sure care is available for those who need it most.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
+      'Reported cases range from mild to severe. Symptoms include:<ul><li>Fever, with temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li></ul>By knowing the symptoms and when to stay home, you make sure care is available for those who need it most.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
 const CARD_R7 = [{
@@ -171,9 +129,9 @@ const CARD_R7 = [{
 const CARD_R8 = [{
   'type': 'accordion',
   'text':
-      'If you suspect you have COVID-19, immediately self-quarantine for at least 14 days.<ul><li>Self-quarantine can slow the rate of illness.</li><li>Keep a distance of least six feet from others</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
+      'Stay home until 14 days after last exposure.<ul><li>Avoid contact with people at higher risk for severe illness (unless they live in the same home and had same exposure).</li><li>Keep a distance of least six feet from others.</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
   'title': 'Stay inside, without visitors',
-  'subtitle': 'Stay at home unless you are seeking medical care.'
+  'subtitle': 'Stay home unless you are seeking medical care.'
 }];
 
 const CARD_R9 = [{
@@ -182,28 +140,32 @@ const CARD_R9 = [{
       'Keep track of how you feel. Know when to seek help and when to stay home.',
   'type': 'accordion',
   'text':
-      'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>sPersistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
+      'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
-const CARDS_BASIC = ['CUST2', 'G1', 'G2'];
+const CARDS_BASIC = ['G1', 'G2'];
 
 const CARDS_AGE = ['HF4'];
 
-const CARDS_DM_CARDIO_LUNG_HEALTHRISK = ['HF1', 'HF2', 'HF3', 'HF4'];
+const CARDS_DM = ['HF1'];
+
+const CARDS_CARDIO = ['HF2'];
+
+const CARDS_LUNG = ['HF3'];
+
+const CARDS_HEALTHRISK = ['HF4'];
 
 const CARDS_HCP = ['HF5'];
 
-const CARDS_HIGH_ASYMPTOMATIC = ['R3', 'R8', 'R5'];
+const CARDS_HIGH_ASYMPTOMATIC = ['R6', 'R8', 'R5'];
 
-const CARDS_HIGH_SYMPTOMATIC = ['CUST1', 'R3', 'R4', 'R5'];
+const CARDS_HIGH_SYMPTOMATIC = ['R3', 'R4', 'R5'];
 
 const CARDS_LOW_ASYMPTOMATIC = ['R6', 'R7', 'R5'];
 
 const CARDS_LOW_SYMPTOMATIC = ['R9', 'R7', 'R5'];
 
 const CARDS_REGISTORY = {
-  'CUST1': {rank: 3, card: CARD_CUST1},
-  'CUST2': {rank: 16, card: CARD_CUST2},
   'G1': {rank: 17, card: CARD_G1},
   'G2': {rank: 18, card: CARD_G2},
   'HF1': {rank: 11, card: CARD_HF1},
@@ -222,7 +184,7 @@ const CARDS_REGISTORY = {
 
 const HEALTH_CONDITION_QUESTION = [
   {
-    'title': 'Do you have any other of the following conditions?',
+    'title': 'Do you have any other of these conditions?',
     'type': 'description'
   },
   {'type': 'divider'}
@@ -232,14 +194,15 @@ const HEALTH_CONDITION_CARDIO = {
   'subtitle': '',
   'event': {'languageCode': 'en', 'name': 'event-health-condition-cardio'},
   'type': 'list',
-  'title': 'Congestive heart failure'
+  'title': 'Serious heart conditions'
 };
 
 const HEALTH_CONDITION_DIABETES = {
-  'title': 'Diabetes with complications',
-  'subtitle': '',
-  'event': {'languageCode': 'en', 'name': 'event-health-condition-dm'},
-  'type': 'list'
+    'title': 'Diabetes',
+    'subtitle': '',
+    'event':
+        {'name': 'event-health-condition-dm', 'languageCode': 'en'},
+    'type': 'list'
 };
 
 const HEALTH_CONDITION_LUNG = {
@@ -249,41 +212,36 @@ const HEALTH_CONDITION_LUNG = {
   'title': 'Chronic lung disease or moderate to severe asthma'
 };
 
-const HEALTH_CONDITION_HEALTHRISK = [
+const HEALTH_CONDITION_HEALTHRISK_1 = [
   {
-    'type': 'list',
-    'title': 'Neurologic conditions that weaken ability to cough',
-    'subtitle': '',
-    'event':
-        {'languageCode': 'en', 'name': 'event-health-condition-healtherisk'}
+  'title': 'Immunocompromised',
+  'subtitle':
+      'Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications',
+  'event': {'languageCode': 'en', 'name': 'event-health-condition-healtherisk'},
+  'type': 'list'
   },
   {
-    'type': 'list',
-    'title': 'Weakened immune system',
-    'subtitle': '',
-    'event':
-        {'name': 'event-health-condition-healtherisk', 'languageCode': 'en'}
-  },
-  {
-    'title': 'Dialysis',
-    'subtitle': '',
+    'title': 'Severe obesity',
+    'subtitle': 'body mass index [BMI] of 40 or higher',
     'event':
         {'languageCode': 'en', 'name': 'event-health-condition-healtherisk'},
     'type': 'list'
-  },
+  }
+];
+const HEALTH_CONDITION_HEALTHRISK_2 = [
   {
-    'title': 'Cirrhosis of the liver',
+    'title': 'Chronic kidney disease undergoing dialysis',
     'subtitle': '',
     'event':
         {'name': 'event-health-condition-healtherisk', 'languageCode': 'en'},
     'type': 'list'
   },
   {
-    'title': 'Extreme obesity',
-    'subtitle': 'Body Mass Index [BMI] greater than or equal to 40',
+    'subtitle': '',
     'event':
         {'name': 'event-health-condition-healtherisk', 'languageCode': 'en'},
-    'type': 'list'
+    'type': 'list',
+    'title': 'Liver disease'
   }
 ];
 
@@ -337,7 +295,7 @@ function openHours(agent) {
           fields: 'place_id,name',
           key: process.env.GOOGLE_MAPS_API_KEY
         },
-        timeout: 3000  // milliseconds
+        timeout: 5000  // milliseconds
       })
       .then(resp => {
         var candidates = resp.data.candidates;
@@ -358,7 +316,7 @@ function openHours(agent) {
             fields: 'opening_hours/periods,opening_hours/open_now',
             key: process.env.GOOGLE_MAPS_API_KEY
           },
-          timeout: 3000  // milliseconds
+          timeout: 5000  // milliseconds
         });
       })
       .then(resp => {
@@ -377,7 +335,8 @@ function openHours(agent) {
                 new Error('No close time found for location: ' + location));
           }
           var close_time = periods[day].close.time;
-          var message = name + ' will remain open until ' +
+          var message = 'According to their website ' + name +
+              ' will remain open until ' +
               convertTimeFormat(close_time.slice(0, 2), close_time.slice(2));
           agent.add(message);
         } else {
@@ -385,13 +344,11 @@ function openHours(agent) {
           tomorrow.setDate(now.getDate() + 1);
           var tomorrowDay = tomorrow.getDay();
           var open_time = periods[tomorrowDay].open.time;
-          var message = name + ' will remain closed until ' +
+          var message = 'According to their website ' + name +
+              ' will remain closed until ' +
               convertTimeFormat(open_time.slice(0, 2), open_time.slice(2));
           agent.add(message);
         }
-        agent.add(new Payload(
-            agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-            {sendAsMessage: true, rawPayload: true}));
       })
       .catch(e => {
         if (!!name) {
@@ -399,9 +356,6 @@ function openHours(agent) {
         } else {
           agent.add(`I'm sorry, I can't find opening hours for ` + location);
         }
-        agent.add(new Payload(
-            agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-            {sendAsMessage: true, rawPayload: true}));
         console.log(e);
       });
 }
@@ -493,23 +447,18 @@ function confirmedCases(agent) {
           return Promise.reject(
               new Error('No data found for confirmed cases ' + resultLocation));
         }
+
         var message = 'According to Johns Hopkins University, as of today, ' +
-            'there are a total of ' + numberWithCommas(totalConfirmed) +
+            'there are approximately ' + numberWithCommas(totalConfirmed) +
             ' confirmed cases of ' +
             'coronavirus ' + resultLocation + '.';
         console.log('response: ' + message);
         agent.add(message);
-        agent.add(new Payload(
-            agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-            {sendAsMessage: true, rawPayload: true}));
       })
       .catch(e => {
         agent.add(
             `I'm sorry, I can't find statistics for confirmed cases ` +
             resultLocation);
-        agent.add(new Payload(
-            agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-            {sendAsMessage: true, rawPayload: true}));
         console.log(e);
       });
 }
@@ -536,9 +485,10 @@ function death(agent) {
           return Promise.reject(
               new Error('No data found for deaths ' + resultLocation));
         }
+
         var message = 'According to Johns Hopkins University, as of today, ' +
-            'total of ' + numberWithCommas(totalDeaths) + ' people died from ' +
-            'coronavirus ' + resultLocation + '.';
+            'there are approximately ' + numberWithCommas(totalDeaths) +
+            ' people died from ' + 'coronavirus ' + resultLocation + '.';
         return queryCovid19dataset('confirmed_cases', country)
             .then(totalConfirmed => {
               if (!!totalConfirmed) {
@@ -547,17 +497,11 @@ function death(agent) {
               }
               console.log('response: ' + message);
               agent.add(message);
-              agent.add(new Payload(
-                  agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-                  {sendAsMessage: true, rawPayload: true}));
             });
       })
       .catch(e => {
         agent.add(
             `I'm sorry, I can't find statistics for deaths ` + resultLocation);
-        agent.add(new Payload(
-            agent.UNSPECIFIED, {richContent: SUGGESTION_CHIPS},
-            {sendAsMessage: true, rawPayload: true}));
         console.log(e);
       });
 }
@@ -586,6 +530,7 @@ function addLabelToContext(agent, label) {
         {name: 'labels', lifespan: 20, parameters: {labels: labels}});
   }
 }
+
 /**
  * Adds a dummy payload when there's no other response so that the webhook
  * works in dialogflow-fulfillment:0.6.1.
@@ -593,21 +538,6 @@ function addLabelToContext(agent, label) {
 function addDummyPayload(agent) {
   agent.add(new Payload(agent.UNSPECIFIED, {}));
 }
-
-/**
- * Given the current intent, appends the corresponding label to the
- * context.
- */
-function labelTagger(agent) {
-  var label = INTENT_TO_LABEL[agent.intent];
-  if (!label) {
-    console.log('Intent doesn\'t have label: ' + agent.intent);
-    return;
-  }
-  addDummyPayload(agent);
-  addLabelToContext(agent, label);
-}
-
 
 /**
  * Checks the input event for the request and maps into corresponding
@@ -636,11 +566,14 @@ function healthConditionEventMapper(agent) {
     if (!labels.includes('CARDIO')) {
       conditions.push(HEALTH_CONDITION_CARDIO);
     }
+    if (!labels.includes('HEALTHRISK')) {
+      conditions.push(...HEALTH_CONDITION_HEALTHRISK_1);
+    }
     if (!labels.includes('DM')) {
       conditions.push(HEALTH_CONDITION_DIABETES);
     }
     if (!labels.includes('HEALTHRISK')) {
-      conditions.push(...HEALTH_CONDITION_HEALTHRISK);
+      conditions.push(...HEALTH_CONDITION_HEALTHRISK_2);
     }
     conditions.push(HEALTH_CONDITION_NONE);
 
@@ -666,11 +599,24 @@ function healthConditionEventMapper(agent) {
  */
 function actionMapper(agent) {
   var labels = [];
+  // The labels context holds risk labels set from this webhook.
   var label_ctx = agent.context.get('labels');
   if (!label_ctx || !label_ctx.parameters || !label_ctx.parameters.labels) {
     console.log('No labels to suggest actions');
   } else {
     labels = label_ctx.parameters.labels;
+  }
+  // The risk_labels context holds risk set from parameters.
+  var risk_label_ctx = agent.context.get('risk_labels');
+  if (!!risk_label_ctx && !!risk_label_ctx.parameters) {
+    for (let param in risk_label_ctx.parameters) {
+      if (!param.startsWith('risk_label') || param.endsWith(".original")) {
+        continue;
+      }
+      labels.push(risk_label_ctx.parameters[param]);
+    }
+  } else {
+    console.log('No risk labels to suggest actions');
   }
   if (agent.intent === 'end-yes' && !labels.includes('HCP')) {
     labels.push('HCP');
@@ -690,14 +636,22 @@ function actionMapper(agent) {
     }
   } else if (labels.includes('LOW')) {
     if (labels.includes('SYMPTOMATIC')) {
-      cards = cards.concat(CARDS_LOW_ASYMPTOMATIC);
-    } else if (labels.includes('ASYMPTOMATIC')) {
       cards = cards.concat(CARDS_LOW_SYMPTOMATIC);
+    } else if (labels.includes('ASYMPTOMATIC')) {
+      cards = cards.concat(CARDS_LOW_ASYMPTOMATIC);
     }
   }
-  if (labels.includes('DM') || labels.includes('CARDIO') ||
-      labels.includes('LUNG') || labels.includes('HEALTHRISK')) {
-    cards = cards.concat(CARDS_DM_CARDIO_LUNG_HEALTHRISK);
+  if (labels.includes('DM')) {
+    cards = cards.concat(CARDS_DM);
+  }
+  if (labels.includes('CARDIO')) {
+    cards = cards.concat(CARDS_CARDIO);
+  }
+  if (labels.includes('LUNG')) {
+    cards = cards.concat(CARDS_LUNG);
+  }
+  if (labels.includes('HEALTHRISK')) {
+    cards = cards.concat(CARDS_HEALTHRISK);
   }
   if (labels.includes('AGE')) {
     cards = cards.concat(CARDS_AGE);
@@ -718,6 +672,7 @@ function actionMapper(agent) {
       {sendAsMessage: true, rawPayload: true}));
   // Clear context.
   agent.context.set({name: 'labels', lifespan: 0});
+  agent.context.set({name: 'risk_labels', lifespan: 0});
 }
 
 exports.dialogflowFirebaseFulfillment =
@@ -743,13 +698,6 @@ exports.dialogflowFirebaseFulfillment =
       intentMap.set('coronavirus.closure', openHours);
       intentMap.set('coronavirus.confirmed_cases', confirmedCases);
       intentMap.set('coronavirus.death', death);
-      intentMap.set('qus.e1-no', labelTagger);
-      intentMap.set('qus.e1-yes', labelTagger);
-      intentMap.set('qus.e3-no', labelTagger);
-      intentMap.set('qus.e3-yes', labelTagger);
-      intentMap.set('qus.p1-no', labelTagger);
-      intentMap.set('qus.p1-yes', labelTagger);
-      intentMap.set('qus.p2-yes', labelTagger);
       intentMap.set('qus.p3-continue', healthConditionEventMapper);
       intentMap.set('end-yes', actionMapper);
       intentMap.set('end-no', actionMapper);

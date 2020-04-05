@@ -13,9 +13,27 @@
           "name": "ctx-p2",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "risk_labels",
+          "parameters": {},
+          "lifespan": 20
         }
       ],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "418738e1-b751-447a-9b3c-58df0857bb3d",
+          "required": false,
+          "dataType": "",
+          "name": "risk_label_p1-yes",
+          "value": "HIGH",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 4,
@@ -55,7 +73,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

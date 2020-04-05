@@ -10,52 +10,30 @@
       "parameters": [],
       "messages": [
         {
+          "type": "simple_response",
+          "platform": "google",
+          "lang": "en",
+          "condition": "",
+          "textToSpeech": "",
+          "ssml": "\u003cspeak\u003eDo you mean \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e? The World Health Organization announced a name for the disease that is causing the 2019 novel coronavirus outbreak, which was first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. In \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, \u003csub alias\u003d\"C O\"\u003e‘CO’\u003c/sub\u003e stands for ‘corona,’ \u003csub alias\u003d\"V I\"\u003e‘VI’\u003c/sub\u003e for ‘virus,’ and ‘D’ for disease.\u003c/speak\u003e",
+          "displayText": "Do you mean COVID-19? The World Health Organization announced a name for the disease that is causing the 2019 novel coronavirus outbreak, which was first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease."
+        },
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDo you mean \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e? The World Health Organization announced a name for the disease that is causing the 2019 novel coronavirus outbreak, which was first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. In \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, \u003csub alias\u003d\"C O\"\u003e‘CO’\u003c/sub\u003e stands for ‘corona,’ \u003csub alias\u003d\"V I\"\u003e‘VI’\u003c/sub\u003e for ‘virus,’ and ‘D’ for disease.\u003c/speak\u003e"
+        },
+        {
           "type": 0,
           "lang": "en",
           "condition": "",
           "speech": "Do you mean COVID-19? The World Health Organization announced a name for the disease that is causing the 2019 novel coronavirus outbreak, which was first identified in Wuhan, China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
         }
       ],
-      "defaultResponsePlatforms": {
-        "telephony": true,
-        "google": true
-      },
+      "defaultResponsePlatforms": {},
       "speech": []
     }
   ],

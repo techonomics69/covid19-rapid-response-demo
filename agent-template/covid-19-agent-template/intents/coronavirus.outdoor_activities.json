@@ -50,43 +50,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "Please check your local city, county, and state government website for specific guidelines during a shelter in place."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "Check your local city, county, and state government website for specific guidelines during a shelter in place."
         },
         {
           "type": "simple_response",
@@ -94,8 +58,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003ePlease check your local city, county, and state government website for specific guidelines during a shelter in place.\u003c/speak\u003e",
-          "displayText": "Please check your local city, county, and state government website for specific guidelines during a shelter in place."
+          "ssml": "\u003cspeak\u003eCheck your local city, county, and state government website for specific guidelines during a shelter in place.\u003c/speak\u003e",
+          "displayText": "Check your local city, county, and state government website for specific guidelines during a shelter in place."
         },
         {
           "type": 14,
@@ -103,7 +67,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003ePlease check your local city, county, and state government website for specific guidelines during a shelter in place.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eCheck your local city, county, and state government website for specific guidelines during a shelter in place.\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

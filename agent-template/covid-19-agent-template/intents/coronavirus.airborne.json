@@ -24,42 +24,6 @@
           "speech": "Studies to date suggest that the virus that causes COVID-19 is mainly transmitted through contact with respiratory droplets rather than through the air."
         },
         {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        },
-        {
           "type": "simple_response",
           "platform": "google",
           "lang": "en",

@@ -37,42 +37,6 @@
           "speech": "In response to COVID-19, the World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones, and our communities. First, regular and thorough hand-washing and good respiratory hygiene upkeep is important. Second, keep informed and follow the advice of local health authorities. Please visit the WHO website for more guidance."
         },
         {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        },
-        {
           "type": "simple_response",
           "platform": "google",
           "lang": "en",

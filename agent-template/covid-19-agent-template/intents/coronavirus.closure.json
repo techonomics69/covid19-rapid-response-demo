@@ -1,5 +1,5 @@
 {
-  "id": "d6fb1db3-a959-4f10-8914-58efd498650d",
+  "id": "adce0bf3-3e29-4b15-923c-1d7c461c17d6",
   "name": "coronavirus.closure",
   "auto": true,
   "contexts": [],
@@ -68,7 +68,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "\u003corganization\u003e will remain \u003copen\u003e/\u003cclosed\u003e until \u003ctime\u003e"
+          "speech": []
         }
       ],
       "defaultResponsePlatforms": {},

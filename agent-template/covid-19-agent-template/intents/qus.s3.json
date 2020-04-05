@@ -44,7 +44,7 @@
                   "title": "Do you have any of the following symptoms?",
                   "type": "description",
                   "text": [
-                    "• Fever (temperature \u003e100.4 F or 38 C) or feeling feverish",
+                    "• Fever (temperature \u003e100.4 °F or 38 °C) or feeling feverish",
                     "• Shortness of breath (not severe)",
                     "• Cough"
                   ]

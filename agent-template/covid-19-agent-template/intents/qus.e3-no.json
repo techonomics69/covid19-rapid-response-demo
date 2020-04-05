@@ -18,9 +18,27 @@
           "name": "ctx-e3",
           "parameters": {},
           "lifespan": 0
+        },
+        {
+          "name": "risk_labels",
+          "parameters": {},
+          "lifespan": 20
         }
       ],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "6e524fe1-942a-4836-b7a9-bdbd1ce35bc8",
+          "required": false,
+          "dataType": "",
+          "name": "risk_label_e3-no",
+          "value": "LOW",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 4,
@@ -30,7 +48,7 @@
             "richContent": [
               [
                 {
-                  "title": "In the past 14 days, have you had close contact* with someone diagnosed with COVID-19?",
+                  "title": "In the past 14 days, have you had close contact* with someone with known or suspected COVID-19 or possible COVID-19?",
                   "subtitle": "*Within approximately 6 feet (2 meters) for a prolonged period of time while caring for, living with, visiting, or sharing a healthcare waiting area with the person, or having direct contact with infectious secretions, such as being coughed on.",
                   "type": "info"
                 },
@@ -59,7 +77,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

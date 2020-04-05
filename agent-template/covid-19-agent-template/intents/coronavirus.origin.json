@@ -19,30 +19,6 @@
           "noInputPromptMessages": [],
           "outputDialogContexts": [],
           "isList": false
-        },
-        {
-          "id": "0f4a4bfe-e163-4e59-b3fb-8d2fb79f75e5",
-          "required": false,
-          "dataType": "@sys.ordinal",
-          "name": "ordinal",
-          "value": "$ordinal",
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": [],
-          "isList": false
-        },
-        {
-          "id": "fbc4f795-9f55-4f1a-a99b-2e1b5b948c8d",
-          "required": false,
-          "dataType": "@covid-19",
-          "name": "covid-191",
-          "value": "$covid-191",
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": [],
-          "isList": true
         }
       ],
       "messages": [
@@ -51,42 +27,6 @@
           "lang": "en",
           "condition": "",
           "speech": "COVID-19 was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
         },
         {
           "type": "simple_response",

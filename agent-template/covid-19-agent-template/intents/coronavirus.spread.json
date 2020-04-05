@@ -38,43 +38,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How can I protect myself?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "The virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Some people without symptoms may be able to spread virus."
         },
         {
           "type": "simple_response",
@@ -82,8 +46,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.\u003c/speak\u003e",
-          "displayText": "The virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs."
+          "ssml": "\u003cspeak\u003eThe virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Some people without symptoms may be able to spread virus.\u003c/speak\u003e",
+          "displayText": "The virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Some people without symptoms may be able to spread virus."
         },
         {
           "type": 14,
@@ -91,7 +55,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eThe virus is thought to spread mainly between people who are in close contact with one another (within about 6 feet), through respiratory droplets produced when an infected person coughs or sneezes.These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Some people without symptoms may be able to spread virus.\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

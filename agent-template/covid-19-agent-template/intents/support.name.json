@@ -15,49 +15,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eI\u0027m the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eThis is the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Virtual Agent.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "I\u0027m the COVID-19 Rapid Response Bot."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "This is the COVID-19 Virtual Agent."
         },
         {
           "type": "simple_response",
@@ -65,8 +29,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eI\u0027m the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Rapid Response Bot.\u003c/speak\u003e",
-          "displayText": "I\u0027m the COVID-19 Rapid Response Bot."
+          "ssml": "\u003cspeak\u003eThis is the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Virtual Agent.\u003c/speak\u003e",
+          "displayText": "This is the COVID-19 Virtual Agent."
         }
       ],
       "defaultResponsePlatforms": {},

@@ -13,43 +13,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "Please reach out to your local community to see how you can help others in need. "
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "Reach out to your local community to see how you can help others in need."
         },
         {
           "type": "simple_response",
@@ -57,8 +21,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003ePlease reach out to your local community to see how you can help others in need. \u003c/speak\u003e",
-          "displayText": "Please reach out to your local community to see how you can help others in need."
+          "ssml": "\u003cspeak\u003eReach out to your local community to see how you can help others in need.\u003c/speak\u003e",
+          "displayText": "Reach out to your local community to see how you can help others in need."
         },
         {
           "type": 14,
@@ -66,7 +30,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003ePlease reach out to your local community to see how you can help others in need. \u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eReach out to your local community to see how you can help others in need.\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

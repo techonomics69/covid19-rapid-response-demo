@@ -1,6 +1,18 @@
 [
   {
-    "id": "8747a418-1eaa-427a-a89a-7f4890dfddd2",
+    "id": "1cf0b812-6b25-4087-add8-e7fa86741df5",
+    "data": [
+      {
+        "text": "how many people have died so far?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6875b5cb-de9a-4d37-804b-f34a577fe5f6",
     "data": [
       {
         "text": "what is the mortality rate so far ?",
@@ -12,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "81e122cb-5615-4d1f-bd90-4be2ba5b3dd5",
+    "id": "d05454fa-d847-48b1-b2aa-50ec866b377b",
     "data": [
       {
         "text": "people died in  ",
@@ -30,7 +42,7 @@
     "updated": 0
   },
   {
-    "id": "86d0740c-f49b-4578-9755-55baae755295",
+    "id": "2bd50f1a-f2d3-416e-897e-7311bf0071ae",
     "data": [
       {
         "text": "How many deaths have been reported in ",
@@ -52,7 +64,7 @@
     "updated": 0
   },
   {
-    "id": "183e5021-8708-4460-b316-cce1405c1f1b",
+    "id": "52693f3b-9623-4d8c-bfdf-fc18b6bf8cbf",
     "data": [
       {
         "text": "deaths in ",
@@ -70,7 +82,7 @@
     "updated": 0
   },
   {
-    "id": "50aab81a-cb41-4f9c-8f29-21f3a197ecf8",
+    "id": "0ba8a1a3-2c7b-42f4-8b8d-9d25abc4650e",
     "data": [
       {
         "text": "what is the mortality rrate in ages 30-40",
@@ -82,7 +94,7 @@
     "updated": 0
   },
   {
-    "id": "ce10d8e9-3a02-4ddb-8134-463e0c2590a9",
+    "id": "5f12c9aa-9f51-41bb-af70-23be205ef928",
     "data": [
       {
         "text": "How many deaths have been reported in ",
@@ -100,10 +112,20 @@
     "updated": 0
   },
   {
-    "id": "5a17969a-3b36-4ba4-9689-65f4e21dc0b1",
+    "id": "510590f6-1165-4685-b291-dd7fe42cefc3",
     "data": [
       {
-        "text": "How many people have died in Jordan?",
+        "text": "How many people have died in ",
+        "userDefined": false
+      },
+      {
+        "text": "Jordan",
+        "alias": "geo-country",
+        "meta": "@sys.geo-country",
+        "userDefined": true
+      },
+      {
+        "text": "?",
         "userDefined": false
       }
     ],
@@ -112,7 +134,7 @@
     "updated": 0
   },
   {
-    "id": "77c9fff6-3dc9-4504-880a-5b58e97fe456",
+    "id": "9ad65308-2d6c-401a-9a62-04962e9c0082",
     "data": [
       {
         "text": "What\u0027s the number of deaf?",
@@ -124,7 +146,7 @@
     "updated": 0
   },
   {
-    "id": "4802088f-08d9-4def-afd4-55b4c4b7d642",
+    "id": "f7c32b13-cc3c-4589-8221-b2aa6af430a2",
     "data": [
       {
         "text": "total death",
@@ -136,7 +158,7 @@
     "updated": 0
   },
   {
-    "id": "ec303e63-609a-48c6-879b-3cd6dbbca671",
+    "id": "b154950a-adf2-42c9-a8e2-beb242f3f33b",
     "data": [
       {
         "text": "total death in ",
@@ -154,7 +176,7 @@
     "updated": 0
   },
   {
-    "id": "52a454ca-f8fa-48fe-9d6c-f4009854ae59",
+    "id": "e85fd7d6-33bd-469a-8395-0798e9e073af",
     "data": [
       {
         "text": "How many deaths have been reported in ",
@@ -176,7 +198,7 @@
     "updated": 0
   },
   {
-    "id": "313ec067-401c-413e-a9ec-86eba0a6ff9c",
+    "id": "c959949b-9e52-41ec-a465-a80acb606443",
     "data": [
       {
         "text": "How many deaths have been reported in the ",
@@ -198,7 +220,7 @@
     "updated": 0
   },
   {
-    "id": "6097fc20-294a-4ed9-8073-6af963f624b3",
+    "id": "a0fd8672-7997-49ce-86a4-5b7f2d8918e4",
     "data": [
       {
         "text": "How many ",
@@ -230,7 +252,7 @@
     "updated": 0
   },
   {
-    "id": "49844f53-1d1a-4080-94df-19d89de05c9b",
+    "id": "5d715f2e-6b8f-41d9-81f7-5a80c5a86b6f",
     "data": [
       {
         "text": "Did anyone die come Coronavirus?",
@@ -242,7 +264,7 @@
     "updated": 0
   },
   {
-    "id": "3f573410-00c0-4ef1-99e2-05003ea29d86",
+    "id": "1b5249b3-c48c-4227-9566-09631388541d",
     "data": [
       {
         "text": "How many people died from Corona virus?",
@@ -254,7 +276,7 @@
     "updated": 0
   },
   {
-    "id": "0289803d-fc33-4108-8012-02a53c7489af",
+    "id": "23b02f8c-9a64-4218-b98c-27e9c15ec4d8",
     "data": [
       {
         "text": "how many died in the ",
@@ -276,7 +298,7 @@
     "updated": 0
   },
   {
-    "id": "d05022ba-8be2-4bde-b90c-369dd0c7fec0",
+    "id": "653d669d-a75a-40c8-8698-703e0f62bc7f",
     "data": [
       {
         "text": "died in usa",
@@ -288,7 +310,7 @@
     "updated": 0
   },
   {
-    "id": "936e3027-ff4b-45ee-a512-816deb2c2fee",
+    "id": "4716c197-ad3e-49fe-a472-d8e1f6eafeb4",
     "data": [
       {
         "text": "how many deaths so far in the ",
@@ -306,7 +328,7 @@
     "updated": 0
   },
   {
-    "id": "c514ea20-9de8-4c67-879c-a52a5fc8eebd",
+    "id": "66964e44-0692-48e9-813e-bf938c727cbc",
     "data": [
       {
         "text": "How many people have died?",
@@ -318,7 +340,7 @@
     "updated": 0
   },
   {
-    "id": "092b0dfb-79d3-4e71-bb9f-0e08d51ba2cc",
+    "id": "d9bbd1ba-9584-497c-bd39-bbfabbea87ce",
     "data": [
       {
         "text": "what is the current mortality rate",
@@ -330,7 +352,7 @@
     "updated": 0
   },
   {
-    "id": "009a427a-c6b4-4a0b-bfea-eaf547179dd6",
+    "id": "b4aed2d4-edaa-418b-9d48-d019d3256b7a",
     "data": [
       {
         "text": "how many deaths have there been in the ",
@@ -348,7 +370,7 @@
     "updated": 0
   },
   {
-    "id": "9cd196a3-cbbf-4b43-9485-48b8d7ed96e2",
+    "id": "c9362499-e8d4-45ef-abd0-e094444071de",
     "data": [
       {
         "text": "How many deaths have there been from COVID-19 in the ",
@@ -370,7 +392,7 @@
     "updated": 0
   },
   {
-    "id": "d78d03b5-f411-4cb5-a467-cce500e28ee5",
+    "id": "21462cd9-978f-40b3-abc5-15749a89f0e7",
     "data": [
       {
         "text": "how many people die every day",
@@ -382,7 +404,7 @@
     "updated": 0
   },
   {
-    "id": "e9a7ec9d-b18f-41a5-bd3f-1d2b786fa85d",
+    "id": "8381fd66-c787-43e3-9765-81f0615b0696",
     "data": [
       {
         "text": "how many people have died",
@@ -394,7 +416,7 @@
     "updated": 0
   },
   {
-    "id": "94a64103-104f-488b-b163-5700d9aef336",
+    "id": "255cec45-7524-4838-9157-80be2db2243b",
     "data": [
       {
         "text": "What is the mortality rate for covid",
@@ -406,7 +428,7 @@
     "updated": 0
   },
   {
-    "id": "a93ffe12-4a89-46c2-8d51-73d33cb0aeef",
+    "id": "fb62d031-870f-4866-b49b-2d16ad3282de",
     "data": [
       {
         "text": "How many people have died covid?",
@@ -418,7 +440,7 @@
     "updated": 0
   },
   {
-    "id": "c63a7aad-d637-44b5-aa7a-d9082f19e47e",
+    "id": "1a4fc83f-44e7-4c38-8295-d68299a8370b",
     "data": [
       {
         "text": "How many people have died in San Bernardino County?",
@@ -430,7 +452,7 @@
     "updated": 0
   },
   {
-    "id": "02ce8d24-2d17-4b93-a249-23c8a2f1a5bb",
+    "id": "2cd27577-8787-4e1a-ab95-cfd96ae04354",
     "data": [
       {
         "text": "the total number of deaths",
@@ -442,7 +464,7 @@
     "updated": 0
   },
   {
-    "id": "8a630ec9-6e60-4300-a177-2ddac13d66bf",
+    "id": "4f7c6bc7-36b2-4eb9-a21c-b1c53b6ff570",
     "data": [
       {
         "text": "what is the death toll",
@@ -454,7 +476,7 @@
     "updated": 0
   },
   {
-    "id": "9c53f654-4416-4e24-9ee7-8ef57b0dd0b8",
+    "id": "82df5a7b-a48b-467c-82a1-3257dd22affa",
     "data": [
       {
         "text": "How many deaths have resulted from covid-19?",
@@ -466,7 +488,7 @@
     "updated": 0
   },
   {
-    "id": "af9b16df-997e-46b8-96e6-866efa6c7989",
+    "id": "8a873e5c-e80c-4db9-82a7-44e72c6df9ae",
     "data": [
       {
         "text": "How many people globally have died from the ",
@@ -488,7 +510,7 @@
     "updated": 0
   },
   {
-    "id": "83fcd200-ff9d-40a3-875c-e2a919f9dd09",
+    "id": "9e7eccfc-f5bf-495c-b6f9-49da15c2ae15",
     "data": [
       {
         "text": "what\u0027s the fatality rate?",
@@ -500,7 +522,7 @@
     "updated": 0
   },
   {
-    "id": "7cdff703-1a9b-46c2-8669-d5a94cfd7fcb",
+    "id": "feb66dcb-4f98-4f6f-91ab-ae762614e542",
     "data": [
       {
         "text": "can you tell me death rate by age?",
@@ -512,7 +534,7 @@
     "updated": 0
   },
   {
-    "id": "7da061dc-9f26-43d9-9ae8-4d6457179f9a",
+    "id": "f3b5fb36-7147-4efe-a601-3372d27c0445",
     "data": [
       {
         "text": "was is the mortality rate?",
@@ -524,7 +546,7 @@
     "updated": 0
   },
   {
-    "id": "b87e213e-360d-4fbb-bbb1-d918868e9e59",
+    "id": "c2b7ebf0-51c7-4520-b68d-d091a4411e8c",
     "data": [
       {
         "text": "Death rate in king county today",
@@ -536,7 +558,7 @@
     "updated": 0
   },
   {
-    "id": "ebf6e2b8-64e3-40fb-82e1-b9828f2520b0",
+    "id": "f729cf59-e973-4420-a9d1-cd31b3de2db0",
     "data": [
       {
         "text": "Death count",
@@ -548,7 +570,7 @@
     "updated": 0
   },
   {
-    "id": "a0aef2f4-87a4-4537-a54e-9177e5059bd5",
+    "id": "f5e4722a-f114-4c84-9948-0f9f18303600",
     "data": [
       {
         "text": "fatality rate",
@@ -560,7 +582,7 @@
     "updated": 0
   },
   {
-    "id": "5a967b19-610c-42ac-9283-d04a60f77a1f",
+    "id": "778cb2ae-794a-49b2-b325-44d51ab4ed32",
     "data": [
       {
         "text": "what is the current death count?",
@@ -572,7 +594,7 @@
     "updated": 0
   },
   {
-    "id": "1bb27f63-da29-4679-ab40-5fe5dafc4f5a",
+    "id": "26144af7-da52-4cdf-928c-7431db917a47",
     "data": [
       {
         "text": "US",
@@ -600,7 +622,7 @@
     "updated": 0
   },
   {
-    "id": "164ea364-f4ae-4a66-af21-65061b2dff7a",
+    "id": "b24e5631-a119-4bcf-80b3-14443ecf4e1e",
     "data": [
       {
         "text": "coronavirus",
@@ -618,7 +640,7 @@
     "updated": 0
   },
   {
-    "id": "300604b2-4ef0-40d0-88c8-ce388c8dac85",
+    "id": "8155d1b8-0f5a-4b36-b203-eb6cc3f6628d",
     "data": [
       {
         "text": "how many people died",
@@ -630,7 +652,7 @@
     "updated": 0
   },
   {
-    "id": "42f6ea57-068d-4b28-b40f-0cba4e79b08c",
+    "id": "ed48ab3d-a665-4a82-9475-aa2244d82819",
     "data": [
       {
         "text": "deaths number",
@@ -642,7 +664,7 @@
     "updated": 0
   },
   {
-    "id": "acae0104-f694-4d92-8594-5ab705334ffb",
+    "id": "a7f270a3-bd5e-4c33-af12-bc7cc206d72f",
     "data": [
       {
         "text": "how many deaths",
@@ -654,7 +676,7 @@
     "updated": 0
   },
   {
-    "id": "a991a3f8-da9e-4e6e-b009-acc74cdef8fb",
+    "id": "73eca1ac-2396-43b8-a28a-2c13cd8b447f",
     "data": [
       {
         "text": "death rate",
@@ -666,7 +688,7 @@
     "updated": 0
   },
   {
-    "id": "46114dfb-302a-4e0c-817f-2d1cecb8a532",
+    "id": "c3284d40-8d09-486e-a3ce-a67ccc598542",
     "data": [
       {
         "text": "What is the death rate of ",
@@ -688,7 +710,7 @@
     "updated": 0
   },
   {
-    "id": "e80390fe-bd25-433b-9840-2975bd10ec6a",
+    "id": "eeecc26d-8631-4aca-a52b-dfdf5903b18e",
     "data": [
       {
         "text": "How many people have died from ",

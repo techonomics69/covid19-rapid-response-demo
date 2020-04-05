@@ -1,5 +1,5 @@
 {
-  "description": "",
+  "description": "COVID-19 Rapid Response Virtual Agent",
   "language": "en",
   "shortDescription": "",
   "examples": "",
@@ -12,11 +12,7 @@
     "welcomeIntentSignInRequired": false,
     "startIntents": [],
     "systemIntents": [],
-    "endIntentIds": [
-      "1f512569-b480-46b6-920a-be1e16ca7e60",
-      "2968c9ec-0c51-4927-b8ad-52393b98663f",
-      "3dd0482f-ec35-4732-8931-c2e5712029e4"
-    ],
+    "endIntentIds": [],
     "oAuthLinking": {
       "required": false,
       "providerId": "",

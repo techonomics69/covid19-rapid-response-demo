@@ -52,42 +52,6 @@
           "lang": "en",
           "condition": "",
           "speech": "The World Health Organization reports that possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The World Health Organization is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
         }
       ],
       "defaultResponsePlatforms": {},

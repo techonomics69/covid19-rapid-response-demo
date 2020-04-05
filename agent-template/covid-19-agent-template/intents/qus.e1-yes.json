@@ -10,34 +10,31 @@
       "resetContexts": false,
       "affectedContexts": [
         {
-          "name": "ctx-e2",
-          "parameters": {},
-          "lifespan": 2
-        },
-        {
           "name": "ctx-e3",
           "parameters": {},
           "lifespan": 2
         },
         {
-          "name": "e1-yes-followup",
+          "name": "risk_labels",
           "parameters": {},
-          "lifespan": 2
+          "lifespan": 20
         }
       ],
-      "parameters": [],
-      "messages": [
+      "parameters": [
         {
-          "type": 2,
-          "platform": "telegram",
-          "lang": "en",
-          "condition": "",
-          "title": "Have you travelled to any of the following areas in the last 14 days? Australia Brazil, Canada, Chile, China, Europe, Iran, Ireland, Israel, Japan, Malaysia, Pakistan, South Korea, Thailand,Turkey, United Kingdom.",
-          "replies": [
-            "yes",
-            "no"
-          ]
-        },
+          "id": "3110d6ec-b9b0-4cc0-95f0-b76cdf6f733d",
+          "required": false,
+          "dataType": "",
+          "name": "risk_label_e1-yes",
+          "value": "SYMPTOMATIC",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
         {
           "type": 4,
           "lang": "en",
@@ -47,7 +44,7 @@
               [
                 {
                   "type": "description",
-                  "title": "Have you traveled internationally in the last 14 days?"
+                  "title": "Have you traveled outside of the country or been on a cruise in the last 14 days?"
                 }
               ],
               [
@@ -76,7 +73,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

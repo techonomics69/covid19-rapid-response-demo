@@ -18,9 +18,27 @@
           "name": "ctx-p3",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "risk_labels",
+          "parameters": {},
+          "lifespan": 20
         }
       ],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "37de8933-94bc-4e66-a5f3-3577ab9680f2",
+          "required": false,
+          "dataType": "",
+          "name": "risk_label_p2-yes",
+          "value": "AGE",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 4,
@@ -30,7 +48,7 @@
             "richContent": [
               [
                 {
-                  "title": "Do you have any of the following conditions?",
+                  "title": "Do you have any of these conditions?",
                   "type": "description"
                 },
                 {
@@ -55,79 +73,67 @@
                     "languageCode": "en"
                   },
                   "type": "list",
-                  "title": "Congestive heart failure"
+                  "title": "Serious heart conditions"
                 },
                 {
                   "type": "divider"
                 },
                 {
-                  "title": "Diabetes with complications",
-                  "subtitle": "",
-                  "event": {
-                    "languageCode": "en",
-                    "name": "event-health-condition-dm"
-                  },
-                  "type": "list"
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "title": "Neurologic conditions that weaken ability to cough",
-                  "subtitle": "",
-                  "event": {
-                    "name": "event-health-condition-healtherisk",
-                    "languageCode": "en"
-                  },
-                  "type": "list"
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "title": "Weakened immune system",
-                  "subtitle": "",
-                  "event": {
-                    "name": "event-health-condition-healtherisk",
-                    "languageCode": "en"
-                  },
-                  "type": "list"
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "subtitle": "",
-                  "event": {
-                    "name": "event-health-condition-healtherisk",
-                    "languageCode": "en"
-                  },
-                  "type": "list",
-                  "title": "Dialysis"
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "type": "list",
-                  "title": "Cirrhosis of the liver",
-                  "subtitle": "",
-                  "event": {
-                    "name": "event-health-condition-healtherisk",
-                    "languageCode": "en"
-                  }
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "title": "Extreme obesity",
-                  "subtitle": "Body Mass Index [BMI] greater than or equal to 40",
+                  "title": "Immunocompromised",
+                  "subtitle": "Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications",
                   "event": {
                     "languageCode": "en",
                     "name": "event-health-condition-healtherisk"
                   },
                   "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Severe obesity",
+                  "subtitle": "body mass index [BMI] of 40 or higher",
+                  "event": {
+                    "languageCode": "en",
+                    "name": "event-health-condition-healtherisk"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Diabetes",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-dm",
+                    "languageCode": "en"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "title": "Chronic kidney disease undergoing dialysis",
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  },
+                  "type": "list"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "subtitle": "",
+                  "event": {
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
+                  },
+                  "type": "list",
+                  "title": "Liver disease"
                 },
                 {
                   "type": "divider"
@@ -151,7 +157,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

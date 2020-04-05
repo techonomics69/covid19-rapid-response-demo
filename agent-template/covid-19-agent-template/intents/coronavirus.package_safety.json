@@ -28,49 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eAccording to the World Health Organization, the likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e from a package that has been moved, travelled, and exposed to different conditions and temperature is also low.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eAccording to the World Health Organization it is unlikely that an infected person will contaminate commercial goods and there is low risk of catching the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e from a package.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "According to the World Health Organization, the likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "According to the World Health Organization it is unlikely that an infected person will contaminate commercial goods and there is low risk of catching the virus that causes COVID-19 from a package."
         },
         {
           "type": "simple_response",
@@ -78,8 +42,8 @@
           "lang": "en",
           "condition": "",
           "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eAccording to the World Health Organization, the likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e from a package that has been moved, travelled, and exposed to different conditions and temperature is also low.\u003c/speak\u003e",
-          "displayText": "According to the World Health Organization, the likelihood of an infected person contaminating commercial goods is low and the risk of catching the virus that causes COVID-19 from a package that has been moved, travelled, and exposed to different conditions and temperature is also low."
+          "ssml": "\u003cspeak\u003eAccording to the World Health Organization it is unlikely that an infected person will contaminate commercial goods and there is low risk of catching the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e from a package.\u003c/speak\u003e",
+          "displayText": "According to the World Health Organization it is unlikely that an infected person will contaminate commercial goods and there is low risk of catching the virus that causes COVID-19 from a package."
         }
       ],
       "defaultResponsePlatforms": {},

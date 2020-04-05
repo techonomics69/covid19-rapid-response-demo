@@ -52,49 +52,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eI am not a physician. Please go to the Center for Disease Control and Prevention website for more information.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eI am not a clinician. Go to the CDC website for more information.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "I am not a physician. Please go to the Center for Disease Control and Prevention website for more information."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What are the symptoms?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "I am not a clinician. Go to the CDC website for more information."
         },
         {
           "type": "simple_response",
@@ -103,7 +67,7 @@
           "condition": "",
           "textToSpeech": "",
           "ssml": "\u003cspeak\u003eI am not a physician. Please go to the Center for Disease Control and Prevention website for more information.\u003c/speak\u003e",
-          "displayText": "I am not a physician. Please go to the Center for Disease Control and Prevention website for more information."
+          "displayText": "I am not a clinician. Go to the CDC website for more information."
         }
       ],
       "defaultResponsePlatforms": {},

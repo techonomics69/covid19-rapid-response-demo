@@ -19,11 +19,11 @@
             "richContent": [
               [
                 {
-                  "title": "Hello! I am the COVID-19 Rapid Response Bot! You can ask me questions related to COVID-19. How can I help?",
+                  "title": "Hi.This is the COVID-19 Virtual Agent. You can ask me questions related to COVID-19. How can I help?",
                   "type": "description",
                   "text": [
-                    "As a disclaimer, I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
-                    "If you are experiencing life threatening emergency, please call 911."
+                    "I will try to provide some answers based on publicly available information. I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
+                    "If you are experiencing a life threatening emergency, please call 911. For medical advice, please contact your healthcare provider."
                   ]
                 }
               ],
@@ -32,9 +32,24 @@
                   "type": "chips",
                   "options": [
                     {
+                      "text": "Start screening",
                       "link": "",
-                      "image": {},
-                      "text": "Start Screening"
+                      "image": {}
+                    },
+                    {
+                      "text": "What is COVID-19?",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "text": "What are the symptoms?",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "text": "How many confirmed cases are there in the US?",
+                      "link": "",
+                      "image": {}
                     }
                   ]
                 }

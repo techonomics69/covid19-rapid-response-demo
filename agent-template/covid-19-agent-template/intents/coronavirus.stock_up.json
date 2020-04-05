@@ -52,42 +52,6 @@
           "lang": "en",
           "condition": "",
           "speech": "According to the Center for Disease Control and Prevention, create a household plan to help protect your health and the health of those you care about in the event of an outbreak of COVID-19 in your community. You should base the details of your household plan on the needs and daily routine of your household members. Visit the CDC website for a planning guide."
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How can I protect myself?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
         }
       ],
       "defaultResponsePlatforms": {},

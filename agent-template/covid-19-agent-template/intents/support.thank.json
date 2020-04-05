@@ -24,43 +24,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "You are welcome! Do you have any other questions?"
-        },
-        {
-          "type": 4,
-          "lang": "en",
-          "condition": "",
-          "payload": {
-            "richContent": [
-              [
-                {
-                  "type": "chips",
-                  "options": [
-                    {
-                      "text": "Start screening",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "What is covid-19?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How many infected in US?",
-                      "link": "",
-                      "image": {}
-                    },
-                    {
-                      "text": "How does it spread?",
-                      "link": "",
-                      "image": {}
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
+          "speech": "You\u0027re welcome. Do you have any other questions?"
         },
         {
           "type": "simple_response",
@@ -69,7 +33,7 @@
           "condition": "",
           "textToSpeech": "",
           "ssml": "\u003cspeak\u003eYou are welcome! Do you have any other questions?\u003c/speak\u003e",
-          "displayText": "You are welcome! Do you have any other questions?"
+          "displayText": "You\u0027re welcome. Do you have any other questions?"
         },
         {
           "type": 14,
@@ -77,7 +41,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eYou are welcome! Do you have any other questions?\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eYou\u0027re welcome. Do you have any other questions?\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

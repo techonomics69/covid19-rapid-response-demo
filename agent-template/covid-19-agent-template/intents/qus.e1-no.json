@@ -10,22 +10,30 @@
       "resetContexts": false,
       "affectedContexts": [
         {
-          "name": "ctx-e2",
-          "parameters": {},
-          "lifespan": 2
-        },
-        {
           "name": "ctx-e3",
           "parameters": {},
           "lifespan": 2
         },
         {
-          "name": "e1-no-followup",
+          "name": "risk_labels",
           "parameters": {},
-          "lifespan": 2
+          "lifespan": 20
         }
       ],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "00cbeaca-24f3-4ab9-a7c8-93194f034a26",
+          "required": false,
+          "dataType": "",
+          "name": "risk_label_e1-no",
+          "value": "ASYMPTOMATIC",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
       "messages": [
         {
           "type": 4,
@@ -35,7 +43,7 @@
             "richContent": [
               [
                 {
-                  "title": "Have you traveled internationally in the last 14 days?",
+                  "title": "Have you traveled outside of the country or been on a cruise in the last 14 days?",
                   "type": "description"
                 }
               ],
@@ -65,7 +73,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

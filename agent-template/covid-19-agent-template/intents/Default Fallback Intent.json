@@ -14,9 +14,10 @@
           "lang": "en",
           "condition": "",
           "speech": [
-            "Sorry, I didn\u0027t get that. You can try that again or ask me something else.",
-            "I missed that, could you repeat?",
-            "Sorry, I missed it. Do you mind repeating it one more time?"
+            "Sorry, I don\u0027t know how to answer that.",
+            "I\u0027m not sure how to answer that question. Try rephrasing it.",
+            "I don\u0027t understand the question.",
+            "Hmm, I\u0027m not sure I know that."
           ]
         }
       ],
