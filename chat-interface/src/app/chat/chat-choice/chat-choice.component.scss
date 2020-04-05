@@ -36,8 +36,10 @@
     padding: 8px 16px;
     margin-right: 10px;
     margin-top: 5px;
+    animation: expand .5s ease-in-out;
 }
 
 .message.quick:hover, .message.quick:active{
     background-color: #F8F8F8;
 }
+

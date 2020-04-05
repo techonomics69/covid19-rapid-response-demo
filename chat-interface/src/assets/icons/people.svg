@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>ic/people copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M15,8 C15,6.58 14.5,5.27 13.67,4.24 C14.09,4.1 14.53,4 15,4 C17.21,4 19,5.79 19,8 C19,10.21 17.21,12 15,12 C14.57,12 14.16,11.91 13.77,11.79 C13.74,11.78 13.71,11.77 13.67,11.76 C14.5305339,10.6957872 14.9999909,9.36860053 15,8 L15,8 Z M16.66,13.13 C18.03,14.06 19,15.32 19,17 L19,20 L23,20 L23,17 C23,14.82 19.42,13.53 16.66,13.13 Z M9,6 C7.9,6 7,6.9 7,8 C7,9.1 7.9,10 9,10 C10.1,10 11,9.1 11,8 C11,6.9 10.1,6 9,6 M9,15 C6.3,15 3.2,16.29 3,17.01 L3,18 L15,18 L15,17 C14.8,16.29 11.7,15 9,15 M9,4 C11.21,4 13,5.79 13,8 C13,10.21 11.21,12 9,12 C6.79,12 5,10.21 5,8 C5,5.79 6.79,4 9,4 Z M9,13 C11.67,13 17,14.34 17,17 L17,20 L1,20 L1,17 C1,14.34 6.33,13 9,13 Z" id="path-1"></path>
+    </defs>
+    <g id="Bot-interface" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mock_2" transform="translate(-1489.000000, -285.000000)">
+            <g id="Group-12" transform="translate(1472.000000, 269.000000)">
+                <g id="ic/people-copy" transform="translate(16.000000, 12.000000)">
+                    <g id="ic/people">
+                        <g id="people">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Shape" fill-rule="nonzero"></g>
+                            <g id="c/grey/700" mask="url(#mask-2)" fill="#5F6368">
+                                <rect id="Shape" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

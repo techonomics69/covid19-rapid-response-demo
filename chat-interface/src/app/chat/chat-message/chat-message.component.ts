@@ -35,6 +35,19 @@ export class ChatMessageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngAfterViewChecked(){
+    this.scrollDownWindow();
+  }
+
+  scrollDownWindow(){
+    let d = document.querySelector('.chat-area');
+    if (d) {
+      d.scrollTop = d.scrollHeight;
+    }
+  }
+
+
+
 
   endSpeech(e){
     let id = e.target.dataset.responseid;
@@ -81,9 +94,6 @@ export class ChatMessageComponent implements OnInit {
     });
   }
 
-  test(input){
-    console.log(input);
-  }
 
   isString(input){
     return (typeof input == "string")

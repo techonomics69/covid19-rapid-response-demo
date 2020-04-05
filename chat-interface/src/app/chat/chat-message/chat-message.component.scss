@@ -31,6 +31,7 @@
     color: #3C4043;
     letter-spacing: 0.2px;
     line-height: 20px;
+    animation: expand .5s ease-in-out;
 
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -96,8 +97,7 @@
     margin: 10px 40px 10px 50px;
     padding: 0 0 0 0;
     text-align: left;
-    border: 1px solid #979797;
-    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.30), 0 1px 3px 1px rgba(60,64,67,0.15);
 
     p{
         padding: 0;
@@ -174,6 +174,9 @@
     background-position-x: 12px;
     background-position-y: 12px;
     width: 60px;
+    height: 32px;
+
+    
 }
 
 
@@ -212,6 +215,7 @@ margin-top: -10px;
     }
     position: relative;
     top: 10px;
+    animation: expand .5s ease-in-out;
 }
 
 .identity{

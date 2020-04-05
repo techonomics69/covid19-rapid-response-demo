@@ -67,7 +67,9 @@ export class ChatService {
   // Sends and receives messages via DialogFlow
   converseText(msg: string) {
     const userMessage = new Message("text", msg, 'user', "");
+    userMessage.display = true;
     this.update(userMessage);
+
 
     let apiURL = environment.apihost + "/query/text";
     let formData = new FormData();
@@ -83,6 +85,7 @@ export class ChatService {
 
   converseEvent(event: DFEvent) {
     const userMessage = new Message("text", event.title, 'user', "");
+    userMessage.display = true;
     this.update(userMessage);
 
     let apiURL = environment.apihost + "/query/event";
@@ -105,7 +108,15 @@ export class ChatService {
 
     return this.http.post<QueryResponse>(apiURL, formData)
       .subscribe(res => {
+        
+        let userMessage = new Message("text", res.original_reqeust, "user", "");
+        userMessage.display = true;
+        this.update(userMessage);
+        
+
         this.handleResponse(res);
+
+
       });
 
   }
@@ -181,6 +192,9 @@ export class ChatService {
 
   // Adds message to source
   update(msg: Message) {
+    if (msg.content == "default hello"){
+      msg.display = false;
+    }
     this.conversation.next([msg]);
   }
 

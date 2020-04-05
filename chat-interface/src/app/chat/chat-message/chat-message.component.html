@@ -25,7 +25,7 @@
                         'list':   message.sentBy === 'list'
                   }">
             <div *ngIf="message.rich; else elseBlock" class="text-holder">
-                  <p class="title">{{message.rich.title}}</p>
+                  <p [ngClass]="message.rich.text && message.rich.text.length > 0 ? 'title' : 'text'">{{message.rich.title}}</p>
                   <p class="subtitle">{{message.rich.subtitle}}</p>
                   <p *ngFor="let text of message.rich.text" >
                         <span class="eliminate" *ngIf="text.title" (click)="fireDFEvent(text)">{{text.title}}</span>

@@ -26,4 +26,8 @@ html {
     min-height: 100vh;
   }
 
-     
+  @keyframes expand {
+    from {
+      opacity: 0;
+    }
+  }     

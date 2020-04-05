@@ -148,8 +148,34 @@
 }    
 
 @media screen and (max-width: 499px) {
+
+    // :host {
+    //     width: 100%;
+    //     position: relative;
+    // }
+    
+
+    .main{
+        position: absolute;
+        top:0;
+        header{
+            position: fixed;
+            top:0;
+            width: 100%;
+        }
+        padding-bottom: 300px;
+        height: -moz-calc(90vh);
+        /* WebKit */
+        height: -webkit-calc(90vh);
+        /* Opera */
+        height: -o-calc(90vh);
+        /* Standard */
+        height: calc(90vh);
+    }
    
     .chat-area{
+        position: fixed;
+        top: 90px;
         height: -moz-calc(90vh - 200px);
         /* WebKit */
         height: -webkit-calc(90vh - 200px);

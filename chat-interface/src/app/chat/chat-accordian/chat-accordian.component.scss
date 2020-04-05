@@ -7,12 +7,20 @@
     color: #3C4043;
     letter-spacing: 0.2px;
     line-height: 20px;
+    animation: expand .5s ease-in-out;
 
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     -webkit-transition: all .2s ease-out;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+
+    .icon{
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 20px;
+    }
     
     .title{
         font-weight: 500; 
@@ -21,6 +29,8 @@
         color: #3C4043;
         letter-spacing: 0.25px;
         line-height: 20px;
+        padding: 12px 20px 12px 48px;
+        margin-top:0;
     }
     .subtitle{
         font-family: "Roboto";
@@ -29,10 +39,15 @@
         letter-spacing: 0.3px;
         text-align: left;
         line-height: 16px;
+        padding: 5px 20px 12px 48px;
     }
 
+    
     .text{
-        display:none;
+        max-height: 0;
+        height:0;
+        transition: max-height 0.25s ease-out;
+        overflow: hidden;
         margin-top: 10px;
         font-family: "Roboto";
         font-size: 14px;
@@ -41,22 +56,45 @@
         text-align: left;
         line-height: 20px;
         
+        
+        padding:0;
+
     }
+
+    .text-visible{
+        border-top: 1px solid rgba(0,0,0,0.20);
+        height:auto;
+        max-height: 1500px;
+        transition: max-height .5s ease-in;
+        padding: 20px 20px 20px 48px;
+    }
+
 
 
     .text-holder{
         white-space: pre-wrap;
         overflow-wrap: break-word; 
+        
     }
     p{
-        margin: 2px 0;
+        margin: 0;
     }
+}
+
+::ng-deep .text li{
+    padding-left: 5px;
+    margin-bottom: 0;
 }
 
 ::ng-deep a:link, ::ng-deep a:visited, ::ng-deep a:hover, ::ng-deep a:active{
     color: #1E88E5;
     font-weight: 500;
 }
+
+::ng-deep li a:link, ::ng-deep li a:visited, ::ng-deep li a:hover, ::ng-deep li a:active{
+    font-weight: 400;
+}
+
 ::ng-deep a .material-icons{
     vertical-align: middle;
     font-size: 14px;
@@ -71,27 +109,30 @@
     margin: 10px 40px 10px 50px;
     padding: 8px 0 0 0;
     text-align: left;
-    border: 1px solid #979797;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.30), 0 1px 3px 1px rgba(60,64,67,0.15);
+
+
     
 }
 
 
 
-p.accordian-title{
+.accordian-title{
     font-family: "Google Sans";
     text-align: center;
-    padding: 15px 10px;
+    padding: 15px 15px;
     font-size: 18px;
     color: #202124;
     letter-spacing: 0;
     text-align: left;
     line-height: 24px;
     box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
+    margin:0;
+    
 }
 
 
 .accordian{
-    padding: 10px;
     position: relative;
     background: #FFFFFF;
     box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.20);
@@ -102,7 +143,12 @@ p.accordian-title{
 .accordian:last-child {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: none;
   }
+
+.accordian.active{
+    background-color: #F8F9FA;
+}  
 
 .bot-avatar{
     height: 0;
@@ -123,15 +169,17 @@ button{
     background-color: transparent;
     vertical-align: middle;
     border-left: 0;
-    height: 24px;
+    height: 48px;
+    width: 48px;
     border: none;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
+    margin: 0;
 
     .material-icons{
-        margin-top: 12px;
+        margin-top: 0;
         color: #757575;
-        font-size: 24px;
+        font-size: 28px;
     }
 }

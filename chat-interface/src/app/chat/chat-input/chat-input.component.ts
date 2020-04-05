@@ -53,7 +53,9 @@ export class ChatInputComponent implements OnInit {
       console.log("getrecordedblob fired");
       this.chat.converseAudio(this.blob);
 
-      let tempmsg = new Message("","", "temp", "", "", "", true);
+      const tempmsg = new Message("text", "", 'temp', "");
+      tempmsg.display = true;
+      this.hideQuick();
       this.chat.update(tempmsg);
 
     });
@@ -79,15 +81,7 @@ export class ChatInputComponent implements OnInit {
 
   sendMessage() {
     if (typeof this.formValue !== "undefined" && this.formValue !== ""){
-      let quick:NodeListOf<Element> = document.querySelectorAll(".quick-replies") as NodeListOf<Element>;
-
-      quick.forEach(function(el){
-        let el_prop:HTMLElement = el as HTMLElement;
-        el_prop.style.display = "none";
-
-      });
-
-      console.log(quick);
+      this.hideQuick();
       this.chat.converseText(this.formValue);
       this.formValue = '';
       this.messages_present = true;
@@ -95,6 +89,15 @@ export class ChatInputComponent implements OnInit {
     }
 
     
+  }
+
+  hideQuick(){
+    let quick:NodeListOf<Element> = document.querySelectorAll(".quick-replies") as NodeListOf<Element>;
+
+    quick.forEach(function(el){
+      let el_prop:HTMLElement = el as HTMLElement;
+      el_prop.style.display = "none";
+    });
   }
 
   toggleSpeech(e) {

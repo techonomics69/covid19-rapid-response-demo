@@ -34,19 +34,24 @@ export class ChatDialogComponent implements OnInit {
     // appends to array after each new message is added to feedSource
     this.messages = this.chat.conversation.asObservable().scan((acc, val) => acc.concat(val));
     this.chat.converseText("default hello");
+    this.chat.conversation.subscribe(value => {
+      this.hideTemp();
+    })
   }
 
  
 
   ngAfterViewChecked(){
-    this.scrollDownWindow();
   }
 
-  scrollDownWindow(){
-    let d = document.querySelector('.chat-area');
-    if (d) {
-      d.scrollTop = d.scrollHeight;
-    }
+  
+
+  hideTemp(){
+    var temps = document.querySelectorAll(".message.temp");
+
+    temps.forEach(function(temp:HTMLElement) {
+      temp.style.display = "none";
+    });
   }
 
 }

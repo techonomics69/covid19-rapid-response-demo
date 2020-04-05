@@ -45,10 +45,6 @@ textarea {
     text-align: left;
     line-height: 20px;
     padding: 0 20px;
-
-
-
-
 }
 
 .chat-entry:focus{
@@ -124,3 +120,29 @@ button{
 .chat-entry-talk::-ms-input-placeholder{
     color: transparent;
 }
+
+@media screen and (max-width: 499px) {
+
+    // :host {
+    //     width: 100%;
+    //     position: relative;
+    // }
+    
+
+   
+    .interface{
+        position: fixed;
+        top: -moz-calc(90vh - 100px);
+        /* WebKit */
+        top: -webkit-calc(90vh - 100px);
+        /* Opera */
+        top: -o-calc(90vh - 100px);
+        /* Standard */
+        top: calc(90vh - 100px);
+    
+        width: 100%;
+        bottom: 0;
+        z-index: 100;
+    }
+
+}  
