@@ -31,13 +31,20 @@ export class ChatChoiceComponent implements OnInit {
 
   sendQuick(e){
     let el = e.target;
+    
 
     let container = el.parentElement;  
     if (el.classList.contains("text-holder")){
       container = el.parentElement.parentElement;
     }
+
+    let text = el.innerText;
+    if (el.innerText == "Try Again"){
+      text = "default hello";
+    }
+
     container.style.display = "none";
-    this.chat.converseText(el.innerText);
+    this.chat.converseText(text);
   }
 
   

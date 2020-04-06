@@ -28,15 +28,56 @@ export class ChatMessageComponent implements OnInit {
 
   audio_playing:boolean = false;
   current_audio:any;
+  watched:Node;
+  observer:any;
 
 
   constructor(public chat: ChatService) { }
 
   ngOnInit(): void {
+    
+
+
   }
+  ngAfterViewInit() {
+    this.watched = document.querySelector('.chat-area') as Node;
+    let self = this;
+
+    // This is all here to provide chat window down scrolling action. 
+    // It has to be done when messages are added to chat, but not 
+    // just when the component changes, due to the accordian interface.
+    this.observer = new MutationObserver((mutations) => {
+      mutations.forEach(function(mutation) {
+        let target:HTMLElement = mutation.target as HTMLElement; 
+        if (target.localName == "app-chat-message"){
+          let addedNode:HTMLElement = mutation.addedNodes[0] as HTMLElement;
+          
+          if (!addedNode.classList){
+            return;
+          }
+
+          if (addedNode.classList.contains("message")){
+            self.scrollDownWindow();
+          }
+          if (addedNode.localName == "app-chat-accordian"){
+            self.scrollDownWindow();
+          }
+        }
+      });
+    });
+
+    this.observer.observe(this.watched, {
+      attributes: false,
+      childList: true,
+      characterData: false,
+      subtree: true,
+    });
+
+   
+  }  
 
   ngAfterViewChecked(){
-    this.scrollDownWindow();
+    
   }
 
   scrollDownWindow(){

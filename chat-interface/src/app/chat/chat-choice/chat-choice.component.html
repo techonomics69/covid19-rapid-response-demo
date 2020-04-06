@@ -17,7 +17,7 @@
 <div class="quick-replies"> 
     <ng-container 
       *ngFor="let reply of quick_replies">
-      <div class="message quick {{reply}}" (click)="sendQuick($event)">
+      <div class="message quick" (click)="sendQuick($event)">
         <div class="text-holder ">{{reply | titlecase}}</div>
       </div>         
     </ng-container>

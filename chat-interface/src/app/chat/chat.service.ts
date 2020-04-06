@@ -1,4 +1,4 @@
-// Copyright 2019 Google LLC
+// Copyright 2020 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -51,12 +51,15 @@ export interface QueryResponse{
   response_id:string;
   messages:any
   messages_json:string[];
+  
 
 }
 
 @Injectable()
 export class ChatService {
   session_id:Number;
+  last_quick:string[];
+  session_started:boolean = false;
 
   conversation = new BehaviorSubject<Message[]>([]);
 
@@ -122,7 +125,30 @@ export class ChatService {
   }
 
   handleResponse(res) {
-    let payload = this.getRichMessages(res.messages_json);
+    let payload:any;
+    try{
+      payload = this.getRichMessages(res.messages_json);
+    } catch(e) {
+      console.log("Caught a network issue.");
+
+      let quick = this.last_quick;
+      let content = "I'm sorry, there was a communication problem, can resend your last response?";
+      if (!this.session_started){
+        quick = ["Try again"];
+        content = "I'm sorry, there was a communication problem, can you try again?";
+      } 
+
+      let botMessage = new Message("text", "", "bot", res.response_id);
+      botMessage.content = content;
+      botMessage.audio = "";
+      botMessage.quick = quick;
+      botMessage.display = true;
+      botMessage.accordian = false;
+      botMessage.haslist = false;
+      this.update(botMessage);
+      return;
+    }
+    
 
     let quick_replies = [];
     let audiourl: any = "";
@@ -144,6 +170,7 @@ export class ChatService {
       botMessage.content = " ";
       botMessage.rich = resp;
       botMessage.quick = quick_replies;
+      this.last_quick = quick_replies;
 
       if (Array.isArray(resp)) {
         botMessage.display = false;
@@ -161,6 +188,7 @@ export class ChatService {
       botMessage.display = false;
 
     }
+    this.session_started = true;
     this.update(botMessage);
   }
 
