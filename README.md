@@ -37,11 +37,12 @@ Information on COVID-19 changes frequently. Check release dates and review
 content before launching your bot.
 
 ## Agent Deployment
-Verity provides the [Verily Pathfinder Virtual Agent Template for COVID-19](./agent-template/covid-19-agent-template.zip), so you can import it into your own agent and make 
-changes to fit your needs.
+Verily provides the [Dialogflow Verily COVID-19 Pathfinder virtual agent 
+template (the "Template")](./agent-template/covid-19-agent-template.zip), so you 
+can import it into your own agent and make changes to fit your needs.
 
-### Import the Verily COVID-19 Virtual Agent Template into Your Agent
-1. Download the [Verily Pathfinder Virtual Agent Template for COVID-19](./agent-template/covid-19-agent-template.zip)
+### Import the Dialogflow Verily COVID-19 Pathfinder Virtual Agent Template into Your Agent
+1. Download the [Dialogflow COVID-19 Agent Template](./agent-template/covid-19-agent-template.zip)
 1. Create a new agent.
 1. Click the Settings icon.
 1. Select the Export and Import tab, then click the IMPORT FROM ZIP button to 
@@ -50,7 +51,7 @@ import the agent template.
 
 ### Import and Deploy Fulfillment into Your Agent
 *Please note there are three special intents (coronavirus.closure and coronavirus.confirmed_cases and coronavirus.death) which require you to set up the Google Maps API and BigQuery API. Please follow up step 7 and 8 to set up the APIs.*
-1. Download Fulfillment from [Verily Pathfinder Virtual Agent Template for COVID-19 Fulfillment](./agent-template/dialogflow-fulfillment.zip).
+1. Download Fulfillment from [Dialogflow COVID-19 Fulfillment.](./agent-template/dialogflow-fulfillment.zip).
 1. Click "Fulfillment" in the left sidebar.
 1. Toggle the switch to enable the Inline Editor.
 ![Inline Editor Screenshot](./resources/inline-editor.png).
@@ -144,5 +145,48 @@ for detailed instructions. Please note that if you expect your virtual agent to
 have a high call volume, request a toll-free phone number during the set up.
 
 
-## Terms of service
-**The contents of the dataset used by coronavirus.confirmed_cases and coronavirus.death intents are provided to the public strictly for educational and academic purposes only. This data is from third party sources that may not be accurate, consistent and/or up-to-date. These datasets are provided "as is" without any warranties or representations of any kind. You are responsible for determining the suitability of this data for your purposes. See the [JHU CSSE GitHub page](https://github.com/CSSEGISandData/COVID-19) for more details.**
+## Verily COVID-19 Pathfinder virtual agent template
+### Terms of Use 
+The Verily COVID-19 Pathfinder virtual agent template (this "Template") and 
+accompanying integration guide is provided by Verily Life Sciences LLC 
+(in "/agent-template/" of this repository). By downloading, accessing or using 
+the Verily COVID-19 Pathfinder virtual agent template you acknowledge and agree 
+that you are authorized to accept these terms and conditions applicable to the 
+Template on behalf of the individual or entity that will be using this Template 
+and will communicate these terms and conditions to all users of the Template for 
+compliance. You acknowledge and agree that the information in the Template does 
+not contain or constitute medical advice and only contains guidance from 
+publicly accepted, publicly available sources, such as the Centers for Disease 
+Control and Prevention, the World Health Organization, Johns Hopkins, the 
+American Heart Association, the American Diabetes Association, and the American 
+Lung Association.  The Template was designed for U.S. audiences. Prior to using 
+the content of the Template, you are responsible for reviewing and approving 
+each of the responses within the Template and will only provide the content to 
+your web service users if you approve of the content. The Template by Verily 
+Life Sciences LLC is subject to copyright and licensed to you under the [CC-BY 
+4.0 License](/agent-template/LICENSE) (a.k.a., the "Creative Commons Attribution 
+4.0 International Public License") including the disclaimer of warranties 
+therein. Your use of this Template indicates your acceptance of all of the above 
+stated and referenced terms and conditions. If you have a concern related to the 
+content of the Template you can contact the Verily Life Sciences LLC support 
+team via the following email address: 
+[covid19pathfinder@verily.com](mailto:covid19pathfinder@verily.com)
+
+Verily COVID-19 Pathfinder virtual agent template ("Template") versions:
+Version 2.0.0 is available at commit ##, released on April 7, 2020 based on 
+information locked on April 3, 2020. 
+
+### User Guide
+<link to pdf, title "Verily Pathfinder COVID-19 Virtual Agent Template User Guide>
+
+### Notice on Version 2.0.0 of COVID-19 Pathfinder virtual agent template
+<link to pdf, title Notice on Version 2.0.0 of COVID-19 Pathfinder Virtual Agent Template>
+
+## Google Cloud Disclaimer: 
+The contents of this GitHub directory (except for Verily's directory 
+/agent-template/ as referenced above) are provided under the Apache 2.0 license. 
+The information in these files is for information use only and does not contain 
+or constitute medical advice; it contains references to and integration guidance 
+for the Verily COVID-19 Pathfinder virtual agent template.  Any implementation 
+of Verily COVID-19 Pathfinder virtual agent template and the information 
+contained therein may not be accurate, consistent and/or up-to-date. 
