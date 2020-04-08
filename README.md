@@ -177,10 +177,10 @@ Version 2.0.0 is available at commit ##, released on April 7, 2020 based on
 information locked on April 3, 2020. 
 
 ### User Guide
-<link to pdf, title "Verily Pathfinder COVID-19 Virtual Agent Template User Guide>
+[102247 Rev A AW, Verily Pathfinder Virtual Agent Template for COVID-19 User Guide.pdf]("/agent-template/102247%20Rev%20A%20AW%2C%20Verily%20Pathfinder%20Virtual%20Agent%20Template%20for%20COVID-19%20User%20Guide.pdf")
 
 ### Notice on Version 2.0.0 of COVID-19 Pathfinder virtual agent template
-<link to pdf, title Notice on Version 2.0.0 of COVID-19 Pathfinder Virtual Agent Template>
+[102253 Rev A AP, Integration Version Letter, Verily COVID-19 Pathfinder v2.0.0.pdf](/agent-template/102253%20Rev%20A%20AP%2C%20Integration%20Version%20Letter%2C%20Verily%20COVID-19%20Pathfinder%20v2.0.0.pdf)
 
 ## Google Cloud Disclaimer: 
 The contents of this GitHub directory (except for Verily's directory 
