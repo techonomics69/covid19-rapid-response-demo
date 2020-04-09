@@ -50,7 +50,7 @@ import the agent template.
 ![Import Agent Screenshot](./resources/import-export.png)
 
 ### Import and Deploy Fulfillment into Your Agent
-*Please note there are three special intents (coronavirus.closure and coronavirus.confirmed_cases and coronavirus.death) which require you to set up the Google Maps API and BigQuery API. Please follow up step 7 and 8 to set up the APIs.*
+*Please note there are three special intents (coronavirus.closure and coronavirus.confirmed_cases and coronavirus.death) which require you to set up the Google Maps API and BigQuery API. Please follow up step 8-10 to set up the APIs.*
 1. Download Fulfillment from [Dialogflow COVID-19 Fulfillment.](./agent-template/dialogflow-fulfillment.zip).
 1. Click "Fulfillment" in the left sidebar.
 1. Toggle the switch to enable the Inline Editor.
@@ -59,9 +59,14 @@ import the agent template.
 Functions and enable billing for the Cloud project.
 1. Go to the Google Cloud Console and select Cloud Functions on the left panel.
 ![Cloud Function Screenshot](./resources/cloud-function.png)
+1. Select the fulfillment and click Edit button.
+![Cloud Function Edit Screenshot](./resources/cloud-function-edit.png)
 1. Under the "Source code" section, select "ZIP upload" and upload the 
-fulfillment zip file downloaded at step 1.
-1. [Optional] Follow [Quickstart](https://developers.google.com/maps/gmp-get-started#quickstart) to enable Google Maps API if you haven't done so. Follow instructions at [Get an API Key](https://developers.google.com/places/web-service/get-api-key?hl=en_US) to get an API key for calling the Google Maps API. And then follow [Cloud Function Updating Environment Variable](https://cloud.google.com/functions/docs/env-var#updating_environment_variables) to set GOOGLE_MAPS_API_KEY environment variable to the API key.
+fulfillment zip file downloaded at step 1. Then select a Stage bucket (you may need to create one if it hasn't been created yet).
+1. [Optional] Follow [Quickstart](https://developers.google.com/maps/gmp-get-started#quickstart) to enable [Google Maps Places API](https://developers.google.com/places/web-service/intro) if you haven't done so. Go to GCP API & Services->Credentials component to creat an API key for calling the Google Maps API (More detailed instructions are listed at [Get an API Key](https://developers.google.com/places/web-service/get-api-key?hl=en_US).
+![Create API Key Screenshot](./resources/create-api-key.png)
+1.  Set GOOGLE_MAPS_API_KEY environment variable to the API key when deploy Cloud Function. (More details can be found at  [Cloud Function Updating Environment Variable](https://cloud.google.com/functions/docs/env-var#updating_environment_variables))
+![Set Maps API Key Screenshot](./resources/set-maps-api-key.png)
 1. [Optional] To use metrics for COVID-19, Enable the [BigQuery API](https://console.cloud.google.com/flows/enableapi?apiid=bigquery) by selecting your project.
 
 ## Integrate with Verily Pathfinder Virtual Agent Template for COVID-19
