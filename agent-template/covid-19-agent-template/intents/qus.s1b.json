@@ -41,14 +41,14 @@
             "richContent": [
               [
                 {
-                  "title": "Do you have any of these life-threatening symptoms?",
                   "type": "description",
                   "text": [
                     "• New or increasing confusion",
-                    "• Severe difficulty waking",
+                    "• Severe difficulty waking up",
                     "• Slurred speech (new or worsening)",
                     "• New or continuous seizures"
-                  ]
+                  ],
+                  "title": "Do you have any of these life-threatening symptoms?"
                 }
               ],
               [
@@ -56,14 +56,14 @@
                   "type": "chips",
                   "options": [
                     {
+                      "image": {},
                       "text": "Yes",
-                      "link": "",
-                      "image": {}
+                      "link": ""
                     },
                     {
+                      "image": {},
                       "text": "No",
-                      "link": "",
-                      "image": {}
+                      "link": ""
                     }
                   ]
                 }

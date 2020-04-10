@@ -1,10 +1,8 @@
 {
-  "id": "cfa0bcfc-658b-47d1-aef0-294d73a8e5f8",
-  "name": "qus.e1-yes",
+  "id": "b28d487d-4b6b-42ea-918b-3dd73d04c91c",
+  "name": "qus.e1-break",
   "auto": true,
-  "contexts": [
-    "ctx-e1"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
@@ -13,27 +11,9 @@
           "name": "ctx-e3",
           "parameters": {},
           "lifespan": 2
-        },
-        {
-          "name": "risk_labels",
-          "parameters": {},
-          "lifespan": 20
         }
       ],
-      "parameters": [
-        {
-          "id": "3110d6ec-b9b0-4cc0-95f0-b76cdf6f733d",
-          "required": false,
-          "dataType": "",
-          "name": "risk_label_e1-yes",
-          "value": "SYMPTOMATIC",
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": [],
-          "isList": false
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": 4,
@@ -76,7 +56,11 @@
   "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
-  "events": [],
+  "events": [
+    {
+      "name": "event-symptom-no-more"
+    }
+  ],
   "conditionalResponses": [],
   "condition": "",
   "conditionalFollowupEvents": []
