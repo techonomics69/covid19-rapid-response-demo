@@ -21,6 +21,22 @@ const HEALTH_CONDITION_EVENT_TYPE_TO_LABEL = {
   'event-health-condition-healtherisk': 'HEALTHRISK'
 };
 
+const SYMPTOM_EVENT = {
+  // Used for an initial 'None of the above' selection.
+  NONE: 'event-symptom-none',
+  // Used for 'None of the above' selections after 1 or more symptom selections
+  // and for programmatic moves to the next intent.
+  NO_MORE: 'event-symptom-no-more',
+};
+
+// Map from symptom-related Event type to the labels they should emit.
+const SYMPTOM_EVENT_TYPE_TO_LABELS = {
+  'event-symptom-cough': ['COUGH', 'SYMPTOMATIC'],
+  'event-symptom-fever': ['FEVER', 'SYMPTOMATIC'],
+  'event-symptom-shortofbreath': ['SHORTOFBREATH', 'SYMPTOMATIC'],
+  [SYMPTOM_EVENT.NONE]: ['ASYMPTOMATIC'],
+};
+
 const CARD_G1 = [{
   'type': 'accordion',
   'text':
@@ -97,7 +113,7 @@ const CARD_R4 = [{
   'subtitle': 'Help prevent the spread of illness.',
   'type': 'accordion',
   'text':
-      'Take these steps:<ul><li>Stay home except to get medical care.</li><li>Contact your healthcare provider within 24 hours.</li><li>Watch your symptoms.</li><li>Stay away from other people in your home.</li><li>Wash hands often with soap, scrubbing for at least 20 seconds each time.</li><li>Call ahead to discuss symptoms before visiting your doctor.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" target="_blank">If You Are Sick</a> (Source: CDC)'
+      'Take these steps:<ul><li>Stay home except to get medical care.</li><li>Contact your healthcare provider within the next 24 hours.</li><li>Watch your symptoms.</li><li>Stay away from other people in your home.</li><li>Wash hands often with soap, scrubbing for at least 20 seconds each time.</li><li>Call ahead to discuss symptoms before visiting your doctor.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" target="_blank">If You Are Sick</a> (Source: CDC)'
 }];
 
 const CARD_R5 = [{
@@ -114,7 +130,7 @@ const CARD_R6 = [{
   'subtitle': 'Track any symptoms you may develop.',
   'type': 'accordion',
   'text':
-      'Reported cases range from mild to severe. Symptoms include:<ul><li>Fever, with temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li></ul>By knowing the symptoms and when to stay home, you make sure care is available for those who need it most.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
+      'Reported cases range from mild to severe. Symptoms include:<ul><li>Fever, with temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li></ul>If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
 const CARD_R7 = [{
@@ -143,6 +159,14 @@ const CARD_R9 = [{
       'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
+const CARD_VA_10 = [{
+  'title': 'Call within the next 24 hours',
+  'subtitle': 'Call your healthcare provider.',
+  'type': 'accordion',
+  'text':
+      'You have one or more symptom(s) that may be related to COVID-19. You also have medical conditions that could put you at greater risk for complications from COVID-19.'
+}];
+
 const CARDS_BASIC = ['G1', 'G2'];
 
 const CARDS_AGE = ['HF4'];
@@ -165,6 +189,8 @@ const CARDS_LOW_ASYMPTOMATIC = ['R6', 'R7', 'R5'];
 
 const CARDS_LOW_SYMPTOMATIC = ['R9', 'R7', 'R5'];
 
+const CARDS_URGENT = ['VA10'];
+
 const CARDS_REGISTORY = {
   'G1': {rank: 17, card: CARD_G1},
   'G2': {rank: 18, card: CARD_G2},
@@ -180,6 +206,7 @@ const CARDS_REGISTORY = {
   'R7': {rank: 9, card: CARD_R7},
   'R8': {rank: 8, card: CARD_R8},
   'R9': {rank: 5, card: CARD_R9},
+  'VA10': {rank: 3, card: CARD_VA_10},
 };
 
 const HEALTH_CONDITION_QUESTION = [
@@ -250,6 +277,41 @@ const HEALTH_CONDITION_NONE = {
   'subtitle': '',
   'event': {'languageCode': 'en', 'name': 'event-health-condition-none'},
   'type': 'list'
+};
+
+const SYMPTOM_MULTI_CHOICE_QUESTION = {
+  question: {
+    'title': 'Do you have any more of these symptoms?',
+    'type': 'description'
+  },
+  divider: {'type': 'divider'},
+  fever: {
+    'subtitle': '',
+    'event': {'name': 'event-symptom-fever', 'languageCode': 'en'},
+    'type': 'list',
+    'title': 'Fever (temperature >100.4 °F or 38 °C) or feeling feverish'
+  },
+  shortofbreath: {
+    'subtitle': '',
+    'event': {'name': 'event-symptom-shortofbreath', 'languageCode': 'en'},
+    'type': 'list',
+    'title': 'Shortness of breath (not severe)'
+  },
+  cough: {
+    'title': 'Cough',
+    'subtitle': '',
+    'event': {'languageCode': 'en', 'name': 'event-symptom-cough'},
+    'type': 'list'
+  },
+  none: {
+    'title': 'None of the above',
+    'subtitle': '',
+    // This event is intentionally distinct from the event used in the initial
+    // version of this question, defined in Dialogflow. See
+    // SYMPTOM_EVENT.NO_MORE for more info.
+    'event': {'name': SYMPTOM_EVENT.NO_MORE, 'languageCode': 'en'},
+    'type': 'list'
+  }
 };
 
 const SUGGESTION_CHIPS = [[{
@@ -487,8 +549,8 @@ function death(agent) {
         }
 
         var message = 'According to Johns Hopkins University, as of today, ' +
-            'there are approximately ' + numberWithCommas(totalDeaths) +
-            ' people died from ' + 'coronavirus ' + resultLocation + '.';
+            'approximately ' + numberWithCommas(totalDeaths) +
+            ' people have died from coronavirus ' + resultLocation + '.';
         return queryCovid19dataset('confirmed_cases', country)
             .then(totalConfirmed => {
               if (!!totalConfirmed) {
@@ -537,6 +599,73 @@ function addLabelToContext(agent, label) {
  */
 function addDummyPayload(agent) {
   agent.add(new Payload(agent.UNSPECIFIED, {}));
+}
+
+/**
+ * Checks the input event for the request and maps into corresponding
+ * labels.
+ *
+ * Responds with the symptom question again, without the already selected
+ * options.
+ */
+function symptomEventMapper(agent) {
+  const type = agent.query;
+  if (!!type) {
+    const newLabels = SYMPTOM_EVENT_TYPE_TO_LABELS[type];
+    if (!newLabels) {
+      return;
+    }
+    newLabels.forEach((label) => {
+      addLabelToContext(agent, label);
+    });
+
+    // After adding the appropriate label(s) for an initial selection of 'None
+    // of the above', proceed directly to the next intent.
+    if (type === SYMPTOM_EVENT.NONE) {
+      agent.setFollowupEvent(SYMPTOM_EVENT.NO_MORE);
+      addDummyPayload(agent);
+      return;
+    }
+
+    let labels = [];
+    const label_ctx = agent.context.get('labels');
+    if (!!label_ctx && !!label_ctx.parameters &&
+        !!label_ctx.parameters.labels) {
+      labels = label_ctx.parameters.labels;
+    }
+
+    var conditions = [
+      SYMPTOM_MULTI_CHOICE_QUESTION.question,
+      SYMPTOM_MULTI_CHOICE_QUESTION.divider
+    ];
+    if (!labels.includes('FEVER')) {
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.fever);
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.divider);
+    }
+    if (!labels.includes('SHORTOFBREATH')) {
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.shortofbreath);
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.divider);
+    }
+    if (!labels.includes('COUGH')) {
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.cough);
+      conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.divider);
+    }
+    conditions.push(SYMPTOM_MULTI_CHOICE_QUESTION.none);
+
+    if (conditions.length == 3) {
+      // If conditions only has question, divider and 'none of above', it should
+      // set SYMPTOM_EVENT.NO_MORE event to trigger qus.e1-break intent.
+      agent.setFollowupEvent(SYMPTOM_EVENT.NO_MORE);
+      addDummyPayload(agent);
+      return;
+    }
+    agent.setFollowupEvent(type);
+    agent.add(new Payload(
+        agent.UNSPECIFIED, {richContent: [conditions]},
+        {sendAsMessage: true, rawPayload: true}));
+    return;
+  }
+  addDummyPayload(agent);
 }
 
 /**
@@ -641,28 +770,41 @@ function actionMapper(agent) {
       cards = cards.concat(CARDS_LOW_ASYMPTOMATIC);
     }
   }
+  var has_health_condition = false;
   if (labels.includes('DM')) {
     cards = cards.concat(CARDS_DM);
+    has_health_condition = true;
   }
   if (labels.includes('CARDIO')) {
     cards = cards.concat(CARDS_CARDIO);
+    has_health_condition = true;
   }
   if (labels.includes('LUNG')) {
     cards = cards.concat(CARDS_LUNG);
+    has_health_condition = true;
   }
   if (labels.includes('HEALTHRISK')) {
     cards = cards.concat(CARDS_HEALTHRISK);
+    has_health_condition = true;
   }
   if (labels.includes('AGE')) {
     cards = cards.concat(CARDS_AGE);
+    has_health_condition = true;
   }
   if (labels.includes('HCP')) {
     cards = cards.concat(CARDS_HCP);
   }
+
+  if (labels.includes('SHORTOFBREATH') ||
+      (has_health_condition &&
+       (labels.includes('FEVER') || labels.includes('COUGH')))) {
+    cards = cards.concat(CARDS_URGENT);
+  }
+
   var cards_to_render =
       Array.from(new Set(cards))
           .sort(function(a, b) {
-            return CARDS_REGISTORY[a].rank - CARDS_REGISTORY[b].rank;
+            return CARDS_REGISTORY[b].rank - CARDS_REGISTORY[a].rank;
           })
           .map(function(a) {
             return CARDS_REGISTORY[a].card;
@@ -698,6 +840,7 @@ exports.dialogflowFirebaseFulfillment =
       intentMap.set('coronavirus.closure', openHours);
       intentMap.set('coronavirus.confirmed_cases', confirmedCases);
       intentMap.set('coronavirus.death', death);
+      intentMap.set('qus.e1-continue', symptomEventMapper);
       intentMap.set('qus.p3-continue', healthConditionEventMapper);
       intentMap.set('end-yes', actionMapper);
       intentMap.set('end-no', actionMapper);
