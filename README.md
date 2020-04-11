@@ -184,8 +184,8 @@ released on April 10, 2020 based on information locked on April 4, 2020.
 ### User Guide
 [USER_GUIDE.pdf](/agent-template/USER_GUIDE.pdf)
 
-### Notice on Version 2.0.0 of COVID-19 Pathfinder virtual agent template
-[NOTICE_v2.0.0.pdf](/agent-template/NOTICE_v2.0.0.pdf)
+### Release Notes
+[RELEASE_NOTES.pdf](/agent-template/RELEASE_NOTES.pdf)
 
 ## Google Cloud Disclaimer: 
 The contents of this GitHub directory (except for Verily's directory 
