@@ -178,8 +178,13 @@ team via the following email address:
 [covid19pathfinder@verily.com](mailto:covid19pathfinder@verily.com)
 
 Verily COVID-19 Pathfinder virtual agent template ("Template") versions:
-Version 3.0.0 is available at commit a9019b290c9d5f9cb006d3422f87a8dfdf4dfb10, 
+* Version 2.0.0 is available at commit 1d61e4672fa24eb2cec1083c69b00fba255dd6f9, 
+released on April 7, 2020 based on information locked on April 4, 2020. 
+* Version 3.0.0 is available at commit a9019b290c9d5f9cb006d3422f87a8dfdf4dfb10, 
 released on April 10, 2020 based on information locked on April 4, 2020. 
+* Version 3.1.0 is available at commit cd4738b899644ee4643a67c07dcd461d308a4ed1,
+released on April 11, 2020 based on information locked on Apirl 7, 2020.
+
 
 ### User Guide
 [USER_GUIDE.pdf](/agent-template/USER_GUIDE.pdf)
