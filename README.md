@@ -94,7 +94,7 @@ This chat application provides a front end chat interface to a Dialogflow Agent.
 ![A screenshot of the chatbot talking with a COVID-19 bot.](/resources/chat-app.png "Chat App Screenshot")
 
 ### Integrate with Twilio to provide the agent over SMS [optional]
-You can deploy a Twilio to Dialogflow "bridge" running serverless Cloud Run to expose your agent over SMS. See the [these instructions](https://github.com/GoogleCloudPlatform/covid19-rapid-response-demo/tree/master/twilio-sms).
+You can deploy a Twilio to Dialogflow "bridge" running serverless Cloud Run to expose your agent over SMS. See the [these instructions](./twilio-sms).
 
 #### Requirements
 * A GCP Project with existing Dialogflow Agent setup in a project we'll refer 
