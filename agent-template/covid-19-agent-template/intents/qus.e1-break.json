@@ -11,6 +11,11 @@
           "name": "ctx-e3",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "ctx-e1",
+          "parameters": {},
+          "lifespan": 0
         }
       ],
       "parameters": [],

@@ -11,6 +11,11 @@
           "name": "ctx-end",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "ctx-p3",
+          "parameters": {},
+          "lifespan": 0
         }
       ],
       "parameters": [],
@@ -23,8 +28,8 @@
             "richContent": [
               [
                 {
-                  "type": "description",
-                  "title": "Do you work in a clinic, hospital, emergency room, nursing home, senior care facility, ambulance service, first responder services, or any healthcare setting (even if you are not a doctor or nurse)?"
+                  "title": "Do you work in a clinic, hospital, emergency room, nursing home, senior care facility, ambulance service, first responder services, or any healthcare setting (even if you are not a doctor or nurse)?",
+                  "type": "description"
                 }
               ],
               [
@@ -37,9 +42,9 @@
                       "link": ""
                     },
                     {
-                      "text": "No",
                       "link": "",
-                      "image": {}
+                      "image": {},
+                      "text": "No"
                     }
                   ]
                 }

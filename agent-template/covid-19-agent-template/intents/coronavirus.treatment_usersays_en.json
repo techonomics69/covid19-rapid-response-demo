@@ -1,6 +1,6 @@
 [
   {
-    "id": "01b5289d-67b4-4479-ad1e-aeb7da05dcb0",
+    "id": "cd298a6f-0ab5-4b2c-a157-abd64d47ba5a",
     "data": [
       {
         "text": "Should I take antibiotics?",
@@ -12,7 +12,7 @@
     "updated": 0
   },
   {
-    "id": "ff5e7bee-1ff7-4796-89bf-07212da15ae1",
+    "id": "c4b9fde5-9516-466f-ab8a-bd41b071edfa",
     "data": [
       {
         "text": "Will antibiotics help with covid-19?",
@@ -24,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "1c7f0442-f3b8-495a-8819-305f623b8317",
+    "id": "29accd96-7947-40b4-9e39-2fe0a466297d",
     "data": [
       {
         "text": "How do you treat covid-19?",
@@ -36,7 +36,7 @@
     "updated": 0
   },
   {
-    "id": "f13509c7-2f77-4a3f-af0b-9910b78377ac",
+    "id": "fcaca9cd-8cae-4663-ba8c-77d8714809aa",
     "data": [
       {
         "text": "Is there a treatment yet?",
@@ -48,7 +48,7 @@
     "updated": 0
   },
   {
-    "id": "f10bba62-0c32-4609-82fd-f2699a2e376d",
+    "id": "3b4a0e4d-1829-4577-97b7-9f027ba9ca4a",
     "data": [
       {
         "text": "What is the treatment for covid-19?",
@@ -60,7 +60,7 @@
     "updated": 0
   },
   {
-    "id": "533dc0ed-3216-4522-ad5d-06e936ca9789",
+    "id": "504d3cf0-3782-4347-917f-4d2cd84b0702",
     "data": [
       {
         "text": "Are there any treatments available?",
@@ -72,7 +72,7 @@
     "updated": 0
   },
   {
-    "id": "a382230e-ced4-4128-bf1c-a7b9f4f1191a",
+    "id": "3fc0b6dd-00e3-4858-baeb-037c01e8c436",
     "data": [
       {
         "text": "treatments for ",
@@ -90,7 +90,7 @@
     "updated": 0
   },
   {
-    "id": "b37056c6-ef9c-42f1-b4d2-71f0350d8ed9",
+    "id": "9bbe1dfb-4d10-4a76-b52f-c27af47a6acd",
     "data": [
       {
         "text": "what is the solution for covid?",
@@ -102,7 +102,7 @@
     "updated": 0
   },
   {
-    "id": "f0071bc9-498c-492e-9437-3b0dc9a3a7da",
+    "id": "930887f4-7772-4f7a-b0ef-cdd76a185002",
     "data": [
       {
         "text": "how can we remove covid?",
@@ -114,7 +114,7 @@
     "updated": 0
   },
   {
-    "id": "5d6aff5a-331f-405b-8876-aa6cacefefe0",
+    "id": "322867ca-5298-4900-b4b6-b67364b54eed",
     "data": [
       {
         "text": "what is the solution to coronavirus?",
@@ -126,7 +126,7 @@
     "updated": 0
   },
   {
-    "id": "c1b5fc2e-7087-410a-8655-f34265a42f5e",
+    "id": "0755cb66-a182-4c4b-913d-5464182579c0",
     "data": [
       {
         "text": "Is there a cure for ",
@@ -148,7 +148,7 @@
     "updated": 0
   },
   {
-    "id": "89ce91a6-a144-4f8b-8ea0-473ff6c9a518",
+    "id": "451b1476-0852-4f5b-9ae0-8679976b9017",
     "data": [
       {
         "text": "is there any cure yet for the virus",
@@ -160,7 +160,7 @@
     "updated": 0
   },
   {
-    "id": "55f83ae6-0269-4627-b0f6-9604cf24d704",
+    "id": "4b748262-768f-4657-a8a4-245c1a9e226b",
     "data": [
       {
         "text": "can you be treated for corona",
@@ -172,7 +172,7 @@
     "updated": 0
   },
   {
-    "id": "f9a2f9d4-1036-4d36-bc80-8c840eae48da",
+    "id": "bdd83725-6d76-450b-a65b-cd316d105481",
     "data": [
       {
         "text": "what medication should i take",
@@ -184,7 +184,7 @@
     "updated": 0
   },
   {
-    "id": "e53d4b4c-064c-48b0-9166-c338ab345328",
+    "id": "38c2318d-cecd-4898-80e4-76ed6cd9fdc2",
     "data": [
       {
         "text": "Can I take medicine?",
@@ -196,7 +196,7 @@
     "updated": 0
   },
   {
-    "id": "1e8adf80-7d44-44e3-aa90-4af56ffff934",
+    "id": "ef8eefb2-04eb-442c-a5c5-9afd1f87817c",
     "data": [
       {
         "text": "what medicines help",
@@ -208,7 +208,7 @@
     "updated": 0
   },
   {
-    "id": "cf813e73-d79d-4bcd-b7ea-07ef0e3e0f05",
+    "id": "e205ef9a-65ea-4bea-8ef3-3fa606c97526",
     "data": [
       {
         "text": "what remedies are available?",
@@ -220,7 +220,7 @@
     "updated": 0
   },
   {
-    "id": "fc6d43f6-4c07-44d5-b019-507a6bd360e5",
+    "id": "ce6c7b95-49a7-4709-a237-3ab812c7fe08",
     "data": [
       {
         "text": "is there a cure?",
@@ -232,7 +232,7 @@
     "updated": 0
   },
   {
-    "id": "5ba7947b-df84-43a0-8b87-87e3b9fb53f0",
+    "id": "1e5b1db4-0598-4b3c-a5ed-78d6a458b019",
     "data": [
       {
         "text": "where can i get treated for covid 19",
@@ -244,7 +244,7 @@
     "updated": 0
   },
   {
-    "id": "d13c9a5f-44f2-44eb-9a5e-ddf714087b5a",
+    "id": "2a5bd842-8d75-46ac-a2e2-ea815cd94086",
     "data": [
       {
         "text": "what if I get sick with ",
@@ -262,7 +262,7 @@
     "updated": 0
   },
   {
-    "id": "e00c461b-110f-4215-a838-97ba4d5ef711",
+    "id": "93c4eb0a-9551-49b4-9aba-43dc5244630e",
     "data": [
       {
         "text": "what do I do if I have ",
@@ -280,7 +280,7 @@
     "updated": 0
   },
   {
-    "id": "b3cd92d7-a20e-43f0-90fc-86f1f826188f",
+    "id": "c1465b48-08e7-4804-9099-d983d5381c5e",
     "data": [
       {
         "text": "what do I do if I have ",
@@ -298,7 +298,7 @@
     "updated": 0
   },
   {
-    "id": "1718b47d-7d7e-427b-a1a4-2aec33120024",
+    "id": "763be72b-10c6-48fe-852e-cd6c69d75140",
     "data": [
       {
         "text": "what do I do if I have ",
@@ -316,7 +316,7 @@
     "updated": 0
   },
   {
-    "id": "3fc190ab-8a1e-42a1-8820-32c8ed9d10b9",
+    "id": "c7332af5-ce3a-41e7-b42f-c0dc03895c21",
     "data": [
       {
         "text": "Is there a treatment?",
@@ -328,7 +328,7 @@
     "updated": 0
   },
   {
-    "id": "526747d1-7e5f-4196-bd57-13286a7b99e9",
+    "id": "4716371a-e703-4ce8-8847-af79aacbef29",
     "data": [
       {
         "text": "Is there an antidote yet?",
@@ -340,7 +340,7 @@
     "updated": 0
   },
   {
-    "id": "837a5b47-d485-450b-ab09-28431a75c021",
+    "id": "6bfe39d5-7ce7-4941-8f0b-4ef1c235fcaa",
     "data": [
       {
         "text": "what treatments are available to treat ",
@@ -362,7 +362,7 @@
     "updated": 0
   },
   {
-    "id": "f7f403ac-872a-4cea-975a-5d2fcc229538",
+    "id": "f5e2e523-adc1-4990-92bc-0edf51c6b969",
     "data": [
       {
         "text": "is there an antiviral treatment for COVID-19?",
@@ -374,7 +374,7 @@
     "updated": 0
   },
   {
-    "id": "f2f07b7e-11bb-4475-94ce-60a6ea08b829",
+    "id": "d94171a8-8008-4056-a8f7-53264d8248ef",
     "data": [
       {
         "text": "are there any medicines or therapies that can cure ",
@@ -396,7 +396,7 @@
     "updated": 0
   },
   {
-    "id": "34aaee85-5771-42ad-b677-34bf9ca8f0e3",
+    "id": "a2bd89a6-4f1e-4c41-88b6-1039f3bea71a",
     "data": [
       {
         "text": "are antibiotics effective in preventing or treating the covid-19?",
@@ -408,7 +408,7 @@
     "updated": 0
   },
   {
-    "id": "c95a96d8-0a57-449e-b3ae-fd83dcade48a",
+    "id": "c5ce6106-4628-4baf-9e5d-77c741cdbda8",
     "data": [
       {
         "text": "existing drugs in ",
@@ -430,7 +430,7 @@
     "updated": 0
   },
   {
-    "id": "b4164e68-b8d0-4fa8-9c9e-8a63c993f009",
+    "id": "8a260751-b79d-400d-bb87-b13289b5253b",
     "data": [
       {
         "text": "medical solutions to the coronavirus",
@@ -442,7 +442,7 @@
     "updated": 0
   },
   {
-    "id": "0e3e2f1a-e106-466c-af4c-e5a5f75f56b2",
+    "id": "1dc4a02c-bb20-4a98-818e-e97cc0778eda",
     "data": [
       {
         "text": "does the US have effective treatment for ",
@@ -464,7 +464,7 @@
     "updated": 0
   },
   {
-    "id": "fedc706d-7a73-4268-93ce-65dcb1e11d42",
+    "id": "765270ca-a93f-4f11-9290-2b3a6e930d44",
     "data": [
       {
         "text": "drugs to treat infection",
@@ -476,7 +476,7 @@
     "updated": 0
   },
   {
-    "id": "57e1f451-3bbe-42d5-84d0-8823b409db3d",
+    "id": "94106bdc-ebd5-4f75-8301-66e9b9c0f2cc",
     "data": [
       {
         "text": "do we have drugs for treating this new disease?",
@@ -488,7 +488,7 @@
     "updated": 0
   },
   {
-    "id": "3195f123-285f-40d5-bcaf-b0a0dc7ab51a",
+    "id": "7f3c6472-d972-4f15-906d-3204270cf8b3",
     "data": [
       {
         "text": "what\u0027s the most effective medicine to treat ",
@@ -510,7 +510,7 @@
     "updated": 0
   },
   {
-    "id": "27f29b21-c679-4830-9675-d4076cea1d37",
+    "id": "2aec1178-3dde-4a61-9fab-8cc718bb9533",
     "data": [
       {
         "text": "can we use antibiotics to treat ",
@@ -532,7 +532,7 @@
     "updated": 0
   },
   {
-    "id": "c23cd8c1-7987-49d0-92d0-54932ee00e3b",
+    "id": "43d96cae-5819-4c32-b43d-3692f11dc6ae",
     "data": [
       {
         "text": "can people be cured if they caught ",
@@ -554,7 +554,7 @@
     "updated": 0
   },
   {
-    "id": "c4a13619-3875-4052-a4d5-808759bd197d",
+    "id": "ca6cb571-ac3d-420d-bcba-15fb1abac6fe",
     "data": [
       {
         "text": "Is there a medicine to treat this virus?",
@@ -566,7 +566,7 @@
     "updated": 0
   },
   {
-    "id": "8415fd5a-0c04-4679-8697-ad36c2ba14c3",
+    "id": "451953a2-17f0-4b19-8e93-08b0cc6c626b",
     "data": [
       {
         "text": "is there a cure for the new ",
@@ -588,7 +588,7 @@
     "updated": 0
   },
   {
-    "id": "fbd1abc9-90ad-4bfc-befa-76069f042607",
+    "id": "2fff3c17-4637-46b0-810b-9fe190da8b24",
     "data": [
       {
         "text": "can ",
@@ -610,7 +610,7 @@
     "updated": 0
   },
   {
-    "id": "805e477a-afc7-4673-9576-579734486a4f",
+    "id": "8edcdabe-011e-4878-82ae-888f267bd59b",
     "data": [
       {
         "text": "do we have treatment for covid-19?",
@@ -622,7 +622,7 @@
     "updated": 0
   },
   {
-    "id": "44ab1759-0af3-4f50-9e8a-97ad59079c2b",
+    "id": "2317bfcc-bf16-4c54-b6af-cbf49a49a855",
     "data": [
       {
         "text": "Is there a treatment for ",

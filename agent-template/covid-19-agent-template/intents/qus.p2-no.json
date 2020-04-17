@@ -17,7 +17,7 @@
         {
           "name": "ctx-p3",
           "parameters": {},
-          "lifespan": 2
+          "lifespan": 10
         }
       ],
       "parameters": [],
@@ -30,7 +30,7 @@
             "richContent": [
               [
                 {
-                  "title": "Do you have any of these conditions?",
+                  "title": "Do you have any of these conditions? Choose all that apply:",
                   "type": "description"
                 },
                 {

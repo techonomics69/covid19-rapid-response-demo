@@ -41,130 +41,105 @@ const CARD_G1 = [{
   'type': 'accordion',
   'text':
       'Helpful websites:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">COVID-19 Resources For the Public (CDC)</a></li><li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">Advice For the Public (WHO)</a></li><li><a href="https://www.google.com/search?q=coronavirus" target="_blank">Help & Info (Google)</a></li></ul>Twitter feeds:<ul><li><a href="https://twitter.com/CDCgov" target="_blank">@CDCgov</a></li><li><a href="https://twitter.com/CDCemergency" target="_blank">@CDCemergency</a></li><li><a href="https://twitter.com/WHO" target="_blank">@WHO</a></li></ul>',
-  'title': 'Stay informed',
-  'subtitle': 'Keep current on the latest COVID-19 facts and recommendations.'
+  'title': 'Stay up-to-date on COVID-19',
 }];
 
 const CARD_G2 = [{
-  'subtitle':
-      'Help yourself and your family stay safe with current information.',
   'type': 'accordion',
   'text':
       'Learn:<ul><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html" target="_blank">How to Protect Yourself (CDC)</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/about/steps-when-sick.html" target="_blank">What to Do if Sick (CDC)</a></li><li><a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="_blank">Questions & Answers (CDC)</a></li></ul>Watch:<ul><li><a href="https://www.youtube.com/watch?v=9Ay4u7OYOhA" target="_blank">Steps to Prevent COVID-19 (CDC)</a></li><li><a href="https://www.youtube.com/watch?v=d914EnpU4Fo" target="_blank">Hand-Washing (CDC)</a></li><li><a href="https://www.youtube.com/watch?v=qPoptbtBjkg" target="_blank">Managing COVID-19 At Home (CDC)</a></li></ul>',
-  'title': 'Browse these COVID-19 resources'
+  'title': 'Learn more about staying safe with current information'
 }];
 
 const CARD_HF1 = [{
-  'subtitle':
-      'Having diabetes may put you at higher risk of getting very sick from COVID-19.',
   'type': 'accordion',
   'text':
-      'Steps you can take:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies and prescription refills.</li><li>Be prepared to stay at home for a period of time by having enough household items and groceries on hand.</li><li>Call your doctor if you develop new symptoms such as fever, cough or shortness of breath. </li><li>If available, take advantage of telehealth options to meet with your doctor.</li></ul><a href="https://www.diabetes.org/diabetes/treatment-care/planning-sick-days/coronavirus" target="_blank">COVID-19 Resources</a> (Source: American Diabetes Association)',
-  'title': 'Be prepared if you\'re diabetic'
+      'You may be at higher risk of getting very sick from COVID-19. Take these steps:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies, and prescription refills.</li><li>Have enough household items and groceries on hand in case you need to stay at home for a period of time.</li><li>Call your doctor if you develop new symptoms such as fever, cough, or shortness of breath.</li><li>Meet with your doctor through telehealth options, if available.</li></ul><a href="https://www.diabetes.org/diabetes/treatment-care/planning-sick-days/coronavirus" target="_blank">COVID-19 Resources</a> (Source: American Diabetes Association)',
+  'title': 'Make a plan if you have diabetes'
 }];
 
 const CARD_HF2 = [{
-  'title': 'Be prepared if you have heart disease',
-  'subtitle':
-      'Having a history of heart disease, hypertension or stroke, may put you at higher risk of getting very sick from COVID-19.',
+  'title': 'Make a plan if you have heart disease',
   'type': 'accordion',
   'text':
-      'Steps you can take:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies and prescription refills.</li><li>Be prepared to stay at home for a period of time by having enough household items and groceries on hand.</li><li>Recognize and manage stress.</li><li>Stay current with vaccinations, including pneumonia and flu shots.</li></ul><a href="https://www.heart.org/en/about-us/coronavirus-covid-19-resources" target="_blank">COVID-19 Resources</a> (Source: American Heart Association)'
+      'Having a history of heart disease, hypertension, or stroke may put you at higher risk of getting very sick from COVID-19. Take these steps:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies, and prescription refills.</li><li>Have enough household items and groceries on hand in case you need to stay at home for a period of time.</li><li>Recognize and manage stress.</li><li>Stay current with vaccinations, including pneumonia and flu shots.</li></ul><a href="https://www.heart.org/en/about-us/coronavirus-covid-19-resources" target="_blank">COVID-19 Resources</a> (Source: American Heart Association)'
 }];
 
 const CARD_HF3 = [{
-  'title': 'Be prepared if you have lung disease',
-  'subtitle':
-      'Your history of lung disease may put you at higher risk of getting very sick from COVID-19.',
+  'title': 'Make a plan if you have lung disease',
   'type': 'accordion',
   'text':
-      'Steps you can take:<ul><li>Keep a distance of least six feet from others.</li><li>Call your doctor if you develop new symptoms such as fever, cough or shortness of breath.</li><li>Follow your Asthma Action Plan, as needed.</li></ul><a href="https://www.lung.org/about-us/media/top-stories/update-covid-19.html" target="_blank">COVID-19 Resources</a> (Source: American Lung Association)'
+      'You may be at higher risk of getting very sick from COVID-19. Take these steps:<ul><li>Keep a distance of least 6 feet from others.</li><li>Call your doctor if you develop new symptoms such as fever, cough, or shortness of breath.</li><li>Know and follow your Asthma Action Plan as needed.</li></ul><a href="https://www.lung.org/about-us/media/top-stories/update-covid-19.html" target="_blank">COVID-19 Resources</a> (Source: American Lung Association)'
 }];
 
 const CARD_HF4 = [{
-  'title': 'Steps to prevent getting sick',
-  'subtitle':
-      'Your age or health history may put you at higher risk of getting very sick from COVID-19.',
+  'title': 'Make a plan because of your age or health history',
   'type': 'accordion',
   'text':
-      'Steps you can take:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies and prescription refills.</li><li>Be prepared to stay at home for a period of time by having enough household items and groceries on hand.</li><li>Keep a distance of least six feet from others.</li><li>Call your doctor if you develop new symptoms such as fever, cough or shortness of breath. </li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html" target="_blank">Older Adults</a> (Source: CDC)',
+      'You may be at higher risk of getting very sick from COVID-19. Take these steps:<ul><li>Gather phone numbers for your doctor and pharmacies, lists of medications, testing supplies, and prescription refills.</li><li>Have enough household items and groceries on hand in case you need to stay at home for a period of time.</li><li>Keep a distance of least 6 feet from others.</li><li>Call your doctor if you develop new symptoms such as fever, cough, or shortness of breath.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/older-adults.html" target="_blank">Older Adults</a> (Source: CDC)',
 }];
 
 const CARD_HF5 = [{
-  'title': 'Reduce your exposure risk',
-  'subtitle':
-      'Being a frontline healthcare professional can put you at higher risk for exposure to COVID-19.',
+  'title': 'Reduce your exposure risk if you\'re a healthcare professional',
   'type': 'accordion',
   'text':
-      'Steps you can take to reduce your risk:<ul><li>Provide your patients with face masks.</li><li>Isolate patients with fever or cough.</li>Use personal protective gear for all patient interactions.<li>Use alcohol-based hand rub before and after contact with patients, potentially infectious material, and before using protective gear.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/caring-for-patients.html" target="_blank">For Healthcare Teams</a> (Source: CDC)'
+      'Take these steps:<ul><li>Give your patients face masks</li><li>Isolate patients with fever or cough</li><li>Use personal protective gear for all patient interactions</li><li>Use alcohol-based hand rub before and after contact with patients, potentially infectious material, and before using protective gear.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/caring-for-patients.html" target="_blank">For Healthcare Teams</a> (Source: CDC)'
 }];
 
 const CARD_R3 = [{
   'type': 'accordion',
   'text':
-      'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)',
-  'title': 'Watch for symptoms',
-  'subtitle':
-      'Check temperature twice a day. Typical symptoms include fever, cough, or shortness of breath.'
+      'Check your temperature twice a day. Typical symptoms include:<ul><li>Fever</li><li>Cough</li><li>Shortness of breath</li></ul><br>Get medical attention right away if you develop these emergency warning signs:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or difficulty waking up</li><li>Bluish lips or face</li></ul><br>COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)',
+  'title': 'Pay attention to symptoms',
 }];
 
 const CARD_R4 = [{
-  'title': 'Manage COVID-19 at home',
-  'subtitle': 'Help prevent the spread of illness.',
+  'title': 'Take care of yourself at home',
   'type': 'accordion',
   'text':
-      'Take these steps:<ul><li>Stay home except to get medical care.</li><li>Contact your healthcare provider within the next 24 hours.</li><li>Watch your symptoms.</li><li>Stay away from other people in your home.</li><li>Wash hands often with soap, scrubbing for at least 20 seconds each time.</li><li>Call ahead to discuss symptoms before visiting your doctor.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" target="_blank">If You Are Sick</a> (Source: CDC)'
+      'Take these steps:<ul><li>Stay home except to get medical care. Avoid other people living with you.</li><li>Contact your healthcare provider within 24 hours. Discuss your symptoms before visiting.</li><li>Pay attention to your symptoms.</li><li>Wash your hands often with soap, scrubbing for at least 20 seconds each time.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html" target="_blank">If You Are Sick</a> (Source: CDC)',
 }];
 
 const CARD_R5 = [{
-  'subtitle':
-      'Stay safe and make sure care is available for those who need it most.',
   'type': 'accordion',
   'text':
-      'COVID-19 is spread through close contact with respiratory droplets that are produced when an infected person coughs or sneezes. Steps you can take:<ul><li>Wash hands often with soap, scrubbing for at least 20 seconds each time.</li><li>Keep a distance of six feet from others outside your home.</li><li>Cover any coughs or sneezes with a tissue or your bent arm.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html" target="_blank">How to Protect Yourself</a> (Source: CDC)',
-  'title': 'Protect yourself and loved ones'
+      'COVID-19 is spread through close contact with respiratory droplets that are produced when an infected person coughs or sneezes.<br>Take these steps:<ul><li>Wash your hands often with soap, scrubbing for at least 20 seconds each time.</li><li>Keep a distance of 6 feet from others outside your home.</li><li>Cover coughs and sneezes with a tissue or your bent arm.</li><li>Cover your mouth and nose with a cloth mask when you go out. Children under age 2 and people who have trouble breathing or might not be able to take off their own mask shouldn\'t wear one. Don\'t wear a mask intended for health care workers.</li></ul><a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html" target="_blank">How to Protect Yourself</a> (Source: CDC)',
+  'title': 'Stay safe and prevent the spread of illness'
 }];
 
 const CARD_R6 = [{
-  'title': 'Know COVID-19 symptoms',
-  'subtitle': 'Track any symptoms you may develop.',
+  'title': 'Know the symptoms',
   'type': 'accordion',
   'text':
-      'Reported cases range from mild to severe. Symptoms include:<ul><li>Fever, with temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li></ul>If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
+      'Symptoms include:<ul><li>Fever, with a temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li></ul>Get medical attention right away if you develop these emergency warning signs:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or difficulty waking up</li><li>Bluish lips or face</li></ul>COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
 const CARD_R7 = [{
-  'subtitle':
-      'You can slow the rate of COVID-19 infection through social distancing.',
   'type': 'accordion',
   'text':
-      '<ul><li>Social distancing means increasing the space between people to avoid the spread of illness.</li><li>Keep a distance of least six feet from others.</li><li>Avoid crowds or crowded spaces.</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
+      'Help slow the spread of COVID-19. Take these steps:<ul><li>Keep a distance of least 6 feet from others.</li><li>Avoid crowds or crowded spaces.</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
   'title': 'Keep distance from others'
 }];
 
 const CARD_R8 = [{
   'type': 'accordion',
   'text':
-      'Stay home until 14 days after last exposure.<ul><li>Avoid contact with people at higher risk for severe illness (unless they live in the same home and had same exposure).</li><li>Keep a distance of least six feet from others.</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
+      'Help slow the spread of COVID-19 by staying home except to get medical care. Take these steps:<ul><li>Stay home until 14 days after last exposure</li><li>Avoid contact with people at higher risk for severe illness (unless they live in the same home and had the same exposure)</li><li>Keep a distance of at least 6 feet from others.</li></ul><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/coronavirus/coronavirus-social-distancing-and-self-quarantine" target="_blank">Distancing & Quarantine</a> (Source: Johns Hopkins Medicine)',
   'title': 'Stay inside, without visitors',
-  'subtitle': 'Stay home unless you are seeking medical care.'
 }];
 
 const CARD_R9 = [{
-  'title': 'Manage your symptoms at home',
-  'subtitle':
-      'Keep track of how you feel. Know when to seek help and when to stay home.',
+  'title': 'Pay attention to symptoms',
   'type': 'accordion',
   'text':
-      'If you develop any of the following emergency warning signs, get medical attention immediately*:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion or inability to arouse</li></ul>*This list is not all inclusive. Please consult your medical provider for any other symptoms that are severe or concerning.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
+      'Keep track of how you feel.<br>Get medical attention right away if you develop these emergency warning signs:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or difficulty waking up</li><li>Bluish lips or face</li></ul>COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms.<br><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html" target="_blank">Symptoms</a> (Source: CDC)'
 }];
 
 const CARD_VA_10 = [{
-  'title': 'Call within the next 24 hours',
-  'subtitle': 'Call your healthcare provider.',
+  'title': 'Call in the next 24 hours',
   'type': 'accordion',
   'text':
-      'You have one or more symptom(s) that may be related to COVID-19. You also have medical conditions that could put you at greater risk for complications from COVID-19.'
+      'Call your healthcare provider<br><br>You have at least one symptom that may be related to COVID-19.<br>You may be at greater risk for complications from COVID-19.'
 }];
 
 const CARDS_BASIC = ['G1', 'G2'];
@@ -211,14 +186,13 @@ const CARDS_REGISTORY = {
 
 const HEALTH_CONDITION_QUESTION = [
   {
-    'title': 'Do you have any other of these conditions?',
+    'title': 'Do you have any other of these conditions? Choose all that apply:',
     'type': 'description'
   },
   {'type': 'divider'}
 ];
 
 const HEALTH_CONDITION_CARDIO = {
-  'subtitle': '',
   'event': {'languageCode': 'en', 'name': 'event-health-condition-cardio'},
   'type': 'list',
   'title': 'Serious heart conditions'
@@ -226,14 +200,12 @@ const HEALTH_CONDITION_CARDIO = {
 
 const HEALTH_CONDITION_DIABETES = {
     'title': 'Diabetes',
-    'subtitle': '',
     'event':
         {'name': 'event-health-condition-dm', 'languageCode': 'en'},
     'type': 'list'
 };
 
 const HEALTH_CONDITION_LUNG = {
-  'subtitle': '',
   'event': {'languageCode': 'en', 'name': 'event-health-condition-lung'},
   'type': 'list',
   'title': 'Chronic lung disease or moderate to severe asthma'
@@ -241,11 +213,12 @@ const HEALTH_CONDITION_LUNG = {
 
 const HEALTH_CONDITION_HEALTHRISK_1 = [
   {
-  'title': 'Immunocompromised',
-  'subtitle':
-      'Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications',
-  'event': {'languageCode': 'en', 'name': 'event-health-condition-healtherisk'},
-  'type': 'list'
+    'title': 'Immunocompromised',
+    'subtitle':
+        'Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications',
+    'event':
+        {'languageCode': 'en', 'name': 'event-health-condition-healtherisk'},
+    'type': 'list'
   },
   {
     'title': 'Severe obesity',
@@ -258,13 +231,11 @@ const HEALTH_CONDITION_HEALTHRISK_1 = [
 const HEALTH_CONDITION_HEALTHRISK_2 = [
   {
     'title': 'Chronic kidney disease undergoing dialysis',
-    'subtitle': '',
     'event':
         {'name': 'event-health-condition-healtherisk', 'languageCode': 'en'},
     'type': 'list'
   },
   {
-    'subtitle': '',
     'event':
         {'name': 'event-health-condition-healtherisk', 'languageCode': 'en'},
     'type': 'list',
@@ -274,38 +245,33 @@ const HEALTH_CONDITION_HEALTHRISK_2 = [
 
 const HEALTH_CONDITION_NONE = {
   'title': 'None of above',
-  'subtitle': '',
   'event': {'languageCode': 'en', 'name': 'event-health-condition-none'},
   'type': 'list'
 };
 
 const SYMPTOM_MULTI_CHOICE_QUESTION = {
   question: {
-    'title': 'Do you have any more of these symptoms?',
+    'title': 'Do you have any more of these symptoms? Choose all that apply:',
     'type': 'description'
   },
   divider: {'type': 'divider'},
   fever: {
-    'subtitle': '',
     'event': {'name': 'event-symptom-fever', 'languageCode': 'en'},
     'type': 'list',
     'title': 'Fever (temperature >100.4 °F or 38 °C) or feeling feverish'
   },
   shortofbreath: {
-    'subtitle': '',
     'event': {'name': 'event-symptom-shortofbreath', 'languageCode': 'en'},
     'type': 'list',
     'title': 'Shortness of breath (not severe)'
   },
   cough: {
     'title': 'Cough',
-    'subtitle': '',
     'event': {'languageCode': 'en', 'name': 'event-symptom-cough'},
     'type': 'list'
   },
   none: {
     'title': 'None of the above',
-    'subtitle': '',
     // This event is intentionally distinct from the event used in the initial
     // version of this question, defined in Dialogflow. See
     // SYMPTOM_EVENT.NO_MORE for more info.

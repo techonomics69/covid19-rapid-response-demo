@@ -18,6 +18,11 @@
           "name": "ctx-s1b",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "start-screener",
+          "parameters": {},
+          "lifespan": 0
         }
       ],
       "parameters": [],

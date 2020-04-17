@@ -32,9 +32,9 @@
               [
                 {
                   "type": "accordion",
-                  "text": "Tell the emergency staff if you have had contact with someone with COVID-19 or if you have recently been to an area where COVID-19 is spreading. (Source: CDC)",
-                  "title": "Go to the emergency department",
-                  "subtitle": "Based on your symptoms, urgent medical attention may be needed. Go to your nearest emergency department."
+                  "text": "Tell the medical staff if:\u003cul\u003e\u003cli\u003eYou had contact with someone with COVID-19\u003c/li\u003e\u003cli\u003eYou recently visited an area where COVID-19 is spreading\u003c/li\u003e\u003c/ul\u003e(Source: CDC)",
+                  "title": "Seek medical care",
+                  "subtitle": "Urgent medical attention may be needed. Go to your nearest emergency department right away."
                 }
               ]
             ]
