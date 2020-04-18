@@ -35,14 +35,14 @@
                   "type": "chips",
                   "options": [
                     {
+                      "link": "",
                       "image": {},
-                      "text": "Yes",
-                      "link": ""
+                      "text": "Yes"
                     },
                     {
-                      "image": {},
                       "text": "No",
-                      "link": ""
+                      "link": "",
+                      "image": {}
                     }
                   ]
                 }

@@ -1,6 +1,6 @@
 [
   {
-    "id": "44555d79-24b4-4712-846f-ff1f6d96cee3",
+    "id": "7dd0bbb2-8526-4dfa-80db-1cb65820e9a0",
     "data": [
       {
         "text": "Should I get tested if I don\u0027t feel that sick",
@@ -12,7 +12,7 @@
     "updated": 0
   },
   {
-    "id": "f4f43876-130c-48a7-9505-852747d55e7f",
+    "id": "61b3e8cb-397b-4d82-abb6-8843c0dd5277",
     "data": [
       {
         "text": "I feel sick",
@@ -24,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "9ed3329e-fe4a-442d-80e4-ca71631adf26",
+    "id": "04e32c4b-bdef-46f5-a709-e0c65b908775",
     "data": [
       {
         "text": "Fever",
@@ -36,7 +36,7 @@
     "updated": 0
   },
   {
-    "id": "9128e427-8f11-4bfe-a06b-81a12fc819bc",
+    "id": "17d0420d-4542-49a6-9785-187fc95e5315",
     "data": [
       {
         "text": "Am I going to die?",
@@ -48,7 +48,7 @@
     "updated": 0
   },
   {
-    "id": "b0372100-49fc-405e-8077-299c743a6232",
+    "id": "54db547f-0c6f-4c0d-a602-b69100321da9",
     "data": [
       {
         "text": "nausea",
@@ -60,7 +60,7 @@
     "updated": 0
   },
   {
-    "id": "81bad315-508c-439d-9733-86a9a3527805",
+    "id": "6d6cbf66-73d9-449a-adae-f41a30111567",
     "data": [
       {
         "text": "coughing",
@@ -72,7 +72,7 @@
     "updated": 0
   },
   {
-    "id": "a1e50124-ca3c-48a1-834d-9c2a20e6d91b",
+    "id": "314a7d3a-00d9-450e-a164-2beec383ceb1",
     "data": [
       {
         "text": "should I go to hospital if I feel sick",
@@ -84,7 +84,7 @@
     "updated": 0
   },
   {
-    "id": "2d735ab3-dc5e-4a71-b848-cbb923d18f6f",
+    "id": "a5b190f1-6dcb-41ff-82c7-db0c74ac7a3e",
     "data": [
       {
         "text": "i am a bit sore throat, dizzying, am I got the virus ?",
@@ -96,7 +96,7 @@
     "updated": 0
   },
   {
-    "id": "bce2fea8-e5e5-4239-a7dd-4d074036e641",
+    "id": "d6c9a0f7-c5b3-4f95-9c9b-fc9d51986dbb",
     "data": [
       {
         "text": "i am a bit sore throat",
@@ -108,7 +108,7 @@
     "updated": 0
   },
   {
-    "id": "16be4f98-f5c8-45b7-89b4-ffd5349cbde3",
+    "id": "ccc8be50-da0a-4849-bbb9-ba11443fd214",
     "data": [
       {
         "text": "I am coughing",
@@ -120,7 +120,7 @@
     "updated": 0
   },
   {
-    "id": "b046a088-54c5-4033-b482-65036686a1dd",
+    "id": "2968691b-623d-40f9-9875-b789f113e76b",
     "data": [
       {
         "text": "I have a cold",
@@ -132,7 +132,7 @@
     "updated": 0
   },
   {
-    "id": "10aa649c-d459-4e68-afc2-16343c7e02e7",
+    "id": "38a41027-868f-4472-9030-c9950dcbe7a6",
     "data": [
       {
         "text": "cough",
@@ -144,7 +144,7 @@
     "updated": 0
   },
   {
-    "id": "b040cd5c-8019-4272-9638-7a1c3b1b7fde",
+    "id": "4592a238-9f52-425e-8c91-b0bae4dc6ac5",
     "data": [
       {
         "text": "my temperature is ",
@@ -162,7 +162,7 @@
     "updated": 0
   },
   {
-    "id": "8b511e9b-302b-4fdf-946f-1aa2496d7767",
+    "id": "5da1b695-9d3c-4c71-b00c-d1a4bba224b9",
     "data": [
       {
         "text": "I have a temperature",
@@ -174,7 +174,7 @@
     "updated": 0
   },
   {
-    "id": "a660a375-4d27-49d8-bc20-5d72a44a64e3",
+    "id": "63175a4b-01cf-4115-b079-8419b1f88e71",
     "data": [
       {
         "text": "I can\u0027t taste or smell anything",
@@ -186,7 +186,7 @@
     "updated": 0
   },
   {
-    "id": "04652f3f-ee4d-4015-8a3f-f5cb56affddb",
+    "id": "958cae88-073b-4381-8a9b-2658043987e7",
     "data": [
       {
         "text": "I can\u0027t taste",
@@ -198,7 +198,7 @@
     "updated": 0
   },
   {
-    "id": "2a796e29-b32c-408a-bf20-bcd20e76808a",
+    "id": "16166130-f438-49ea-9a9f-2d33a5d7ecea",
     "data": [
       {
         "text": "I can\u0027t smell",
@@ -210,7 +210,7 @@
     "updated": 0
   },
   {
-    "id": "51b15234-b197-493e-bf5e-a15af7a560ce",
+    "id": "57ec3aad-b370-426a-8baf-cf7024587c18",
     "data": [
       {
         "text": "I have fever",
@@ -222,7 +222,7 @@
     "updated": 0
   },
   {
-    "id": "7b69af0b-ccbf-476e-ae93-46925d694f80",
+    "id": "c4795eae-7eaa-4bfd-aeb2-e43c40900381",
     "data": [
       {
         "text": "I\u0027m not feeling well. What can I do?",
@@ -234,7 +234,7 @@
     "updated": 0
   },
   {
-    "id": "ea6bb8ac-e599-49b2-8167-b14570e13478",
+    "id": "086e37be-7dda-4e92-8d34-e1b519a2c056",
     "data": [
       {
         "text": "how do i manage symptoms",
@@ -246,7 +246,7 @@
     "updated": 0
   },
   {
-    "id": "c763839a-2607-46dd-b214-400600ebaba3",
+    "id": "fcafc8f5-46ee-42c9-af1c-d77de3e59b69",
     "data": [
       {
         "text": "Okay, what if I feel sick?",
@@ -258,7 +258,7 @@
     "updated": 0
   },
   {
-    "id": "304e827c-ce3d-4984-a7b6-35642a8677a4",
+    "id": "a32f64bf-a73a-4a66-a53c-a6760d666db4",
     "data": [
       {
         "text": "I\u0027m feeling I have a headache and I feeling sick. What should I do?",
@@ -270,7 +270,7 @@
     "updated": 0
   },
   {
-    "id": "a8a2120b-9e70-45e9-8399-eab31e96c5ac",
+    "id": "c87cda54-d94e-491f-928e-210734f22d71",
     "data": [
       {
         "text": "What should I do if I have a sore throat?",
@@ -282,7 +282,7 @@
     "updated": 0
   },
   {
-    "id": "0ac88329-0285-459c-801e-2ca99815f19e",
+    "id": "4ceff4d7-5ebc-46b4-b8d2-53de190744bd",
     "data": [
       {
         "text": "how do i manage my symptoms?",
@@ -294,7 +294,7 @@
     "updated": 0
   },
   {
-    "id": "ba9a853c-cb1e-435b-ba57-adaf6024a4a6",
+    "id": "8f932206-edcb-4235-ae0f-4a725e84706b",
     "data": [
       {
         "text": "what should i do if i get the virus?",
@@ -306,7 +306,7 @@
     "updated": 0
   },
   {
-    "id": "2dea31b7-a988-4fcd-9a78-eac626c77661",
+    "id": "33f6ec65-fda1-441a-8c6b-834af9f15ad9",
     "data": [
       {
         "text": "What should I do if I have coronavirus?",
@@ -318,7 +318,7 @@
     "updated": 0
   },
   {
-    "id": "548ce954-1ad0-4f33-aae5-14ba53fce498",
+    "id": "f14fb6f5-2ca7-4bb7-b2cf-af7c191bcac8",
     "data": [
       {
         "text": "I think I\u0027ve been infected with coronavirus. What should I do?",
@@ -330,7 +330,7 @@
     "updated": 0
   },
   {
-    "id": "1e9daf1e-4fcd-4e89-86ed-5dba20ae3222",
+    "id": "a5ebff50-3d27-4814-bf5e-b5d9da857a30",
     "data": [
       {
         "text": "what should I do if I am sick",
@@ -342,7 +342,7 @@
     "updated": 0
   },
   {
-    "id": "91797af5-ac97-4041-9c31-bde9f146f3b6",
+    "id": "0326a801-b2c8-40ad-8dee-8f12cff4e84c",
     "data": [
       {
         "text": "i have a runny nose, should I be tested?",
@@ -354,7 +354,7 @@
     "updated": 0
   },
   {
-    "id": "f7ef1da1-c5c1-4b78-ac80-dbe238643a1d",
+    "id": "09f1a70b-7714-4945-adec-b6cfca5ed53e",
     "data": [
       {
         "text": "My throat hurts",
@@ -366,7 +366,7 @@
     "updated": 0
   },
   {
-    "id": "a9946b8f-ac58-4696-b7d3-bf0b027cfbf9",
+    "id": "ed2264c9-691e-4056-ae48-5fd2ef636065",
     "data": [
       {
         "text": "What should I do if my throat hurts?",
@@ -378,7 +378,7 @@
     "updated": 0
   },
   {
-    "id": "363cf571-cf6d-4103-9e26-1d69c48e1c04",
+    "id": "c4465fa3-3993-4196-8a16-62e94e2040ae",
     "data": [
       {
         "text": "What should I do if my wife has Coronavirus?",
@@ -390,7 +390,7 @@
     "updated": 0
   },
   {
-    "id": "d0361af9-233a-4cc5-a6ee-5b0f7a9d0c75",
+    "id": "6a11d0e1-b195-49a1-aa0c-503dc6eb54ca",
     "data": [
       {
         "text": "what should I do if I have a fever?",
@@ -402,7 +402,7 @@
     "updated": 0
   },
   {
-    "id": "7013fbb8-8f75-41f8-b729-0380efaf511e",
+    "id": "f14a39ce-5b66-4709-89bc-c5178669c5a8",
     "data": [
       {
         "text": "who can i call?",
@@ -414,7 +414,7 @@
     "updated": 0
   },
   {
-    "id": "ffde51bf-f0e4-46a9-99c8-c3c4d17b4243",
+    "id": "625d7e45-d9a0-4d6d-a09a-05bbf82e9ceb",
     "data": [
       {
         "text": "Do I have coronavirus?",
@@ -426,7 +426,7 @@
     "updated": 0
   },
   {
-    "id": "5cccad6a-a353-4ccd-a75e-662d5b64e1bd",
+    "id": "9661e87c-808b-45fa-99d7-121b87815aa5",
     "data": [
       {
         "text": "i have been exposed",
@@ -438,7 +438,7 @@
     "updated": 0
   },
   {
-    "id": "afccc964-9c9a-4eff-ba77-a09685a50bf8",
+    "id": "9164fb8a-2b8f-48ad-8202-cadd765463f3",
     "data": [
       {
         "text": "i think i have corona",
@@ -450,7 +450,7 @@
     "updated": 0
   },
   {
-    "id": "e7fd9dc6-adfe-42ec-96bc-aaacd4ebb9e5",
+    "id": "0904cf27-e4f2-4723-8900-7069569f55df",
     "data": [
       {
         "text": "I have a fever",
@@ -462,7 +462,7 @@
     "updated": 0
   },
   {
-    "id": "a7e4ba3f-46b0-4549-95b3-4cc84600a2b3",
+    "id": "8bccc6e6-e137-452b-bcb8-b30d75ef9a96",
     "data": [
       {
         "text": "Where can I get help?",
@@ -474,7 +474,7 @@
     "updated": 0
   },
   {
-    "id": "177f8290-df63-4441-aaf8-17082b61d707",
+    "id": "b4c5dfed-e791-4e6b-b7d9-93fe5580207b",
     "data": [
       {
         "text": "what if I can\u0027t get the medicine I need?",
@@ -486,7 +486,7 @@
     "updated": 0
   },
   {
-    "id": "d8765fb6-6eaf-4263-a8c3-e93bc47803aa",
+    "id": "8ec2c9ca-6741-45c5-aa3f-8748aecaf54a",
     "data": [
       {
         "text": "i have fever and cough",
@@ -498,7 +498,7 @@
     "updated": 0
   },
   {
-    "id": "d7561613-2b2f-4805-b182-0cd07fb6cb18",
+    "id": "d1b24d33-c034-413e-81c5-04d042c47cb5",
     "data": [
       {
         "text": "I have a sore throat and a fever, what should I do?",
@@ -510,7 +510,7 @@
     "updated": 0
   },
   {
-    "id": "fab9a576-7e8c-4408-90ea-eb6d0bdd96ad",
+    "id": "346f07d3-aa70-4bd4-8b88-023ceb75f739",
     "data": [
       {
         "text": "sore throat and a fever",
@@ -522,7 +522,7 @@
     "updated": 0
   },
   {
-    "id": "a45d57ed-8b5c-40ce-8c83-137b12d523bc",
+    "id": "a20dc1bb-d988-41a6-9ac4-79e820064f13",
     "data": [
       {
         "text": "I\u0027m having a fever and a cough",
@@ -534,7 +534,7 @@
     "updated": 0
   },
   {
-    "id": "cbeeaac2-abf1-476e-8cd4-ede32dcd8fba",
+    "id": "039992fc-0bff-43e8-a7f4-421579bd9d98",
     "data": [
       {
         "text": "I have a fever and cough. What can I do?",
@@ -546,7 +546,7 @@
     "updated": 0
   },
   {
-    "id": "d3edbeed-3f40-494d-932d-8037b471e282",
+    "id": "87d65240-7a49-489e-86d1-de2743eb4ab4",
     "data": [
       {
         "text": "i don\u0027t feel well",
@@ -558,7 +558,7 @@
     "updated": 0
   },
   {
-    "id": "9b0b749a-9908-404a-bfad-589d52ced5d5",
+    "id": "2c902d72-c0ea-47c5-ae21-6a3ddd7191e4",
     "data": [
       {
         "text": "i have a fever",
@@ -570,7 +570,7 @@
     "updated": 0
   },
   {
-    "id": "a62e21ab-4076-417d-91fa-330c50023b67",
+    "id": "1417d8f1-b459-4f85-bbbe-8b166d28d7a4",
     "data": [
       {
         "text": "i have a high fever",
@@ -582,7 +582,7 @@
     "updated": 0
   },
   {
-    "id": "16878443-3856-4d50-88bc-7f23514872db",
+    "id": "b96fcb87-b172-40e6-8446-f28d6de845a1",
     "data": [
       {
         "text": "i have a fever and a cough",
@@ -594,7 +594,7 @@
     "updated": 0
   },
   {
-    "id": "aba3df8e-edd9-4fe1-a94f-e192589612f5",
+    "id": "0f54300b-9f5f-4655-ad27-461953b2f9a1",
     "data": [
       {
         "text": "should i take medicine?",
@@ -606,7 +606,7 @@
     "updated": 0
   },
   {
-    "id": "ea08599c-cd6e-41e6-a52f-c9061bafe9d7",
+    "id": "32b04b53-99d3-4b14-8e7a-6a4208659349",
     "data": [
       {
         "text": "how long will i be sick for?",
@@ -618,7 +618,7 @@
     "updated": 0
   },
   {
-    "id": "4717005b-eb1b-4b43-a909-d6293da3931a",
+    "id": "99173101-58e0-452b-8ebc-b97993d7e192",
     "data": [
       {
         "text": "how long does the sickness last",
@@ -630,7 +630,7 @@
     "updated": 0
   },
   {
-    "id": "1ed87218-27d4-44e8-9793-062e68f73711",
+    "id": "b501affd-3346-42cf-a1b1-5c43a6600abd",
     "data": [
       {
         "text": "where can I turn to if I need to speak with someone",
@@ -642,7 +642,7 @@
     "updated": 0
   },
   {
-    "id": "b82a151d-2cdd-4dad-aabe-f5828c5d3791",
+    "id": "6501581e-f077-4ccd-8b42-7d4ee10da143",
     "data": [
       {
         "text": "What should I do if I think I have the coronavirus?",
@@ -654,7 +654,7 @@
     "updated": 0
   },
   {
-    "id": "be27a258-d136-48ee-8f11-33d3c5e55742",
+    "id": "246ecdbe-4149-4db9-8fe3-8709e680b5f2",
     "data": [
       {
         "text": "where can I go for emergency in ",
@@ -672,7 +672,7 @@
     "updated": 0
   },
   {
-    "id": "a5d43e20-7efb-4639-a8e0-5c589e35e3e7",
+    "id": "ad68e46f-046c-45d8-8ce2-d8749a7150b6",
     "data": [
       {
         "text": "when do I know if I have to call my doctor",
@@ -684,7 +684,7 @@
     "updated": 0
   },
   {
-    "id": "185a3aa8-b3b7-490c-aa91-78c176b84a0e",
+    "id": "8efac8cd-8160-4187-b486-18b596e7d015",
     "data": [
       {
         "text": "i have a fever, should I worry?",
@@ -696,7 +696,7 @@
     "updated": 0
   },
   {
-    "id": "55485c95-a4d9-405a-a318-d89397808855",
+    "id": "6f08494d-f4ea-4f0d-a1d2-66cc6f6eb0b2",
     "data": [
       {
         "text": "Hi - I have some shortness of breath, but it might be allergies",
@@ -708,7 +708,7 @@
     "updated": 0
   },
   {
-    "id": "f6adb746-3139-4209-8167-a8066e5e51bd",
+    "id": "ae85cd5b-eecc-4129-83fb-fc002578a394",
     "data": [
       {
         "text": "I have shortness of breath - what should i do?",
@@ -720,7 +720,7 @@
     "updated": 0
   },
   {
-    "id": "db1ff387-fcbf-4a32-bfb4-7af38d73920b",
+    "id": "232ef42f-f7ec-4f5d-93c3-a783d9c24746",
     "data": [
       {
         "text": "where should I go if I have symptoms?",
@@ -732,7 +732,7 @@
     "updated": 0
   },
   {
-    "id": "a5dc44c9-7109-4c50-af1e-f1d1925a6e61",
+    "id": "1ccb1e66-6971-4a7c-81e2-a815df5f49fc",
     "data": [
       {
         "text": "What do I do if I\u0027m not feeling well?",
@@ -744,7 +744,7 @@
     "updated": 0
   },
   {
-    "id": "e0f08975-41d5-4070-9a18-e1e087448516",
+    "id": "5bd46e52-f4f3-4123-90fb-15498e828f0d",
     "data": [
       {
         "text": "What do I do if I have the virus",
@@ -756,7 +756,7 @@
     "updated": 0
   },
   {
-    "id": "3459be15-28f4-4ee8-8992-7c80053e2caf",
+    "id": "d2af7f8a-5cf2-4caf-b0a2-83e8c690e1ac",
     "data": [
       {
         "text": "Do I have coronavirus",
@@ -768,7 +768,7 @@
     "updated": 0
   },
   {
-    "id": "5dd3235d-4d54-4492-9287-8417f028d0b4",
+    "id": "5aa812a0-106a-4610-94c5-7c94fda5f4a9",
     "data": [
       {
         "text": "I have a fever and a cough. What can I do?",
@@ -780,7 +780,7 @@
     "updated": 0
   },
   {
-    "id": "d8b26af6-2d4a-4fa1-a8ae-8a34bf06361c",
+    "id": "4b3f0259-5131-42fe-aab2-47f9ab6f02f7",
     "data": [
       {
         "text": "Where can I seek help?",
@@ -792,7 +792,7 @@
     "updated": 0
   },
   {
-    "id": "a23ba7c8-59d4-4f69-a148-d75d0c8f53fc",
+    "id": "72c42c39-05e9-4224-ad26-8bfb77cbef77",
     "data": [
       {
         "text": "what temperature should I look for?",
@@ -804,7 +804,7 @@
     "updated": 0
   },
   {
-    "id": "328060ea-99f2-45c6-8d26-49e969b76ccb",
+    "id": "92f6d194-f9a5-4c79-a0e0-2e8b6b0773b9",
     "data": [
       {
         "text": "what temperature is a fever?",
@@ -816,7 +816,7 @@
     "updated": 0
   },
   {
-    "id": "676138eb-7c03-4744-bf70-712d3774d839",
+    "id": "1b6d2e25-00e4-4fb6-87df-f23523e38833",
     "data": [
       {
         "text": "how do i get help?",
@@ -828,7 +828,7 @@
     "updated": 0
   },
   {
-    "id": "8a06b034-b2b3-4504-aeb6-2af4f27b5f11",
+    "id": "725b716a-7250-4db7-96ec-08d2a3c5959b",
     "data": [
       {
         "text": "home remedies?",
@@ -840,7 +840,7 @@
     "updated": 0
   },
   {
-    "id": "05734e9c-ae51-4362-83b4-1de5242af891",
+    "id": "3221fa16-9b77-45bd-8d25-b3c7562995bb",
     "data": [
       {
         "text": "what should i be doing if I am tested positive?",
@@ -852,7 +852,7 @@
     "updated": 0
   },
   {
-    "id": "22712fd7-28f1-40a8-b130-7bd57ea64f34",
+    "id": "fc7f1cf9-cbbb-42b5-945c-41a7ad998441",
     "data": [
       {
         "text": "what to do/",
@@ -864,7 +864,7 @@
     "updated": 0
   },
   {
-    "id": "da969012-3119-4ca2-9311-d7dc96437643",
+    "id": "8c4f1e24-d95c-40a7-b4f5-e15553e64665",
     "data": [
       {
         "text": "What should I do if I cough?",
@@ -876,7 +876,7 @@
     "updated": 0
   },
   {
-    "id": "b62af213-97c3-44b5-9f14-1fce2cac38b2",
+    "id": "33143c68-e0ad-4253-9230-8579db8515c3",
     "data": [
       {
         "text": "im sick",
@@ -888,7 +888,7 @@
     "updated": 0
   },
   {
-    "id": "5f1b4630-e4db-4a1a-8eb8-afa8762cd8c7",
+    "id": "f34240fb-4ce4-4d99-aca6-65b6aa338faf",
     "data": [
       {
         "text": "I have corona virus what should I do",
@@ -900,7 +900,7 @@
     "updated": 0
   },
   {
-    "id": "8b347670-bc25-40dd-a1a5-b98d2b443c9f",
+    "id": "eba50b3e-ac5f-4d83-8224-b8d4b9a19973",
     "data": [
       {
         "text": "what are the help line numbers for covid 19?",
@@ -912,7 +912,7 @@
     "updated": 0
   },
   {
-    "id": "09698251-6866-4c88-81ee-73173be9b31e",
+    "id": "54921e08-f9e1-457e-b2c4-0916ddc3103c",
     "data": [
       {
         "text": "what should I do if see symptoms of covid ",
@@ -930,7 +930,7 @@
     "updated": 0
   },
   {
-    "id": "0505a39c-6b3f-4aa1-913a-0dfd2594a37a",
+    "id": "bcddd508-8927-4d9b-9f56-3bff261c9aa7",
     "data": [
       {
         "text": "I am sneezing",
@@ -942,7 +942,7 @@
     "updated": 0
   },
   {
-    "id": "269c6054-dda0-420d-99b6-1eb2af03c772",
+    "id": "99ce0392-4af3-4cd3-9c5b-ca5c0d8c98c9",
     "data": [
       {
         "text": "I am feeling tired",
@@ -954,7 +954,7 @@
     "updated": 0
   },
   {
-    "id": "6275c0d0-35e7-444e-8cce-aa0c2ba6f5f3",
+    "id": "5c0a7e9c-3e24-46cd-95fe-75e15e76dfb5",
     "data": [
       {
         "text": "what should i do if i am tested positive?",
@@ -966,7 +966,7 @@
     "updated": 0
   },
   {
-    "id": "f9fb6e4d-a09f-4891-9f73-1edffd4a79cb",
+    "id": "8236f2b2-999d-4467-b4c4-7da950b09b62",
     "data": [
       {
         "text": "When shall I go to see a doctor?",
@@ -978,7 +978,7 @@
     "updated": 0
   },
   {
-    "id": "d921b118-c5cb-450b-882a-84f12764d50b",
+    "id": "5d657cef-5ec6-4d7b-9fe5-24d8959254f5",
     "data": [
       {
         "text": "When should I go to the hospital?",
@@ -990,7 +990,7 @@
     "updated": 0
   },
   {
-    "id": "53094a6a-e162-438c-95f7-5a1d22d703ab",
+    "id": "9475af65-3cfc-4a14-870c-e8a1af6170bb",
     "data": [
       {
         "text": "do I have the virus?",
@@ -1002,7 +1002,7 @@
     "updated": 0
   },
   {
-    "id": "5655dcfa-b4d7-425e-8ce3-00cacb0b5a65",
+    "id": "6b516939-3ff9-4c7c-aa6b-57fc34bd5459",
     "data": [
       {
         "text": "My child has covid-19, do I need to stay away from them?",
@@ -1014,7 +1014,7 @@
     "updated": 0
   },
   {
-    "id": "4043b546-7db8-4cc2-b9e9-bbd161b12697",
+    "id": "27daa55a-d51f-4bb1-86c8-00270d9e44d1",
     "data": [
       {
         "text": "I think my child has the virus, what do I do?",
@@ -1026,7 +1026,7 @@
     "updated": 0
   },
   {
-    "id": "d0853771-da52-4cb9-9ed6-1c5db33c317c",
+    "id": "983bbfe7-5d74-434a-95e5-f707d1a9ef9c",
     "data": [
       {
         "text": "how do I know I have the virus",
@@ -1038,7 +1038,7 @@
     "updated": 0
   },
   {
-    "id": "363150e3-14bd-4d79-9506-23693b1ba211",
+    "id": "018c9452-604d-425e-89ce-9d9320e0c818",
     "data": [
       {
         "text": "if you have a headache, do you have the coronavirus?",
@@ -1050,7 +1050,7 @@
     "updated": 0
   },
   {
-    "id": "900a6e0c-26c5-495b-b0f1-63fb50f978bd",
+    "id": "6684845d-5781-4001-beee-3e8afaa8ac95",
     "data": [
       {
         "text": "am i going to die",
@@ -1062,7 +1062,7 @@
     "updated": 0
   },
   {
-    "id": "d7704466-1c8f-4974-88f2-74a9fed09b98",
+    "id": "8dac2b6f-51d7-4394-b8a4-3565b5d01e0c",
     "data": [
       {
         "text": "Where should I go if i have symptoms",
@@ -1074,7 +1074,7 @@
     "updated": 0
   },
   {
-    "id": "1f9f4750-f3f9-4a29-a033-3e5709c3b8fb",
+    "id": "e1462f6f-1743-41eb-ba75-3efae5acb39d",
     "data": [
       {
         "text": "Do I have the virus?",
@@ -1086,7 +1086,7 @@
     "updated": 0
   },
   {
-    "id": "7a9190b8-0f7c-4a8a-a570-6f20feb62651",
+    "id": "5a2f0f8a-c1f8-4718-9a92-bf9c6f95c506",
     "data": [
       {
         "text": "if you have a headache, do you have the coronavirus",
@@ -1098,7 +1098,7 @@
     "updated": 0
   },
   {
-    "id": "0abc2af4-a50e-419f-b0c0-992a353a7fa2",
+    "id": "64b0bcb1-e8ee-4c5d-81ce-a74ef094baa8",
     "data": [
       {
         "text": "Am I going to die",
@@ -1110,7 +1110,7 @@
     "updated": 0
   },
   {
-    "id": "a006d81f-f95d-46d5-8d74-3fcad845d19a",
+    "id": "7c59627b-26c5-4b42-8fab-7a532fd97f20",
     "data": [
       {
         "text": "am i going to die?",
@@ -1122,7 +1122,7 @@
     "updated": 0
   },
   {
-    "id": "1fc0c764-0248-48f4-b7ac-4d295061771d",
+    "id": "8a50699d-6ba3-4f12-be61-f4657020624a",
     "data": [
       {
         "text": "my child may be sick, do i need to see a doctor?",
@@ -1134,7 +1134,7 @@
     "updated": 0
   },
   {
-    "id": "b5e59d33-ab75-472c-b6be-79569b893823",
+    "id": "e11890bd-53f6-4e24-80ec-c41ef7e2edda",
     "data": [
       {
         "text": "fever",
@@ -1146,7 +1146,7 @@
     "updated": 0
   },
   {
-    "id": "287deee1-a167-4687-bf10-70598001ba4f",
+    "id": "fa41694b-e6e8-49c4-9084-be5a82ff8a70",
     "data": [
       {
         "text": "how high of a fever to expect.",
@@ -1158,7 +1158,7 @@
     "updated": 0
   },
   {
-    "id": "5ef678fb-0488-469f-9d50-6166a91e8b96",
+    "id": "adb04000-214f-4c70-949e-167743a628b0",
     "data": [
       {
         "text": "how high of a fever should I be concerned with?",
@@ -1170,7 +1170,7 @@
     "updated": 0
   },
   {
-    "id": "02e8ec83-8920-4cb2-94c1-849545cef3b6",
+    "id": "6df7d997-3eda-4dbe-9c9e-daba687dd1e6",
     "data": [
       {
         "text": "I have shortness of breath - what should I do?",
@@ -1182,7 +1182,7 @@
     "updated": 0
   },
   {
-    "id": "de463eb6-ed1e-4aff-bab6-e8a0ace14746",
+    "id": "164c9621-1c25-4c39-a594-e5a5341902c0",
     "data": [
       {
         "text": "should I get tested if I have a headache",
@@ -1194,7 +1194,7 @@
     "updated": 0
   },
   {
-    "id": "29c388b4-106a-4917-b36b-16bcdc16659d",
+    "id": "ebb1530e-f0c8-41d6-95cc-dc8ebe8d57e0",
     "data": [
       {
         "text": "help",
@@ -1206,7 +1206,7 @@
     "updated": 0
   },
   {
-    "id": "2fd129d3-44c9-42e2-b093-b5f72795a5bf",
+    "id": "44855420-0a91-492c-9aa0-19d372ae4b3a",
     "data": [
       {
         "text": "What do I do if i suspect that I have symptoms of the virus?",
@@ -1218,7 +1218,7 @@
     "updated": 0
   },
   {
-    "id": "738c5b27-7088-46f2-a29b-3121ff93b838",
+    "id": "7b106b18-dab4-4bf0-b7b3-9af3b382fee8",
     "data": [
       {
         "text": "What if I think I have the virus?",
@@ -1230,7 +1230,7 @@
     "updated": 0
   },
   {
-    "id": "375d8fc2-00e6-4605-9961-2f113bfa19a7",
+    "id": "4103be43-7a31-46d4-a85e-200d935079f0",
     "data": [
       {
         "text": "how will I know I need a test for Coronavirus?",
@@ -1242,7 +1242,7 @@
     "updated": 0
   },
   {
-    "id": "f3ee2c88-f1d4-49b6-bb64-3fe189a4032b",
+    "id": "856d26e0-8b49-4cd5-9248-1679ad6087c6",
     "data": [
       {
         "text": "Hi - I think that I might have coronavirus",
@@ -1254,7 +1254,7 @@
     "updated": 0
   },
   {
-    "id": "326ef34b-cbb9-4c98-9136-78e432bd8f49",
+    "id": "a3eee605-148e-4d86-a7cf-27f82d917f6b",
     "data": [
       {
         "text": "where should I go if I have symptoms",
@@ -1266,7 +1266,7 @@
     "updated": 0
   },
   {
-    "id": "f3d23796-5b09-471a-b985-a0b2985b5fdc",
+    "id": "cfdf125a-0c86-49eb-8597-acf4f440580f",
     "data": [
       {
         "text": "What should I do if I feel sick?",
@@ -1278,7 +1278,7 @@
     "updated": 0
   },
   {
-    "id": "119ddff2-eb90-4ff6-94fb-3cad05933696",
+    "id": "e51cfa35-9df5-434b-a5a5-070afe926677",
     "data": [
       {
         "text": "I think I\u0027ve been exposed. What should I do?",
@@ -1290,7 +1290,7 @@
     "updated": 0
   },
   {
-    "id": "ceb2e34c-192a-477e-935e-0d662f573791",
+    "id": "6bc878f1-3a49-415a-8f91-c135a910f66c",
     "data": [
       {
         "text": "what happens if my child has the virus?",
@@ -1302,7 +1302,7 @@
     "updated": 0
   },
   {
-    "id": "7e6dbe4a-0e04-4e28-8b03-453b79076c79",
+    "id": "d840a9d0-72c1-4e2d-a4a8-ff73cd377a56",
     "data": [
       {
         "text": "What do I do if I have Corona virus",
@@ -1314,7 +1314,7 @@
     "updated": 0
   },
   {
-    "id": "a2711007-8e0d-41e1-a9e4-bdd19557d722",
+    "id": "7f44d01d-aa3d-476e-8b24-519bf55b7140",
     "data": [
       {
         "text": "What do I do if I have Coronavirus",
@@ -1326,7 +1326,7 @@
     "updated": 0
   },
   {
-    "id": "9f5a2009-f236-4479-ab1c-2f0e5f65b9bd",
+    "id": "ad388a3f-e9c7-43ff-b610-c362a11cb987",
     "data": [
       {
         "text": "I\u0027m feeling sick, what should I do?",
@@ -1338,7 +1338,7 @@
     "updated": 0
   },
   {
-    "id": "329c9287-84db-414e-9eb3-646dc75a3dae",
+    "id": "23b39804-7848-45e2-b9f3-08be0ab193ef",
     "data": [
       {
         "text": "I can\u0027t move",
@@ -1350,7 +1350,7 @@
     "updated": 0
   },
   {
-    "id": "1889acad-08ef-4b41-99b3-c0bf985c419a",
+    "id": "5674efc0-b29c-4252-bf4f-01200d05b2e1",
     "data": [
       {
         "text": "What do I do if my left foot hurts",
@@ -1362,7 +1362,7 @@
     "updated": 0
   },
   {
-    "id": "9c47cec3-35ab-44a2-916c-6abd8d2cade3",
+    "id": "a2f07026-f454-4772-a6b3-53aa05f9da85",
     "data": [
       {
         "text": "I think I have corona what should I do?",
@@ -1374,7 +1374,7 @@
     "updated": 0
   },
   {
-    "id": "a538c994-cf6e-483e-8085-6a31c1258872",
+    "id": "66dc8d23-f2ce-46a9-9281-20963f4377bf",
     "data": [
       {
         "text": "who should i contact if i think i have covid",
@@ -1386,7 +1386,7 @@
     "updated": 0
   },
   {
-    "id": "5f418885-5d5e-48b2-9c77-a197353bb664",
+    "id": "e8c72fe2-7cd1-4724-9e34-35385668209c",
     "data": [
       {
         "text": "My kids don\u0027t feel well",
@@ -1398,7 +1398,7 @@
     "updated": 0
   },
   {
-    "id": "579930e1-73e7-4c85-bb0e-19cb1d99ed2b",
+    "id": "78bbbc2c-89c1-483c-a77e-9b3a1c653b48",
     "data": [
       {
         "text": "I\u0027m worried I have covid ",
@@ -1416,7 +1416,7 @@
     "updated": 0
   },
   {
-    "id": "640867da-f410-41c4-ad35-09d504030d34",
+    "id": "89c268a3-57ff-405a-b763-d2ca8e59590c",
     "data": [
       {
         "text": "I just threw up",
@@ -1428,7 +1428,7 @@
     "updated": 0
   },
   {
-    "id": "01f94019-e781-4b4d-9861-e0cd7a29769a",
+    "id": "edc9c736-2b52-4e42-bc3a-4ce54017099c",
     "data": [
       {
         "text": "I\u0027m coughing like crazy",
@@ -1440,7 +1440,7 @@
     "updated": 0
   },
   {
-    "id": "443f5485-a651-435f-b277-6082aebb761c",
+    "id": "4e975420-4849-4f78-92a6-1a5b99b8b8e7",
     "data": [
       {
         "text": "Do I have Caronavirus?",
@@ -1452,7 +1452,7 @@
     "updated": 0
   },
   {
-    "id": "e76aa948-44b5-42f2-abeb-bca7e63e617c",
+    "id": "73c9597f-0662-4393-a2df-628244a38f17",
     "data": [
       {
         "text": "I don\u0027t feel well",
@@ -1464,7 +1464,7 @@
     "updated": 0
   },
   {
-    "id": "a3739c9e-b73c-4651-b741-1e744d0f284c",
+    "id": "bbabd80e-9869-42fc-9478-55307cdd6c5c",
     "data": [
       {
         "text": "My dad is 72 years old and he has symptoms last week. Do I need to take him to the hospital?",
@@ -1476,7 +1476,7 @@
     "updated": 0
   },
   {
-    "id": "ec06b88b-2dc2-427e-896c-fc5d1113d6a1",
+    "id": "2776c5e3-bb03-45d8-b3a7-f2afd280b642",
     "data": [
       {
         "text": "Help",
@@ -1488,7 +1488,7 @@
     "updated": 0
   },
   {
-    "id": "7d7d81ab-c6a1-4c16-9861-909035c1eb3e",
+    "id": "4b5835a8-625c-49bc-857d-a961ec955913",
     "data": [
       {
         "text": "Where should I go if i have any symptoms?",
@@ -1500,7 +1500,7 @@
     "updated": 0
   },
   {
-    "id": "9a5c9b4c-13e0-4235-b626-56cef8c2d2a9",
+    "id": "6ce0ebb4-0da4-4449-9d16-dca093bb7a05",
     "data": [
       {
         "text": "i feel sick",

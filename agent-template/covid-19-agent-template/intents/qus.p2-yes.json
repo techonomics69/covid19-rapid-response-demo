@@ -17,7 +17,7 @@
         {
           "name": "ctx-p3",
           "parameters": {},
-          "lifespan": 2
+          "lifespan": 10
         },
         {
           "name": "risk_labels",
@@ -27,7 +27,7 @@
       ],
       "parameters": [
         {
-          "id": "37de8933-94bc-4e66-a5f3-3577ab9680f2",
+          "id": "b08e8456-e3bc-44fe-bd79-8d86d9a3e3a0",
           "required": false,
           "dataType": "",
           "name": "risk_label_p2-yes",
@@ -48,20 +48,20 @@
             "richContent": [
               [
                 {
-                  "title": "Do you have any of these conditions?",
-                  "type": "description"
+                  "type": "description",
+                  "title": "Do you have any of these conditions? Choose all that apply:"
                 },
                 {
                   "type": "divider"
                 },
                 {
+                  "type": "list",
+                  "title": "Chronic lung disease or moderate to severe asthma",
                   "subtitle": "",
                   "event": {
                     "name": "event-health-condition-lung",
                     "languageCode": "en"
-                  },
-                  "type": "list",
-                  "title": "Chronic lung disease or moderate to severe asthma"
+                  }
                 },
                 {
                   "type": "divider"
@@ -69,8 +69,8 @@
                 {
                   "subtitle": "",
                   "event": {
-                    "name": "event-health-condition-cardio",
-                    "languageCode": "en"
+                    "languageCode": "en",
+                    "name": "event-health-condition-cardio"
                   },
                   "type": "list",
                   "title": "Serious heart conditions"
@@ -79,25 +79,25 @@
                   "type": "divider"
                 },
                 {
+                  "type": "list",
                   "title": "Immunocompromised",
                   "subtitle": "Many conditions can cause a person to be immunocompromised, including cancer treatment, smoking, bone marrow or organ transplantation, immune deficiencies, poorly controlled HIV or AIDS, and prolonged use of corticosteroids and other immune weakening medications",
                   "event": {
                     "languageCode": "en",
                     "name": "event-health-condition-healtherisk"
-                  },
-                  "type": "list"
+                  }
                 },
                 {
                   "type": "divider"
                 },
                 {
-                  "title": "Severe obesity",
                   "subtitle": "body mass index [BMI] of 40 or higher",
                   "event": {
-                    "languageCode": "en",
-                    "name": "event-health-condition-healtherisk"
+                    "name": "event-health-condition-healtherisk",
+                    "languageCode": "en"
                   },
-                  "type": "list"
+                  "type": "list",
+                  "title": "Severe obesity"
                 },
                 {
                   "type": "divider"
@@ -106,8 +106,8 @@
                   "title": "Diabetes",
                   "subtitle": "",
                   "event": {
-                    "name": "event-health-condition-dm",
-                    "languageCode": "en"
+                    "languageCode": "en",
+                    "name": "event-health-condition-dm"
                   },
                   "type": "list"
                 },
@@ -139,13 +139,13 @@
                   "type": "divider"
                 },
                 {
-                  "title": "None of above",
                   "subtitle": "",
                   "event": {
-                    "name": "event-health-condition-none",
-                    "languageCode": "en"
+                    "languageCode": "en",
+                    "name": "event-health-condition-none"
                   },
-                  "type": "list"
+                  "type": "list",
+                  "title": "None of above"
                 }
               ]
             ]

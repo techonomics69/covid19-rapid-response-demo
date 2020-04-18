@@ -8,7 +8,13 @@
   "responses": [
     {
       "resetContexts": false,
-      "affectedContexts": [],
+      "affectedContexts": [
+        {
+          "name": "start-screener",
+          "parameters": {},
+          "lifespan": 0
+        }
+      ],
       "parameters": [],
       "messages": [
         {

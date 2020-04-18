@@ -18,6 +18,11 @@
           "name": "ctx-s3",
           "parameters": {},
           "lifespan": 2
+        },
+        {
+          "name": "ctx-extreme",
+          "parameters": {},
+          "lifespan": 0
         }
       ],
       "parameters": [],

@@ -16,6 +16,11 @@
           "name": "satisfaction",
           "parameters": {},
           "lifespan": 5
+        },
+        {
+          "name": "thank",
+          "parameters": {},
+          "lifespan": 2
         }
       ],
       "parameters": [],
