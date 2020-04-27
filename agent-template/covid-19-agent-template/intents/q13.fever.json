@@ -1,0 +1,74 @@
+{
+  "id": "d07efbb1-c723-4e45-91db-afa5dc276127",
+  "name": "q13.fever",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q13-fever"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have fever, a temperature above 100.4 °F or 38 °C, or have #pronouns.pronoun1 felt hot or feverish in the last two days?\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Do #pronouns.pronoun1 have fever (a temperature above 100.4 °F or 38 °C) or have #pronouns.pronoun1 felt hot or feverish in the last two days?",
+                  "type": "description"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "Yes"
+                    },
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

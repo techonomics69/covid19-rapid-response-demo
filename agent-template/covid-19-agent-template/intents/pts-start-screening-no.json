@@ -18,6 +18,14 @@
       "parameters": [],
       "messages": [
         {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eHi.This is the\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e  Virtual Agent. You can ask me questions related to COVID-19. How can I help? I will try to provide some answers based on publicly available information. I\u0027m not responsible for providing professional medical advice, diagnosis or treatment. If you are experiencing a life threatening emergency, please call 911. For medical advice, please contact your healthcare provider.\u003c/speak\u003e"
+        },
+        {
           "type": 4,
           "lang": "en",
           "condition": "",
@@ -25,12 +33,12 @@
             "richContent": [
               [
                 {
-                  "title": "Hi.This is the COVID-19 Virtual Agent. You can ask me questions related to COVID-19. How can I help?",
                   "type": "description",
                   "text": [
                     "I will try to provide some answers based on publicly available information. I\u0027m not responsible for providing professional medical advice, diagnosis or treatment.",
                     "If you are experiencing a life threatening emergency, please call 911. For medical advice, please contact your healthcare provider."
-                  ]
+                  ],
+                  "title": "Hi.This is the COVID-19 Virtual Agent. You can ask me questions related to COVID-19. How can I help?"
                 }
               ],
               [
@@ -38,9 +46,9 @@
                   "type": "chips",
                   "options": [
                     {
+                      "image": {},
                       "text": "Start screening",
-                      "link": "",
-                      "image": {}
+                      "link": ""
                     },
                     {
                       "text": "What is COVID-19?",
@@ -53,9 +61,9 @@
                       "image": {}
                     },
                     {
-                      "text": "How many confirmed cases are there in the US?",
                       "link": "",
-                      "image": {}
+                      "image": {},
+                      "text": "How many confirmed cases are there in the US?"
                     }
                   ]
                 }
@@ -64,7 +72,9 @@
           }
         }
       ],
-      "defaultResponsePlatforms": {},
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
       "speech": []
     }
   ],

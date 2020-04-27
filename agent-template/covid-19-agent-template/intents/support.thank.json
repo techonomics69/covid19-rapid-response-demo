@@ -32,15 +32,6 @@
           "speech": "You\u0027re welcome. Do you have any other questions?"
         },
         {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eYou are welcome! Do you have any other questions?\u003c/speak\u003e",
-          "displayText": "You\u0027re welcome. Do you have any other questions?"
-        },
-        {
           "type": 14,
           "platform": "telephony",
           "lang": "en",

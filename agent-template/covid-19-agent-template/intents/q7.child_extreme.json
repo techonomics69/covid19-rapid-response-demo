@@ -1,0 +1,81 @@
+{
+  "id": "664e4b5b-93d5-4795-aad3-03d0d5f1053a",
+  "name": "q7.child_extreme",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q7-child_extreme"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eIs the child experiencing any of these life-threatening symptoms? Extremely fast or shallow breathing. Blue-colored lips or face. Not waking up or not interacting when awake. So irritable that the child does not want to be held. Seizures.\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Is the child experiencing any of these life-threatening symptoms?",
+                  "type": "description",
+                  "text": [
+                    "Extremely fast or shallow breathing",
+                    "Blue-colored lips or face",
+                    "Not waking up or not interacting when awake",
+                    "So irritable that the child does not want to be held",
+                    "Seizures"
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "image": {},
+                      "text": "Yes",
+                      "link": ""
+                    },
+                    {
+                      "text": "No",
+                      "link": "",
+                      "image": {}
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "c3bbeacc-8b46-4289-9e48-1282cbda2c00",
+          "id": "78fb59c6-7f29-499e-a211-2d1aa4121598",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -28,30 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe World Health Organization reports that possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The World Health Organization is coordinating efforts to develop vaccines and medicines to prevent and treat \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e.\u003c/speak\u003e"
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe World Health Organization reports that possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The World Health Organization is coordinating efforts to develop vaccines and medicines to prevent and treat \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e.\u003c/speak\u003e",
-          "displayText": "The World Health Organization reports that possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The World Health Organization is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19."
-        },
-        {
-          "type": "link_out_chip",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "destinationName": "WHO\u0027s updates on Vaccines",
-          "url": "https://www.cdc.gov/coronavirus/2019-ncov/about/prevention.html?CDC_AA_refVal\u003dhttps%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention-treatment.html"
+          "ssml": "\u003cspeak\u003eNot yet. The World Health Organization states that at this time there is no vaccine or specific antiviral medicine to prevent or treat \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The World Health Organization reports that possible vaccines and some specific drug treatments are under investigation. They are being tested through clinical trials. The World Health Organization is coordinating efforts to develop vaccines and medicines to prevent and treat COVID-19."
+          "speech": "Not yet. The World Health Organization states that at this time there is no vaccine or specific antiviral medicine to prevent or treat COVID-2019."
         }
       ],
       "defaultResponsePlatforms": {},

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "59360eb7-b567-4e3a-a095-4dbf870a6dd3",
+    "data": [
+      {
+        "text": "what is the chinese ",
+        "userDefined": false
+      },
+      {
+        "text": "virus",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "02c6e055-daa9-4b73-8063-dbd6fc5ed069",
+    "data": [
+      {
+        "text": "what is the chinese flu?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4dca2db9-c0f1-47a3-ab5f-2f566013d46d",
+    "data": [
+      {
+        "text": "what is the ",
+        "userDefined": false
+      },
+      {
+        "text": "wuhan virus",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "96dcbca0-098a-4dcd-8884-f18499efc61a",
+    "data": [
+      {
+        "text": "what is the ",
+        "userDefined": false
+      },
+      {
+        "text": "wuhan",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " disease?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c74bc08d-47c2-4f61-af03-eeef36159805",
+    "data": [
+      {
+        "text": "china",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "virus",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d07fd286-2763-4e85-b6dd-7c3ed6c65115",
+    "data": [
+      {
+        "text": "wuhan virus",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "573a8fbf-800c-4779-8931-c4faa7f4caf6",
+    "data": [
+      {
+        "text": "china flu",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6132c743-2a9e-44a7-bade-f518cd3e8db5",
+    "data": [
+      {
+        "text": "chinese ",
+        "userDefined": false
+      },
+      {
+        "text": "virus",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

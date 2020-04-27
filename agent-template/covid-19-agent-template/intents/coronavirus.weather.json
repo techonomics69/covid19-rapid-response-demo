@@ -15,22 +15,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention reports that it is not yet known whether weather and temperature impact the spread of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. At this time, it is not known whether the spread of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e will decrease when weather becomes warmer. There is much more to learn about the transmissibility, severity, and other features associated with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and investigations are ongoing.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eIt is not yet known whether weather and temperature affect the spread of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but it\u0027s still possible to get sick with these viruses at other times. There is much more to learn about the transmissibility, severity, and other features associated with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The Center for Disease Control and Prevention reports that it is not yet known whether weather and temperature impact the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. At this time, it is not known whether the spread of COVID-19 will decrease when weather becomes warmer. There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention reports that it is not yet known whether weather and temperature impact the spread of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. At this time, it is not known whether the spread of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e will decrease when weather becomes warmer. There is much more to learn about the transmissibility, severity, and other features associated with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e and investigations are ongoing.\u003c/speak\u003e",
-          "displayText": "The Center for Disease Control and Prevention reports that it is not yet known whether weather and temperature impact the spread of COVID-19. Some other viruses, like the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months. At this time, it is not known whether the spread of COVID-19 will decrease when weather becomes warmer. There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing."
+          "speech": "It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but it\u0027s still possible to get sick with these viruses at other times. There is much more to learn about the transmissibility, severity, and other features associated with COVID-19."
         }
       ],
       "defaultResponsePlatforms": {},
