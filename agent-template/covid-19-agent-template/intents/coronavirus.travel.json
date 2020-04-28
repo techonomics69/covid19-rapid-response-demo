@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "0675952d-56cd-48bf-84ed-ae1cfdf54409",
+          "id": "ad449465-0cfe-4bae-9bf4-5a37b05446ce",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "e8f1b10f-314f-4a76-a50d-10cb19b98634",
+          "id": "fc6438c6-fc46-4665-92a0-602ce8e9df0a",
           "required": false,
           "dataType": "@sys.geo-country",
           "name": "geo-country",
@@ -41,15 +41,6 @@
           "condition": "",
           "text": "",
           "ssml": "\u003cspeak\u003eThe guidelines for travel are changing often. Check the Center for Disease Control and Prevention\u0027s website for travel notices before planning travel.\u003c/speak\u003e"
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe guidelines for travel are changing often. Check the Center for Disease Control and Prevention\u0027s website for travel notices before planning travel.\u003c/speak\u003e",
-          "displayText": "The guidelines for travel are changing often. Check the Center for Disease Control and Prevention\u0027s website for travel notices before planning travel."
         },
         {
           "type": 0,

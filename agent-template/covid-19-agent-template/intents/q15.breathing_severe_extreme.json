@@ -1,0 +1,74 @@
+{
+  "id": "4e440dd4-8681-416d-be98-d111d0e19c0a",
+  "name": "q15.breathing_severe_extreme",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q15-breathing_severe_extreme"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eAre #pronouns.pronoun1 having difficulty talking without catching #pronouns.pronoun2 breath?\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Are #pronouns.pronoun1 having difficulty talking without catching #pronouns.pronoun2 breath?",
+                  "type": "description"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "image": {},
+                      "text": "Yes",
+                      "link": ""
+                    },
+                    {
+                      "text": "No",
+                      "link": "",
+                      "image": {}
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

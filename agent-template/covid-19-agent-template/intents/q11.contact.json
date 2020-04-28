@@ -1,0 +1,74 @@
+{
+  "id": "247780cd-add0-4eda-9e52-362817f00047",
+  "name": "q11.contact",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q11-contact"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eIn the two weeks before #pronouns.pronoun1 felt sick, did #pronouns.pronoun1 have contact with someone who was diagnosed with COVID-19?\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "description",
+                  "title": "In the two weeks before #pronouns.pronoun1 felt sick, did #pronouns.pronoun1 have contact with someone who was diagnosed with COVID-19?"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "image": {},
+                      "text": "Yes",
+                      "link": ""
+                    },
+                    {
+                      "text": "No",
+                      "link": "",
+                      "image": {}
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

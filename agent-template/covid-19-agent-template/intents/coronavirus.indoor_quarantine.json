@@ -15,22 +15,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention recommends that people stay at home if they are showing signs of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e infection or are mildly ill except to seek medical care. If ill or displaying signs of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, the CDC says to separate yourself from other people in your home, which is known as home isolation. Please check your local authorities for specific guidelines during any shelter in place.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eFollow local authorities for shelter in place guidelines. In addition, the CDC recommends that you stay home if you are showing signs of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e or are mildly ill, except to get medical care. If you have \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e symptoms, separate yourself from other people and pets in your home.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The Center for Disease Control and Prevention recommends that people stay at home if they are showing signs of COVID-19 infection or are mildly ill except to seek medical care. If ill or displaying signs of COVID-19, the CDC says to separate yourself from other people in your home, which is known as home isolation. Please check your local authorities for specific guidelines during any shelter in place."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention recommends that people stay at home if they are showing signs of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e infection or are mildly ill except to seek medical care. If ill or displaying signs of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, the CDC says to separate yourself from other people in your home, which is known as home isolation. Please check your local authorities for specific guidelines during any shelter in place.\u003c/speak\u003e",
-          "displayText": "The Center for Disease Control and Prevention recommends that people stay at home if they are showing signs of COVID-19 infection or are mildly ill except to seek medical care. If ill or displaying signs of COVID-19, the CDC says to separate yourself from other people in your home, which is known as home isolation. Please check your local authorities for specific guidelines during any shelter in place."
+          "speech": "Follow local authorities for shelter in place guidelines. In addition, the CDC recommends that you stay home if you are showing signs of COVID-19 or are mildly ill, except to get medical care. If you have COVID-19 symptoms, separate yourself from other people and pets in your home."
         }
       ],
       "defaultResponsePlatforms": {},

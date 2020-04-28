@@ -1,0 +1,74 @@
+{
+  "id": "32822af3-d379-485e-84f3-8043fbf3f780",
+  "name": "q9.child_severe_cont",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q9-child_severe_cont"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDoes the child appear dehydrated? Signs of dehydration include not urinating for 8 hours or more, dry mouth, and no tears when crying.\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Does the child appear dehydrated? Signs of dehydration include not urinating for 8 hours or more, dry mouth, and no tears when crying.",
+                  "type": "description"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "image": {},
+                      "text": "Yes",
+                      "link": ""
+                    },
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

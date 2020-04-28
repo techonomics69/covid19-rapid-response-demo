@@ -15,22 +15,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention reports that we do not know at this time if \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e would cause problems during pregnancy or affect the health of the baby after birth. Pregnant women should do the same things as the general public to avoid infection.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eAccording to the CDC, we do not know if pregnant people have a greater chance of getting sick from \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e than the general public nor whether they are more likely to have serious illness as a result. Pregnant people seem to have the same risk as adults who are not pregnant. Mother-to-child transmission of coronavirus during pregnancy is unlikely, but after birth a newborn is susceptible to person-to-person spread and a very small number of babies have tested positive for the virus shortly after birth.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The Center for Disease Control and Prevention reports that we do not know at this time if COVID-19 would cause problems during pregnancy or affect the health of the baby after birth. Pregnant women should do the same things as the general public to avoid infection."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe Center for Disease Control and Prevention reports that we do not know at this time if \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e would cause problems during pregnancy or affect the health of the baby after birth. Pregnant women should do the same things as the general public to avoid infection.\u003c/speak\u003e",
-          "displayText": "The Center for Disease Control and Prevention reports that we do not know at this time if COVID-19 would cause problems during pregnancy or affect the health of the baby after birth. Pregnant women should do the same things as the general public to avoid infection."
+          "speech": "According to the CDC, we do not know if pregnant people have a greater chance of getting sick from COVID-19 than the general public nor whether they are more likely to have serious illness as a result. Pregnant people seem to have the same risk as adults who are not pregnant. Mother-to-child transmission of coronavirus during pregnancy is unlikely, but after birth a newborn is susceptible to person-to-person spread and a very small number of babies have tested positive for the virus shortly after birth."
         }
       ],
       "defaultResponsePlatforms": {

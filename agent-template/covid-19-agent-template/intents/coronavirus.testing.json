@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "ba75bb9e-b9f3-413b-937c-4cce222f6e96",
+          "id": "0efa486a-55bb-41d5-abc2-31e4dc78a5b5",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -23,27 +23,10 @@
       ],
       "messages": [
         {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. According to the Center for Disease Control and Prevention, not everyone needs to be tested for \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. Visit their website for guidance for who should be tested, but decisions about testing are at the discretion of state and local health departments and/or individual clinicians.\u003c/speak\u003e",
-          "displayText": "The process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. According to the Center for Disease Control and Prevention, not everyone needs to be tested for COVID-19. Visit their website for guidance for who should be tested, but decisions about testing are at the discretion of state and local health departments and/or individual clinicians."
-        },
-        {
-          "type": "link_out_chip",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "destinationName": "California COVID-19 risk screening and testing",
-          "url": "https://www.projectbaseline.com/study/covid-19/"
-        },
-        {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "The process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. According to the Center for Disease Control and Prevention, not everyone needs to be tested for COVID-19. Visit their website for guidance for who should be tested, but decisions about testing are at the discretion of state and local health departments and/or individual clinicians."
+          "speech": "The process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. While supplies of these tests are increasing, it may still be difficult to find someplace to get tested. If you think you may be sick, stay home and consult with your healthcare provider on the need for testing."
         },
         {
           "type": 14,
@@ -51,7 +34,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThe process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. According to the Center for Disease Control and Prevention, not everyone needs to be tested for \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. Visit their website for guidance for who should be tested, but decisions about testing are at the discretion of state and local health departments and/or individual clinicians.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eThe process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. While supplies of these tests are increasing, it may still be difficult to find someplace to get tested. If you think you may be sick, stay home and consult with your healthcare provider on the need for testing.\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

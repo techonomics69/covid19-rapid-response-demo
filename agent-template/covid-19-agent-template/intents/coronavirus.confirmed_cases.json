@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "398880e5-0afd-4786-b820-28315253a1f2",
+          "id": "cdff30a3-b872-4203-a9d1-2ee865988de5",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "86c3e7ad-379f-4325-9c20-38b782fa9ab6",
+          "id": "890d43b1-a2e4-42b2-afde-9117888bbe25",
           "required": false,
           "dataType": "@sys.geo-country",
           "name": "geo-country",
@@ -33,7 +33,7 @@
           "isList": false
         },
         {
-          "id": "52b57a18-965f-4152-8f31-7109f4f87434",
+          "id": "40c38203-54bb-43bb-b135-76965aafdd41",
           "required": false,
           "dataType": "@sys.date-time",
           "name": "date-time",
@@ -45,7 +45,7 @@
           "isList": false
         },
         {
-          "id": "37381978-2b5f-48e8-a3d8-63adb3bab4f4",
+          "id": "0fe9adf8-2b43-4de2-bf10-753732708cd0",
           "required": false,
           "dataType": "@sys.geo-city",
           "name": "geo-city",
@@ -57,7 +57,7 @@
           "isList": true
         },
         {
-          "id": "6b28b1bd-3797-48a3-a502-2ddc7f80a63b",
+          "id": "8c352bce-91f0-474d-9369-aedd4ef55ef1",
           "required": false,
           "dataType": "@sys.geo-state",
           "name": "geo-state",
@@ -69,7 +69,7 @@
           "isList": false
         },
         {
-          "id": "6a910bc1-c6a6-45d1-8729-fb1f90b1bc07",
+          "id": "f9a09412-8a9e-48f6-b439-8bb516630782",
           "required": false,
           "dataType": "@sys.number",
           "name": "number",

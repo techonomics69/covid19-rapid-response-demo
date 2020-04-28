@@ -18,15 +18,6 @@
           "ssml": ""
         },
         {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "Thank you for the feedback. Goodbye!",
-          "ssml": "",
-          "displayText": ""
-        },
-        {
           "type": 0,
           "lang": "en",
           "condition": "",

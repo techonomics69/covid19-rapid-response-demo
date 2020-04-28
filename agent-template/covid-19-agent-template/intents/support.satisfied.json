@@ -10,15 +10,6 @@
       "parameters": [],
       "messages": [
         {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "Thank you for the feedback. Goodbye!",
-          "ssml": "",
-          "displayText": ""
-        },
-        {
           "type": 14,
           "platform": "telephony",
           "lang": "en",

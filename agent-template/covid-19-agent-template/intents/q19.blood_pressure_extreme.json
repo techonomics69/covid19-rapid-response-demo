@@ -1,0 +1,74 @@
+{
+  "id": "c7824b4a-8039-4d2f-9d3e-83c73b87f388",
+  "name": "q19.blood_pressure_extreme",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q19-blood_pressure_extreme"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have symptoms of low blood pressure? Signs of low blood pressure can include cold, pale, or clammy skin; or feeling so light-headed and so weak that #pronouns.pronoun1 are not able to stand.\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Do #pronouns.pronoun1 have symptoms of low blood pressure? Signs of low blood pressure can include cold, pale, or clammy skin; or feeling so light-headed and so weak that #pronouns.pronoun1 are not able to stand.",
+                  "type": "description"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "Yes"
+                    },
+                    {
+                      "text": "No",
+                      "link": "",
+                      "image": {}
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "5b6e018c-57f7-40a2-ae87-6596d3d67a61",
+          "id": "ccf51108-bfda-4721-833e-c38794536492",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "e5d790ac-f8b7-44bb-98af-8836590f5d92",
+          "id": "7465de97-402e-47b1-898b-82036f95ed64",
           "required": false,
           "dataType": "@sys.geo-city",
           "name": "geo-city",
@@ -33,7 +33,7 @@
           "isList": false
         },
         {
-          "id": "6065f03e-c138-4923-84e8-1ca5cf1479df",
+          "id": "31f2472b-f12b-45e3-9b8e-15421f31f89f",
           "required": false,
           "dataType": "@sys.geo-country",
           "name": "geo-country",
@@ -46,15 +46,6 @@
         }
       ],
       "messages": [
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThe status of \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e is changing daily. Please check the Center for Disease Control and Prevention\u0027s website for updates.\u003c/speak\u003e",
-          "displayText": "The status of COVID-19 is changing daily. Please check the Center for Disease Control and Prevention\u0027s website for updates."
-        },
         {
           "type": 0,
           "lang": "en",

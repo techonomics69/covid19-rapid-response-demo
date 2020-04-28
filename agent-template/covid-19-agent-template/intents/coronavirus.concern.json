@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "8c7fd9ef-bcf1-41a7-8ffd-bebebcdce625",
+          "id": "554bf2a7-35d4-45db-bfb7-a24b99f10cd8",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -28,22 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eIn response to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, the World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones, and our communities. First, regular and thorough hand-washing and good respiratory hygiene upkeep is important. Second, keep informed and follow the advice of local health authorities. Please visit the WHO website for more guidance.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eIt\u0027s natural to feel worried. The World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones and our communities. Wash your hands regularly. Always sneeze or cough into a tissue and wear a mask when you go out. And follow the advice of your local health authorities.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "In response to COVID-19, the World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones, and our communities. First, regular and thorough hand-washing and good respiratory hygiene upkeep is important. Second, keep informed and follow the advice of local health authorities. Please visit the WHO website for more guidance."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eIn response to \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e, the World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones, and our communities. First, regular and thorough hand-washing and good respiratory hygiene upkeep is important. Second, keep informed and follow the advice of local health authorities. Please visit the WHO website for more guidance.\u003c/speak\u003e",
-          "displayText": "In response to COVID-19, the World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones, and our communities. First, regular and thorough hand-washing and good respiratory hygiene upkeep is important. Second, keep informed and follow the advice of local health authorities. Please visit the WHO website for more guidance."
+          "speech": "It\u0027s natural to feel worried. The World Health Organization recommends we channel our concerns into action to protect ourselves, our loved ones and our communities. Wash your hands regularly. Always sneeze or cough into a tissue and wear a mask when you go out. And follow the advice of your local health authorities."
         }
       ],
       "defaultResponsePlatforms": {},

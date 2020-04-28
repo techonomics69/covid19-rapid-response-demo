@@ -22,15 +22,6 @@
           "lang": "en",
           "condition": "",
           "speech": "This is the COVID-19 Virtual Agent."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eThis is the \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e Virtual Agent.\u003c/speak\u003e",
-          "displayText": "This is the COVID-19 Virtual Agent."
         }
       ],
       "defaultResponsePlatforms": {},

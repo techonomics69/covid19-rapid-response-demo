@@ -1,0 +1,81 @@
+{
+  "id": "1661cc7b-8395-4c1a-9d54-5f2992142b74",
+  "name": "q20.symptoms",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q20-symptoms"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have any of the following symptoms. Runny or stuffy nose. Sore throat. Muscle aches, body aches, or headaches. Fatigue or malaise. Nausea, vomiting or diarrhea.\u003cspeak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "title": "Do #pronouns.pronoun1 have any of the following symptoms:",
+                  "type": "description",
+                  "text": [
+                    "Runny or stuffy nose",
+                    "Sore throat",
+                    "Muscle aches, body aches, or headaches",
+                    "Fatigue or malaise",
+                    "Nausea, vomiting or diarrhea"
+                  ]
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "Yes"
+                    },
+                    {
+                      "image": {},
+                      "text": "No",
+                      "link": ""
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,74 @@
+{
+  "id": "4d431d2c-dd84-4b19-a5b8-70f082b6e031",
+  "name": "q23.dm",
+  "auto": true,
+  "contexts": [
+    "pronouns",
+    "q23-dm"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 14,
+          "platform": "telephony",
+          "lang": "en",
+          "condition": "",
+          "text": "",
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have diabetes with complications?\u003c/speak\u003e"
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "description",
+                  "title": "Do #pronouns.pronoun1 have diabetes with complications?"
+                }
+              ],
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "Yes",
+                      "link": "",
+                      "image": {}
+                    },
+                    {
+                      "link": "",
+                      "image": {},
+                      "text": "No"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "telephony": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "trigger-question"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

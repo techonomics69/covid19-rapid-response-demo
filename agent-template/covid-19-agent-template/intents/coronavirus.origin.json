@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "5f257afc-e2ae-4374-99ef-d8018fc9f20a",
+          "id": "935c0269-88f9-4ea9-ac99-9decde24f350",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -26,16 +26,7 @@
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "COVID-19 was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003e\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person.\u003c/speak\u003e",
-          "displayText": "COVID-19 was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person."
+          "speech": "COVID-19 was first detected in Wuhan City, Hubei Province, China. Coronaviruses are a large family of viruses that are common in people and many different species of animals, including camels, cattle, cats, and bats. Rarely, animal coronaviruses can infect people and then spread between people. This occurred with the virus that causes COVID-19."
         },
         {
           "type": 14,
@@ -43,7 +34,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003e\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e was first detected in Wuhan City, Hubei Province, China. The first infections were linked to a live animal market, but the virus is now spreading from person-to-person.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003e\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e was first detected in Wuhan City, Hubei Province, China. Coronaviruses are a large family of viruses that are common in people and many different species of animals, including camels, cattle, cats, and bats. Rarely, animal coronaviruses can infect people and then spread between people. This occurred with the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e.\u003c/speak\u003e"
         }
       ],
       "defaultResponsePlatforms": {},

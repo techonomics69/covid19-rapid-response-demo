@@ -42,9 +42,9 @@
                       "image": {}
                     },
                     {
+                      "image": {},
                       "text": "Not satisfied",
-                      "link": "",
-                      "image": {}
+                      "link": ""
                     },
                     {
                       "text": "I prefer not to answer",
@@ -56,15 +56,6 @@
               ]
             ]
           }
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eBefore you go, from \"very satisfied\" to \"not satisfied\" how would you rate the information you received today?\u003c/speak\u003e",
-          "displayText": "Before you go, from \"very satisfied\" to \"not satisfied\" how would you rate the information you received today?"
         },
         {
           "type": 14,

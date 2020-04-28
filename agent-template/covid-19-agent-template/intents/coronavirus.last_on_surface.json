@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "5facf9b4-9adf-456d-862f-e06024438ca5",
+          "id": "7b1335c6-48fd-4f45-9e23-0ce0a74a27c1",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "ec5ee43c-9515-466b-9afe-bd65f1cfac89",
+          "id": "dad537df-f964-4fac-98d3-97e96006f6b6",
           "required": false,
           "dataType": "@surface",
           "name": "surface",
@@ -40,22 +40,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eIt is not certain how long the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e survives on surfaces. Studies suggest that coronaviruses may persist on surfaces for a few hours or up to several days. This varies depending on different conditions such as the type of surface, temperature or humidity of the environment.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eIt isn\u0027t certain how long the virus that causes\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e can last on surfaces. Studies suggest that coronaviruses can remain on surfaces for a few hour up to several days, depending on conditions like the temperature or type of surface.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "It is not certain how long the virus that causes COVID-19 survives on surfaces. Studies suggest that coronaviruses may persist on surfaces for a few hours or up to several days. This varies depending on different conditions such as the type of surface, temperature or humidity of the environment."
-        },
-        {
-          "type": "simple_response",
-          "platform": "google",
-          "lang": "en",
-          "condition": "",
-          "textToSpeech": "",
-          "ssml": "\u003cspeak\u003eIt is not certain how long the virus that causes \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e survives on surfaces. Studies suggest that coronaviruses may persist on surfaces for a few hours or up to several days. This varies depending on different conditions such as the type of surface, temperature or humidity of the environment.\u003c/speak\u003e",
-          "displayText": "It is not certain how long the virus that causes COVID-19 survives on surfaces. Studies suggest that coronaviruses may persist on surfaces for a few hours or up to several days. This varies depending on different conditions such as the type of surface, temperature or humidity of the environment."
+          "speech": "It isn\u0027t certain how long the virus that causes COVID-19 can last on surfaces. Studies suggest that coronaviruses can remain on surfaces for a few hour up to several days, depending on conditions like the temperature or type of surface."
         }
       ],
       "defaultResponsePlatforms": {},
