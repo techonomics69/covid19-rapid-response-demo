@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "7b1335c6-48fd-4f45-9e23-0ce0a74a27c1",
+          "id": "c3cef445-6f4e-4049-b578-de4de22d1b2a",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "dad537df-f964-4fac-98d3-97e96006f6b6",
+          "id": "41ee2507-f05e-47d7-b388-084f285553f1",
           "required": false,
           "dataType": "@surface",
           "name": "surface",
@@ -40,13 +40,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eIt isn\u0027t certain how long the virus that causes\u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e can last on surfaces. Studies suggest that coronaviruses can remain on surfaces for a few hour up to several days, depending on conditions like the temperature or type of surface.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eStudies have shown that the COVID-19 virus can survive for up to 72 hours on plastic and stainless steel, less than 4 hours on copper and less than 24 hours on cardboard. Common household disinfectants will kill the virus can be used to clean surfaces.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "It isn\u0027t certain how long the virus that causes COVID-19 can last on surfaces. Studies suggest that coronaviruses can remain on surfaces for a few hour up to several days, depending on conditions like the temperature or type of surface."
+          "speech": "Studies have shown that the COVID-19 virus can survive for up to 72 hours on plastic and stainless steel, less than 4 hours on copper and less than 24 hours on cardboard. Common household disinfectants will kill the virus can be used to clean surfaces."
         }
       ],
       "defaultResponsePlatforms": {},

@@ -240,10 +240,10 @@ const CARD_CM_H = [{
   'title': `${PRONOUN1_UP} should stay home and call ${PRONOUN2} provider if ${PRONOUN2} symptoms get worse`,
   'type': 'accordion',
   'text':
-      `In the meantime, ${PRONOUN1} should follow these steps:<ul><li>Drink plenty of water and other clear liquids to prevent dehydration</li><li>Treat fever and cough with non-prescription medicines, and follow the directions on the label</li></ul><br><br>${CDC_SOURCE}`
+      `In the meantime, ${PRONOUN1} should follow these steps:<ul><li>Drink plenty of water and other clear liquids to prevent dehydration</li><li>Take over-the-counter medicines, such as acetaminophen, to help feel better</li></ul><br><br>${CDC_SOURCE}`
 }];
 
-const CARD_CM_H_TELEPHONY = `${PRONOUN1_UP} should stay home and call ${PRONOUN2} provider if ${PRONOUN2} symptoms get worse. In the meantime, ${PRONOUN1} should drink plenty of water and other clear liquids to prevent dehydration and treat fever and cough with non-prescription medicines, and follow the directions on the label. Source: CDC.`;
+const CARD_CM_H_TELEPHONY = `${PRONOUN1_UP} should stay home and call ${PRONOUN2} provider if ${PRONOUN2} symptoms get worse. In the meantime, ${PRONOUN1} should drink plenty of water and other clear liquids to prevent dehydration and take over-the-counter medicines, such as acetaminophen, to help feel better. Source: CDC.`;
 
 const CARD_CM_I = [{
   'title': `Call 911 or go to the emergency department now`,
@@ -351,7 +351,7 @@ const CARD_AC11 = [{
       `Symptoms include:<ul><li>Fever, with a temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li><li>Chills or repeated shaking with chills</li><li>Muscle Pain</li><li>Headache</li><li>Sore throat</li><li>New loss of taste or smell</li></ul>Get medical attention right away if any of these emergency warning signs develop:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or new difficulty waking up</li><li>Bluish lips or face</li></ul>${CDC_SYMPTOMS_SOURCE}`
 }];
 
-const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include Fever, with a temperature above 100.4 °F or 38 °C, cough, shortness of breath, chills or repeated shaking with chills, muscle pain, headache, sore throat, and new loss of taste or smell. Get medical attention right away if any of these emergency warning signs develop: difficulty breathing, constant chest pain or pressure, or new confusion or new difficulty waking up, bluish lips or face. COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms. Source: Symptoms, CDC.`;
+const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include fever, with a temperature above 100.4 °F or 38 °C, cough, shortness of breath, chills or repeated shaking with chills, muscle pain, headache, sore throat, and new loss of taste or smell. Get medical attention right away if any of these emergency warning signs develop: difficulty breathing, constant chest pain or pressure, new confusion or new difficulty waking up, bluish lips or face. COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms. Source: Symptoms, CDC.`;
 
 const CARD_HF1 = [{
   'title': `Make a plan if ${PRONOUN1} have diabetes`,
@@ -375,10 +375,10 @@ const CARD_HF3 = [{
   'title': `Make a plan if ${PRONOUN1} have lung disease`,
   'type': 'accordion',
   'text':
-      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Keep a distance of least 6 feet from others</li><li> Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li><li>Know and follow ${PRONOUN2} Asthma Action Plan as needed</li></ul>${LUNG_SOURCE}`
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Keep a distance of least 6 feet from others</li><li>Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li><li>Know and follow ${PRONOUN2} Asthma Action Plan as needed</li><li>Many individuals use a nebulizer to take inhaled medications at home. If ${PRONOUN1} have suspected or diagnosed COVID-19, speak with ${PRONOUN2} healthcare provider about additional precautions to take when using ${PRONOUN2} nebulizer.</li></ul>${LUNG_SOURCE}`
 }];
 
-const CARD_HF3_TELEPHONY = `Make a plan if ${PRONOUN1} have lung disease. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Keep a distance of least 6 feet from others. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Know and follow ${PRONOUN2} Asthma Action Plan as needed. Source: COVID-19 Resources, American Lung Association.`;
+const CARD_HF3_TELEPHONY = `Make a plan if ${PRONOUN1} have lung disease. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Keep a distance of least 6 feet from others. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Know and follow ${PRONOUN2} Asthma Action Plan as needed. Many individuals use a nebulizer to take inhaled medications at home. If ${PRONOUN1} have suspected or diagnosed COVID-19, speak with ${PRONOUN2} healthcare provider about additional precautions to take when using ${PRONOUN2} nebulizer. Source: COVID-19 Resources, American Lung Association.`;
 
 const CARD_HF4 = [{
   'title': `Make a plan if ${PRONOUN1} have higher risk factors`,
@@ -733,7 +733,8 @@ function numberWithCommas(x) {
  */
 function addLabelToContext(agent, label) {
   var label_ctx = agent.context.get('labels');
-  if (!label_ctx || !label_ctx.parameters || !label_ctx.parameters.labels) {
+  if (!label_ctx || !label_ctx.parameters ||
+      !label_ctx.parameters.labels || label_ctx.lifespan === 0) {
     agent.context.set(
         {name: 'labels', lifespan: 100, parameters: {labels: [label]}});
   } else {
@@ -754,10 +755,22 @@ function addDummyPayload(agent) {
    agent.add('');
 }
 
+function deleteAllContexts(agent) {
+  const context_names = Object.keys(agent.context.contexts);
+  console.log(context_names);
+  context_names.forEach(name => agent.context.delete(name));
+  console.log(agent.context.contexts);
+}
+
 /**
  * Sets pronoun variables in a long lived context, then queues question q2-ill
  */
 function handlePronounResponse(agent) {
+  // We delete all contexts here so that any question-contexts leftover
+  // from restarting the questionnaire don't cause us to skip questions
+  // when invoking the 'trigger-question' event.
+  deleteAllContexts(agent);
+
   let pronoun1;
   let pronoun2;
   let pronoun1_up;
@@ -777,9 +790,10 @@ function handlePronounResponse(agent) {
   else {
     throw 'Could not match: ${agent.intent} to a pronoun response!';
   }
-  const pronoun_params = {'pronoun1': pronoun1,
-                   'pronoun2': pronoun2,
-                   'pronoun1_up': pronoun1_up};
+  const pronoun_params = {
+    'pronoun1': pronoun1,
+    'pronoun2': pronoun2,
+    'pronoun1_up': pronoun1_up};
   agent.context.set(PRONOUNS, 100, pronoun_params);
   agent.context.set(Q2, 5);
   agent.context.delete(Q1);
@@ -931,10 +945,6 @@ function actionMapper(agent) {
   }
 
   let cards = [];
-  /* Check if a special label is present, signifying an early exit from the
-   * questionairre. Only one speical label should ever be present. Only cards
-   * for that label will display.
-   */
   const care_message_card = getCareMessageCard(labels);
   if (care_message_card !== NO_CARE_MESSAGE) {
     cards.push(care_message_card);

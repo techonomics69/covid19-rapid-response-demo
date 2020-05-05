@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "cd4a0c4a-ec09-4dc3-93dd-d5bcefb436e6",
+          "id": "3e0a577d-e5ce-4998-bd88-b586c876bfcd",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -28,13 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eThere is no specific antiviral treatment recommended for \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e. People with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e should receive supportive care to help relieve symptoms.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eThere is no specific antiviral treatment recommended for COVID-19. People, particularly those with serious illness, may need to be hospitalized so that they can receive life-saving treatment for complications. Most patients recover thanks to such care.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "There is no specific antiviral treatment recommended for COVID-19. People with COVID-19 should receive supportive care to help relieve symptoms."
+          "speech": "There is no specific antiviral treatment recommended for COVID-19. People, particularly those with serious illness, may need to be hospitalized so that they can receive life-saving treatment for complications. Most patients recover thanks to such care."
         }
       ],
       "defaultResponsePlatforms": {},

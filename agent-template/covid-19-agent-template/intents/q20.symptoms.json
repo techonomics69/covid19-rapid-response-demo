@@ -18,7 +18,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have any of the following symptoms. Runny or stuffy nose. Sore throat. Muscle aches, body aches, or headaches. Fatigue or malaise. Nausea, vomiting or diarrhea.\u003cspeak\u003e"
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have any of the following symptoms. Runny or stuffy nose. Sore throat. Muscle aches, body aches, or headaches. Fatigue or malaise. Nausea, vomiting or diarrhea. Chills or repeated shaking with chills. New loss of taste or smell.\u003cspeak\u003e"
         },
         {
           "type": 4,
@@ -28,15 +28,17 @@
             "richContent": [
               [
                 {
-                  "title": "Do #pronouns.pronoun1 have any of the following symptoms:",
                   "type": "description",
                   "text": [
                     "Runny or stuffy nose",
                     "Sore throat",
                     "Muscle aches, body aches, or headaches",
                     "Fatigue or malaise",
-                    "Nausea, vomiting or diarrhea"
-                  ]
+                    "Nausea, vomiting or diarrhea",
+                    "Chills or repeated shaking with chills",
+                    "New loss of taste or smell"
+                  ],
+                  "title": "Do #pronouns.pronoun1 have any of the following symptoms:"
                 }
               ],
               [
@@ -49,9 +51,9 @@
                       "text": "Yes"
                     },
                     {
-                      "image": {},
                       "text": "No",
-                      "link": ""
+                      "link": "",
+                      "image": {}
                     }
                   ]
                 }
