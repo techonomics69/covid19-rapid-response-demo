@@ -181,9 +181,33 @@ export class ChatService {
         botMessage.sentBy = "list";
       }
 
+    } else if (res.messages.length > 0){
+      let text:string = "";
+
+
+      res.messages_json.forEach(function (value) {
+        let item = JSON.parse(value);
+        let content = item.text.text[0];
+
+        if (content.includes("http")){
+          content = `<a href="${content}">${content}<span class="material-icons">open_in_new</span></a>`;
+        }
+
+        text += content + "<br />";
+        console.log(item);
+  
+      });
+      botMessage.content = text;
+
+      
     } else {
       botMessage.content = res.text;
     }
+
+
+
+
+
     if (botMessage.content.length == 0) {
       botMessage.display = false;
 
