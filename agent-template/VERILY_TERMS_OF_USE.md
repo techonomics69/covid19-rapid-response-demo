@@ -37,6 +37,8 @@ released on April 11, 2020 based on information locked on April 7, 2020.
 released on April 17, 2020 based on information locked on April 14, 2020.
 * Version 4.0.0 is available at commit d99e6e28e543dd557846dd89a40b5893a6102523,
 released on April 28, 2020 based on information locked on April 20, 2020.
+* Version 4.1.0 is available at commit da7989b37bd38703248f2dd6f815402805d8201b,
+released on May 7, 2020 based on information locked on April 27, 2020.
 
 
 
