@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "bd5d83ef-129a-492b-9220-bab07c19f3a7",
+          "id": "01ccca5d-b3b7-4080-aa97-73b10c8c5ed0",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -28,13 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eCDC has not received any reports of pets becoming sick with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e in the United States, though it is aware of a very small number of pets, including dogs and cats, reported to be infected with the virus outside of the U.S. To date, there is no evidence that pets can spread the virus to people though it is still recommended that people sick with \u003csub alias\u003d\"covid 19\"\u003eCOVID-19\u003c/sub\u003e limit contact with animals until more information is known about the new coronavirus. When possible, have another member of your household care for your animals while you are sick.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eCDC has two confirmed cases of pet cats in the United States becoming sick with mild resperatory illness caused by COVID-19. SARS-CoV-2 infections have been reported in very few animals worldwide, mostly in those that had close contact with a person with COVID-19.To date, there is no evidence that pets can spread the virus to people. Until more information is known about the new coronavirus it is recommended that pets should not interact with people or animals outside the household, and people sick with COVID-19 should limit contact with animals. When possible, have another member of your household care for your animals while you are sick.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "CDC has not received any reports of pets becoming sick with COVID-19 in the United States, though it is aware of a very small number of pets, including dogs and cats, reported to be infected with the virus outside of the U.S. To date, there is no evidence that pets can spread the virus to people though it is still recommended that people sick with COVID-19 limit contact with animals until more information is known about the new coronavirus. When possible, have another member of your household care for your animals while you are sick."
+          "speech": "CDC has two confirmed cases of pet cats in the United States becoming sick with mild resperatory illness caused by COVID-19. SARS-CoV-2 infections have been reported in very few animals worldwide, mostly in those that had close contact with a person with COVID-19.To date, there is no evidence that pets can spread the virus to people. Until more information is known about the new coronavirus it is recommended that pets should not interact with people or animals outside the household, and people sick with COVID-19 should limit contact with animals. When possible, have another member of your household care for your animals while you are sick."
         }
       ],
       "defaultResponsePlatforms": {},
