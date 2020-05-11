@@ -348,10 +348,10 @@ const CARD_AC11 = [{
   'title': `Know the symptoms`,
   'type': 'accordion',
   'text':
-      `Symptoms include:<ul><li>Fever, with a temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath</li><li>Chills or repeated shaking with chills</li><li>Muscle Pain</li><li>Headache</li><li>Sore throat</li><li>New loss of taste or smell</li></ul>Get medical attention right away if any of these emergency warning signs develop:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or new difficulty waking up</li><li>Bluish lips or face</li></ul>${CDC_SYMPTOMS_SOURCE}`
+      `Symptoms include:<ul><li>Fever, with a temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath or difficulty breathing</li><li>Chills</li><li>Muscle Pain</li><li>Sore throat</li><li>New loss of taste or smell</li></ul>Get medical attention right away if any of these emergency warning signs develop:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or new difficulty waking up</li><li>Bluish lips or face</li></ul>This list is not inclusive. Other less common symptoms have been reported, including gastrointestinal symptoms like nausea, vomiting, or diarrhea. Contact a medical provider for any severe or concerning symptoms.${CDC_SYMPTOMS_SOURCE}`
 }];
 
-const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include fever, with a temperature above 100.4 °F or 38 °C, cough, shortness of breath, chills or repeated shaking with chills, muscle pain, headache, sore throat, and new loss of taste or smell. Get medical attention right away if any of these emergency warning signs develop: difficulty breathing, constant chest pain or pressure, new confusion or new difficulty waking up, bluish lips or face. COVID-19 can have other symptoms. Contact a medical provider for any severe or concerning symptoms. Source: Symptoms, CDC.`;
+const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include fever, with a temperature above 100.4 °F or 38 °C, cough, shortness of breath or difficulty breathing, chills, muscle pain, sore throat, and new loss of taste or smell. This list is not all inclusive. Other less common symptoms have been reported, including gastrointestinal symptoms like nausea, vomiting, or diarrhea. Get medical attention right away if any of these emergency warning signs develop: difficulty breathing, constant chest pain or pressure, new confusion or new difficulty waking up, bluish lips or face. Source: Symptoms, CDC.`;
 
 const CARD_HF1 = [{
   'title': `Make a plan if ${PRONOUN1} have diabetes`,
@@ -734,6 +734,8 @@ function numberWithCommas(x) {
 function addLabelToContext(agent, label) {
   var label_ctx = agent.context.get('labels');
   if (!label_ctx || !label_ctx.parameters ||
+      // Check for lifespan === 0 because we don't want to accidentally
+      // refresh the lifespan of labels we're trying to delete.
       !label_ctx.parameters.labels || label_ctx.lifespan === 0) {
     agent.context.set(
         {name: 'labels', lifespan: 100, parameters: {labels: [label]}});
@@ -755,11 +757,15 @@ function addDummyPayload(agent) {
    agent.add('');
 }
 
+/**
+ * Delete all currently existing contexts.
+ * Calling "delete" on a context sets its lifespan to 0, so the deleted
+ * context will remain on the agent object until the current webhook request
+ * returns.
+ */
 function deleteAllContexts(agent) {
   const context_names = Object.keys(agent.context.contexts);
-  console.log(context_names);
   context_names.forEach(name => agent.context.delete(name));
-  console.log(agent.context.contexts);
 }
 
 /**
