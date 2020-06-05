@@ -40,9 +40,13 @@ const Q20 = 'q20-symptoms';
 const Q21 = 'q21-lung';
 const Q22 = 'q22-cardio';
 const Q23 = 'q23-dm';
-const Q24 = 'q24-risks';
-const Q25 = 'q25-ltc';
-const Q26 = 'q26-hcp';
+const Q24 = 'q24-immune';
+const Q25 = 'q25-kidney';
+const Q26 = 'q26-liver';
+const Q27 = 'q27-hemoglobin';
+const Q28 = 'q28-obesity';
+const Q29 = 'q29-ltc';
+const Q30 = 'q30-hcp';
 const END = 'end';
 
 // Special Intents
@@ -56,6 +60,7 @@ const EXTREME = 'EXTREME';
 const SEVERE = 'SEVERE';
 const SEVERE_EXTREME = 'SEVERE_EXTREME';
 const HEALTHRISK = 'HEALTHRISK';
+const AGE = 'SIXTYFIVEPLUS';
 const EXPOSURE = 'EXPOSURE';
 const SYMPTOMATIC = 'SYMPTOMATIC';
 const ASYMPTOMATIC = 'ASYMPTOMATIC';
@@ -65,6 +70,11 @@ const SHORT_OF_BREATH = 'SHORT_OF_BREATH';
 const LUNG = 'LUNG';
 const CARDIO = 'CARDIO';
 const DM = 'DM';
+const WEAKIMMUNE = 'WEAKIMMUNE';
+const KIDNEY = 'KIDNEY';
+const LIVER = 'LIVER';
+const HEMOGLOBIN = 'HEMOGLOBIN';
+const OBESITY = 'OBESITY';
 const LTC = 'LTC';
 const HCP = 'HCP';
 // Pronoun Labels
@@ -95,14 +105,18 @@ const QUESTION_FLOW_MAP = {
   [Q23]: {[YES_INTENT]: Q24, [NO_INTENT]: Q24},
   [Q24]: {[YES_INTENT]: Q25, [NO_INTENT]: Q25},
   [Q25]: {[YES_INTENT]: Q26, [NO_INTENT]: Q26},
-  [Q26]: {[YES_INTENT]: END, [NO_INTENT]: END}
+  [Q26]: {[YES_INTENT]: Q27, [NO_INTENT]: Q27},
+  [Q27]: {[YES_INTENT]: Q28, [NO_INTENT]: Q28},
+  [Q28]: {[YES_INTENT]: Q29, [NO_INTENT]: Q29},
+  [Q29]: {[YES_INTENT]: Q30, [NO_INTENT]: Q30},
+  [Q30]: {[YES_INTENT]: END, [NO_INTENT]: END}
 };
 
 const QUESTION_ANSWER_LABEL_MAP = {
   [Q2]: {[YES_INTENT]: [], [NO_INTENT]: [NOT_ILL]},
   [Q3]: {[YES_INTENT]: [], [NO_INTENT]: []},
   [Q4]: {[YES_INTENT]: [], [NO_INTENT]: []},
-  [Q5]: {[YES_INTENT]: [HEALTHRISK], [NO_INTENT]: []},
+  [Q5]: {[YES_INTENT]: [HEALTHRISK, AGE], [NO_INTENT]: []},
   [Q7]: {[YES_INTENT]: [EXTREME], [NO_INTENT]: [INFANT]},
   [Q8]: {[YES_INTENT]: [SEVERE], [NO_INTENT]: []},
   [Q9]: {[YES_INTENT]: [SEVERE], [NO_INTENT]: []},
@@ -120,9 +134,13 @@ const QUESTION_ANSWER_LABEL_MAP = {
   [Q21]: {[YES_INTENT]: [LUNG, HEALTHRISK], [NO_INTENT]: []},
   [Q22]: {[YES_INTENT]: [CARDIO, HEALTHRISK], [NO_INTENT]: []},
   [Q23]: {[YES_INTENT]: [DM, HEALTHRISK], [NO_INTENT]: []},
-  [Q24]: {[YES_INTENT]: [HEALTHRISK], [NO_INTENT]: []},
-  [Q25]: {[YES_INTENT]: [LTC], [NO_INTENT]: []},
-  [Q26]: {[YES_INTENT]: [HCP], [NO_INTENT]: []},
+  [Q24]: {[YES_INTENT]: [HEALTHRISK, WEAKIMMUNE], [NO_INTENT]: []},
+  [Q25]: {[YES_INTENT]: [HEALTHRISK, KIDNEY], [NO_INTENT]: []},
+  [Q26]: {[YES_INTENT]: [HEALTHRISK, LIVER], [NO_INTENT]: []},
+  [Q27]: {[YES_INTENT]: [HEALTHRISK, HEMOGLOBIN], [NO_INTENT]: []},
+  [Q28]: {[YES_INTENT]: [HEALTHRISK, OBESITY], [NO_INTENT]: []},
+  [Q29]: {[YES_INTENT]: [LTC], [NO_INTENT]: []},
+  [Q30]: {[YES_INTENT]: [HCP], [NO_INTENT]: []},
 };
 
 /**
@@ -142,10 +160,8 @@ function formatSourceHTML(text, url) {
 const CDC_SOURCE = `${formatSourceHTML("CDC", "https://www.cdc.gov/coronavirus/2019-ncov/index.html")}`;
 const CDC_HOUSEHOLD_SOURCE = `${formatSourceHTML("Household Checklist, CDC", "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/checklist-household-ready.html")}`;
 const CDC_SYMPTOMS_SOURCE = `${formatSourceHTML("Symptoms, CDC", "https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html")}`;
-const DIABETES_SOURCE = `${formatSourceHTML("COVID-19 Resources, American Diabetes Association", "https://www.diabetes.org/coronavirus-covid-19")}`;
-const HEART_SOURCE = `${formatSourceHTML("COVID-19 Resources, American Heart Association", "https://www.heart.org/en/about-us/coronavirus-covid-19-resources")}`;
-const LUNG_SOURCE = `${formatSourceHTML("COVID-19 Resources, American Lung Association", "https://www.lung.org/about-us/media/top-stories/update-covid-19.html")}`;
-const CDC_AGE_SOURCE = `${formatSourceHTML("Older Adults, CDC", "https://www.cdc.gov/coronavirus/2019-ncov/specific-groups/high-risk-complications/older-adults.html")}`;
+const CDC_RISK_SOURCE = `${formatSourceHTML("CDC, People Who Are at Higher Risk for Severe Illness", "https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/people-at-higher-risk.html")}`;
+const CDC_MENTAL_HEALTH_SOURCE = `${formatSourceHTML("CDC, Mental Health and Coping During COVID-19", "https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/managing-stress-anxiety.html")}`;
 
 // Links
 const CDC_MAIN = `${formatHyperlink("COVID-19 Resources For the Public (CDC)", "https://www.cdc.gov/coronavirus/2019-ncov/index.html")}`;
@@ -166,7 +182,7 @@ const TWITTER_CDC_EMERGENCY = `${formatHyperlink("@CDCemergency", "https://twitt
 const TWITTER_WHO = `${formatHyperlink("@WHO", "https://twitter.com/WHO")}`;
 const YOUTUBE_CDC_PREVENT = `${formatHyperlink("Steps to Prevent COVID-19 (CDC)", "https://www.youtube.com/watch?v=9Ay4u7OYOhA")}`;
 const YOUTUBE_CDC_WASH = `${formatHyperlink("Hand-Washing (CDC)", "https://www.youtube.com/watch?v=d914EnpU4Fo")}`;
-const YOUTUBE_CDC_MANAGE = `${formatHyperlink("Managing COVID-19 At Home (CDC))", "https://www.youtube.com/watch?v=qPoptbtBjkg")}`;
+const YOUTUBE_CDC_MANAGE = `${formatHyperlink("Managing COVID-19 At Home (CDC)", "https://www.youtube.com/watch?v=qPoptbtBjkg")}`;
 
 // Placeholder text for user pronoun selections.
 const PRONOUN1 = '-pronoun1-';
@@ -348,46 +364,109 @@ const CARD_AC11 = [{
   'title': `Know the symptoms`,
   'type': 'accordion',
   'text':
-      `Symptoms include:<ul><li>Fever, with a temperature above 100.4 °F or 38 °C</li><li>Cough</li><li>Shortness of breath or difficulty breathing</li><li>Chills</li><li>Muscle Pain</li><li>Sore throat</li><li>New loss of taste or smell</li></ul>Get medical attention right away if any of these emergency warning signs develop:<ul><li>Difficulty breathing</li><li>Constant chest pain or pressure</li><li>New confusion or new difficulty waking up</li><li>Bluish lips or face</li></ul>This list is not inclusive. Other less common symptoms have been reported, including gastrointestinal symptoms like nausea, vomiting, or diarrhea. Contact a medical provider for any severe or concerning symptoms.${CDC_SYMPTOMS_SOURCE}`
+      `Symptoms include:<ul><li>Fever or chills</li><li>Cough</li><li>Shortness of breath or difficulty breathing</li><li>Fatigue</li><li>Muscle or body aches</li><li>Headache</li><li>New loss of taste or smell</li><li>Sore throat</li><li>Congestion or runny nose</li><li>Nausea or vomiting</li><li>Diarrhea</li></ul>This list does not include all possible symptoms. Seek emergency medical care immediately if any of these emergency warning signs for COVID-19 develop:<ul><li>Difficulty breathing</li><li>Persistent pain or pressure in the chest</li><li>New confusion</li><li>Inability to wake or stay awake</li><li>Bluish lips or face</li></ul>This list is not all possible symptoms. Please call a medical provider for any other symptoms that are severe or concerning.<br><br>${CDC_SYMPTOMS_SOURCE}`
 }];
 
-const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include fever, with a temperature above 100.4 °F or 38 °C, cough, shortness of breath or difficulty breathing, chills, muscle pain, sore throat, and new loss of taste or smell. This list is not all inclusive. Other less common symptoms have been reported, including gastrointestinal symptoms like nausea, vomiting, or diarrhea. Get medical attention right away if any of these emergency warning signs develop: difficulty breathing, constant chest pain or pressure, new confusion or new difficulty waking up, bluish lips or face. Source: Symptoms, CDC.`;
+const CARD_AC11_TELEPHONY = `Know the symptoms of COVID-19. Symptoms include fever or chills, cough, shortness of breath or difficulty breathing, fatigue, muscle or body aches, headache, new loss of taste or smell, sore throat, congestion or runny nose, nausea or vomiting, diarrhea. This list does not include all possible symptoms.  Seek emergency medical care immediately if any of these emergency warning signs for COVID-19 develop: trouble breathing, persistent pain or pressure in the chest, new confusion, inability to wake or stay awake, bluish lips or face. This list is not all possible symptoms. Please call a medical provider for any other symptoms that are severe or concerning. Source: Symptoms, CDC.`;
 
 const CARD_HF1 = [{
   'title': `Make a plan if ${PRONOUN1} have diabetes`,
   'type': 'accordion',
   'text':
-      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills</li><li>Have enough household items and groceries on hand in case an extended stay at home is needed</li><li>Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li><li>Meet with ${PRONOUN2} doctor through telehealth options, if available</li></ul>${DIABETES_SOURCE}`
+      `Diabetes includes type 1, type 2, or gestational. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Continue taking ${PRONOUN2} diabetes pills and insulin as usual</li><li>Test ${PRONOUN2} blood sugar every four hours and keep track of the results</li><li>Make sure that ${PRONOUN1} have at least a two-week supply of ${PRONOUN2} diabetes pills and insulin</li><li>Follow the CDC "sick day guidelines" for people with diabetes</li></ul>${CDC_RISK_SOURCE}`
 }];
 
-const CARD_HF1_TELEPHONY = `Make a plan if ${PRONOUN1} have diabetes. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills. Have enough household items and groceries on hand in case an extended stay at home is needed. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Meet with ${PRONOUN2} doctor through telehealth options, if available. Source: COVID-19 Resources, American Diabetes Association.`;
+const CARD_HF1_TELEPHONY = `Make a plan if ${PRONOUN1} have diabetes. Diabetes includes type 1, type 2, or gestational. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Continue taking ${PRONOUN2} diabetes pills and insulin as usual. Test ${PRONOUN2} blood sugar every four hours and keep track of the results. Make sure that ${PRONOUN1} have at least a two-week supply of ${PRONOUN2} diabetes pills and insulin. Follow the CDC "sick day guidelines" for people with diabetes. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
 
 const CARD_HF2 = [{
-  'title': `Make a plan if ${PRONOUN1} have heart disease`,
+  'title': `Make a plan if ${PRONOUN1} have serious heart conditions`,
   'type': 'accordion',
   'text':
-      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills</li><li>Have enough household items and groceries on hand in case an extended stay at home is needed</li><li>Recognize and manage stress</li><li>Stay current with vaccinations, including pneumonia and flu shots</li></ul>${HEART_SOURCE}`
+      `Serious heart conditions include heart failure, coronary artery disease, congenital heart disease, cardiomyopathies, and pulmonary hypertension. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Take ${PRONOUN2} medication exactly as prescribed. Continue angiotensin converting enzyme inhibitors (ACE-I) or angiotensin-II receptor blockers (ARB) as prescribed by ${PRONOUN2} healthcare provider for indications such as heart failure or high blood pressure. This is recommended by current clinical guidelines</li><li>Make sure that ${PRONOUN1} have at least a two-week supply of ${PRONOUN2} heart disease medications (such as those to treat high cholesterol and high blood pressure)</li><li>People with hypertension should continue to manage and control their blood pressure and take their medication as directed</li></ul>${CDC_RISK_SOURCE}`
 }];
 
-const CARD_HF2_TELEPHONY = `Make a plan if ${PRONOUN1} have heart disease. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills. Have enough household items and groceries on hand in case an extended stay at home is needed. Recognize and manage stress. Stay current with vaccinations, including pneumonia and flu shots. Source: COVID-19 Resources, American Heart Association.`;
+const CARD_HF2_TELEPHONY = `Make a plan if ${PRONOUN1} have serious heart conditions, including heart failure, coronary artery disease, congenital heart disease, cardiomyopathies, and pulmonary hypertension. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Take ${PRONOUN2} medication exactly as prescribed. Continue angiotensin converting enzyme inhibitors (ACE-I) or angiotensin-II receptor blockers (ARB) as prescribed by your healthcare provider for indications such as heart failure or high blood pressure. This is recommended by current clinical guidelines. Make sure that you have at least a two-week supply of your heart disease medications (such as those to treat high cholesterol and high blood pressure). People with hypertension should continue to manage and control their blood pressure and take their medication as directed. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
 
 const CARD_HF3 = [{
-  'title': `Make a plan if ${PRONOUN1} have lung disease`,
+  'title': `Make a plan if ${PRONOUN1} have chronic lung disease or moderate to severe asthma`,
   'type': 'accordion',
   'text':
-      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Keep a distance of least 6 feet from others</li><li>Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li><li>Know and follow ${PRONOUN2} Asthma Action Plan as needed</li><li>Many individuals use a nebulizer to take inhaled medications at home. If ${PRONOUN1} have suspected or diagnosed COVID-19, speak with ${PRONOUN2} healthcare provider about additional precautions to take when using ${PRONOUN2} nebulizer.</li></ul>${LUNG_SOURCE}`
+      `If ${PRONOUN1} have chronic lung disease, ${PRONOUN1} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Keep taking ${PRONOUN2} current medications, including those with steroids in them ("steroids" is another word for corticosteroids)</li><li>Avoid triggers that make ${PRONOUN2} symptoms worse</li></ul>If ${PRONOUN1} have moderate to severe asthma, ${PRONOUN1} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Follow ${PRONOUN2} asthma action plan</li><li>Keep ${PRONOUN2} asthma under control</li><li>Continue ${PRONOUN2} current medications, including any inhalers with steroids in them ("steroids" is another word for corticosteroids)</li><li>Know how to use ${PRONOUN2} inhaler</li><li>Avoid ${PRONOUN2} asthma triggers</li><li>If possible, have another member of ${PRONOUN2} household who doesn't have asthma clean and disinfect ${PRONOUN2} house for ${PRONOUN1}. When using cleaning and disinfecting products:<ul><li>Make sure that people with asthma are not in the room</li><li>Minimize use of disinfectants that can cause an asthma attack</li><li>Open windows or doors and use a fan that blows air outdoors</li><li>Always follow the instructions on the product label</li><li>Spray or pour spray products onto a cleaning cloth or paper towel instead of spraying the product directly onto the cleaning surface (if the product label allows)</li></ul></li></ul>${CDC_RISK_SOURCE}`
 }];
 
-const CARD_HF3_TELEPHONY = `Make a plan if ${PRONOUN1} have lung disease. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Keep a distance of least 6 feet from others. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Know and follow ${PRONOUN2} Asthma Action Plan as needed. Many individuals use a nebulizer to take inhaled medications at home. If ${PRONOUN1} have suspected or diagnosed COVID-19, speak with ${PRONOUN2} healthcare provider about additional precautions to take when using ${PRONOUN2} nebulizer. Source: COVID-19 Resources, American Lung Association.`;
+const CARD_HF3_TELEPHONY = `Make a plan if ${PRONOUN1} have lung disease or moderate to severe asthma. If ${PRONOUN1} have chronic lung disease, ${PRONOUN1} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Keep taking ${PRONOUN2} current medications, including those with steroids in them ("steroids" is another word for corticosteroids). Avoid triggers that make ${PRONOUN2} symptoms worse. If ${PRONOUN1} have moderate to severe asthma, ${PRONOUN1} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Follow ${PRONOUN2} asthma action plan. Keep ${PRONOUN2} asthma under control. Continue ${PRONOUN2} current medications, including any inhalers with steroids in them ("steroids" is another word for corticosteroids). Know how to use ${PRONOUN2} inhaler. Avoid ${PRONOUN2} asthma triggers. If possible, have another member of ${PRONOUN2} household who doesn't have asthma clean and disinfect ${PRONOUN2} house for ${PRONOUN1}. When using cleaning and disinfecting products: Make sure that people with asthma are not in the room. Minimize use of disinfectants that can cause an asthma attack. Open windows or doors and use a fan that blows air outdoors. Always follow the instructions on the product label. Spray or pour spray products onto a cleaning cloth or paper towel instead of spraying the product directly onto the cleaning surface (if the product label allows). Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
 
 const CARD_HF4 = [{
   'title': `Make a plan if ${PRONOUN1} have higher risk factors`,
   'type': 'accordion',
   'text':
-      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19 due to ${PRONOUN2} age or health history. ${PRONOUN1_UP} should take these steps:<ul><li>Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills</li><li>Have enough household items and groceries on hand in case an extended stay at home is needed</li><li>Keep a distance of least 6 feet from others</li><li>Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li></ul>${CDC_AGE_SOURCE}`,
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19 due to ${PRONOUN2} age or health history. ${PRONOUN1_UP} should take these steps:<ul><li>Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills</li><li>Have enough household items and groceries on hand in case an extended stay at home is needed</li><li>Keep a distance of least 6 feet from others</li><li>Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath</li></ul>${CDC_RISK_SOURCE}`,
 }];
 
-const CARD_HF4_TELEPHONY = `Make a plan if ${PRONOUN1} have higher risk factors. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19 due to ${PRONOUN2} age or health history. ${PRONOUN1_UP} should take these steps: Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills. Have enough household items and groceries on hand in case an extended stay at home is needed. Keep a distance of least 6 feet from others. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Source: CDC.`;
+const CARD_HF4_TELEPHONY = `Make a plan if ${PRONOUN1} have higher risk factors. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19 due to ${PRONOUN2} age or health history. ${PRONOUN1_UP} should take these steps: Gather phone numbers for ${PRONOUN2} doctor and pharmacies, lists of medications, testing supplies, and prescription refills. Have enough household items and groceries on hand in case an extended stay at home is needed. Keep a distance of least 6 feet from others. Call ${PRONOUN2} doctor if ${PRONOUN1} develop new symptoms such as fever, cough, or shortness of breath. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF5 = [{
+  'title': `Make a plan if ${PRONOUN1} have chronic kidney disease being treated with dialysis`,
+  'type': 'accordion',
+  'text':
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>If ${PRONOUN1} are on dialysis, ${PRONOUN1} should NOT miss ${PRONOUN2} treatments</li><li>Contact ${PRONOUN2} dialysis clinic and ${PRONOUN2} healthcare provider if ${PRONOUN1} feel sick or have concerns</li><li>Plan to have enough food on hand to follow the "3-Day Emergency Diet Plan", published by the Kidney Center Emergency Response (KCER) in case ${PRONOUN1} are unable to maintain ${PRONOUN2} normal treatment schedule</li></ul>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF5_TELEPHONY = `Make a plan if ${PRONOUN1} have chronic kidney disease being treated with dialysis. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: If ${PRONOUN1} are on dialysis, ${PRONOUN1} should NOT miss ${PRONOUN2} treatments. Contact ${PRONOUN2} dialysis clinic and ${PRONOUN2} healthcare provider if ${PRONOUN1} feel sick or have concerns. Plan to have enough food on hand to follow the "3-Day Emergency Diet Plan", published by the Kidney Center Emergency Response (KCER) in case ${PRONOUN1} are unable to maintain ${PRONOUN2} normal treatment schedule. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF6 = [{
+  'title': `Make a plan if ${PRONOUN1} have severe obesity (body mass index [BMI] of 40 or higher)`,
+  'type': 'accordion',
+  'text':
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should:<br>Take ${PRONOUN2} medications for any underlying health conditions exactly as prescribed.<br><br>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF6_TELEPHONY = `Make a plan if ${PRONOUN1} have severe obesity (body mass index [BMI] of 40 or higher). ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should: Take ${PRONOUN2} medications for any underlying health conditions exactly as prescribed. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF7 = [{
+  'title': `Make a plan if ${PRONOUN1} have a weakened immune system`,
+  'type': 'accordion',
+  'text':
+      `Many conditions and treatments can cause a person to have a weakened immune system (immunocompromised), including cancer treatment, bone marrow or organ transplantation, immune deficiencies, HIV with a low CD4 cell count or not on HIV treatment, and prolonged use of corticosteroids and other immune weakening medications. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Continue any recommended medications or treatments and follow the advice of ${PRONOUN2} healthcare provider</li><li>Call ${PRONOUN2} healthcare provider if ${PRONOUN1} have concerns about ${PRONOUN2} condition or feel sick</li><li>Review the CDC website for additional information related to specific conditions and risk factors</li></ul>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF7_TELEPHONY = `Make a plan if ${PRONOUN1} have a weakened immune system. Many conditions and treatments can cause a person to have a weakened immune system (immunocompromised), including cancer treatment, bone marrow or organ transplantation, immune deficiencies, HIV with a low CD4 cell count or not on HIV treatment, and prolonged use of corticosteroids and other immune weakening medications. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Continue any recommended medications or treatments and follow the advice of ${PRONOUN2} healthcare provider. Call ${PRONOUN2} healthcare provider if ${PRONOUN1} have concerns about ${PRONOUN2} condition or feel sick. Review the CDC website for additional information related to specific conditions and risk factors. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF8 = [{
+  'title': `Make a plan if ${PRONOUN1} have chronic liver disease`,
+  'type': 'accordion',
+  'text':
+      `Chronic liver disease includes cirrhosis. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should:<br>Take ${PRONOUN2} medications exactly as prescribed.<br><br>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF8_TELEPHONY = `Make a plan if ${PRONOUN1} have chronic liver disease, including cirrhosis. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should: Take ${PRONOUN2} medications exactly as prescribed. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF9 = [{
+  'title': `Make a plan if ${PRONOUN1} have a hemoglobin disorder`,
+  'type': 'accordion',
+  'text':
+      `Hemoglobin disorders include sickle cell disease (SCD) and thalassemia. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Ask ${PRONOUN2} healthcare provider about telemedicine or remote healthcare visits, and know when to go to the emergency department</li><li>Work with ${PRONOUN2} healthcare provider to manage medications and therapies for ${PRONOUN2} disorder (including hydroxyurea, chelation therapy, blood transfusions, and prescriptions for pain management) and any other health condition ${PRONOUN1} may have (such as diabetes, high blood pressure, and arthritis)</li><li>Try to prevent vaso-occlusive episodes or pain crises by avoiding possible triggers</li><li>Review the CDC guide for healthy living with SCD, or the CDC guide for healthy living with thalassemia, for tips to stay healthy</li></ul>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF9_TELEPHONY = `Make a plan if ${PRONOUN1} have a hemoglobin disorder, including sickle cell disease (SCD) and thalassemia. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Ask ${PRONOUN2} healthcare provider about telemedicine or remote healthcare visits, and know when to go to the emergency department. Work with ${PRONOUN2} healthcare provider to manage medications and therapies for ${PRONOUN2} disorder (including hydroxyurea, chelation therapy, blood transfusions, and prescriptions for pain management) and any other health condition ${PRONOUN1} may have (such as diabetes, high blood pressure, and arthritis). Try to prevent vaso-occlusive episodes or pain crises by avoiding possible triggers. Review the CDC guide for healthy living with SCD, or the CDC guide for healthy living with thalassemia, for tips to stay healthy. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF10 = [{
+  'title': `Make a plan if ${PRONOUN1} are 65 years or older`,
+  'type': 'accordion',
+  'text':
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Take ${PRONOUN2} medications for any underlying health conditions exactly as prescribed</li><li>Follow the advice of ${PRONOUN2} healthcare provider</li><li>Develop a care plan that summarizes ${PRONOUN2} health conditions and current treatments</li><li>Review the CDC website for suggestions on making preparations to stay home for long periods</li></ul>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF10_TELEPHONY = `Make a plan if ${PRONOUN1} are 65 years or older. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Take ${PRONOUN2} medications for any underlying health conditions exactly as prescribed. Follow the advice of ${PRONOUN2} healthcare provider. Develop a care plan that summarizes ${PRONOUN2} health conditions and current treatments. Review the CDC website for suggestions on making preparations to stay home for long periods. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
+
+const CARD_HF11 = [{
+  'title': `Make a plan if ${PRONOUN1} live in a nursing home or long-term care facility`,
+  'type': 'accordion',
+  'text':
+      `${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps:<ul><li>Carefully follow ${PRONOUN2} facility's instructions for infection prevention</li><li>Notify staff right away if ${PRONOUN1} feel sick</li><li>Ask ${PRONOUN2} caretakers about the actions that are being taken at ${PRONOUN2} nursing home or long-term care facility to protect ${PRONOUN1} and ${PRONOUN2} loved ones, including if and how visitors are limited</li></ul>${CDC_RISK_SOURCE}`
+}];
+
+const CARD_HF11_TELEPHONY = `Make a plan if ${PRONOUN1} live in a nursing home or long-term care facility. ${PRONOUN1_UP} may be at higher risk of getting very sick from COVID-19. ${PRONOUN1_UP} should take these steps: Carefully follow ${PRONOUN2} facility's instructions for infection prevention. Notify staff right away if ${PRONOUN1} feel sick. Ask ${PRONOUN2} caretakers about the actions that are being taken at ${PRONOUN2} nursing home or long-term care facility to protect ${PRONOUN1} and ${PRONOUN2} loved ones, including if and how visitors are limited. Source: CDC, People Who Are at Higher Risk for Severe Illness.`;
 
 const CARD_G1 = [{
   'title': `Stay up-to-date on COVID-19`,
@@ -407,13 +486,30 @@ const CARD_G2 = [{
 
 const CARD_G2_TELEPHONY = ``;
 
+const CARD_G3 = [{
+  'title': `Manage stress better`,
+  'type': 'accordion',
+  'text':
+      `Coping with stress can promote a positive mindset and healthy wellbeing during difficult times. Know the signs of stress to manage wellbeing:<ul><li>Increased fear and worry</li><li>Changes in sleep and eating patterns</li><li>Worsening mental health or chronic medical conditions</li><li>Trouble sleeping</li><li>Increased alcohol or drug use</li></ul>How to cope:<ul><li>Practice self care: exercises, meditation, try to eat healthy, avoid alcohol and drugs</li><li>Build connections: reach out to trusted people to talk about how one feels</li><li>Make time to unwind: set time for enjoyable activities</li><li>Limit exposure to news including social media</li></ul>${CDC_MENTAL_HEALTH_SOURCE}`
+}];
+
+const CARD_G3_TELEPHONY = `Coping with stress can promote a positive mindset and healthy wellbeing during difficult times. Know the signs of stress to manage wellbeing: Increased fear and worry. Changes in sleep and eating patterns. Worsening mental health or chronic medical conditions. Trouble sleeping. Increased alcohol or drug use. How to cope: Practice self care: exercises, meditation, try to eat healthy, avoid alcohol and drugs. Build connections: reach out to trusted people to talk about how one feels. Make time to unwind: set time for enjoyable activities. Limit exposure to news including social media. Source: CDC, Mental Health and Coping During COVID-19.`;
+
+
 const LABEL_CARD_MAP = {
+  [LTC]: ['HF11'],
+  [AGE]: ['HF10'],
+  [HEMOGLOBIN]: ['HF9'],
+  [LIVER]: ['HF8'],
+  [WEAKIMMUNE]: ['HF7'],
+  [OBESITY]: ['HF6'],
+  [KIDNEY]: ['HF5'],
   [HEALTHRISK]: ['HF4'],
   [LUNG]: ['HF3'],
   [CARDIO]: ['HF2'],
   [DM]: ['HF1'],
 };
-const CARDS_ALL = ['G1', 'G2'];
+const CARDS_ALL = ['G1', 'G2', 'G3'];
 // Emergency cards do not get additional cards displayed upon completion
 const EMERGENCY_CARDS = [
   'CMB',
@@ -463,8 +559,16 @@ const CARDS_REGISTRY = {
   'HF2': {rank: 22, card: CARD_HF2, telephony: CARD_HF2_TELEPHONY},
   'HF3': {rank: 23, card: CARD_HF3, telephony: CARD_HF3_TELEPHONY},
   'HF4': {rank: 24, card: CARD_HF4, telephony: CARD_HF4_TELEPHONY},
-  'G1': {rank: 25, card: CARD_G1, telephony: CARD_G1_TELEPHONY},
-  'G2': {rank: 26, card: CARD_G2, telephony: CARD_G2_TELEPHONY}
+  'HF5': {rank: 25, card: CARD_HF5, telephony: CARD_HF5_TELEPHONY},
+  'HF6': {rank: 26, card: CARD_HF6, telephony: CARD_HF6_TELEPHONY},
+  'HF7': {rank: 27, card: CARD_HF7, telephony: CARD_HF7_TELEPHONY},
+  'HF8': {rank: 28, card: CARD_HF8, telephony: CARD_HF8_TELEPHONY},
+  'HF9': {rank: 29, card: CARD_HF9, telephony: CARD_HF9_TELEPHONY},
+  'HF10': {rank: 30, card: CARD_HF10, telephony: CARD_HF10_TELEPHONY},
+  'HF11': {rank: 31, card: CARD_HF11, telephony: CARD_HF11_TELEPHONY},
+  'G1': {rank: 32, card: CARD_G1, telephony: CARD_G1_TELEPHONY},
+  'G2': {rank: 33, card: CARD_G2, telephony: CARD_G2_TELEPHONY},
+  'G3': {rank: 34, card: CARD_G3, telephony: CARD_G3_TELEPHONY}
 };
 
 const SUGGESTION_CHIPS = [[{

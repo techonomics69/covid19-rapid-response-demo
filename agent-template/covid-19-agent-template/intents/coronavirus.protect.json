@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "264e6503-2c48-4325-92cf-16d6e519356b",
+          "id": "37efd644-19ef-4f1b-86fd-fc70816dae0c",
           "required": false,
           "dataType": "@covid-19",
           "name": "covid-19",
@@ -28,13 +28,13 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eWash your hands with soap and water for at least 20 seconds and don\u0027t touch your face with unwashed hands. Stay home as much as possible. When you need to go out, wear a cloth face cover and practice social distancing by staying at least 6 feet away from other people.\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eVisit the CDC website to learn about how to protect yourself from respiratory illnesses, like COVID-19.\u003c/speak\u003e"
         },
         {
           "type": 0,
           "lang": "en",
           "condition": "",
-          "speech": "Wash your hands with soap and water for at least 20 seconds and don\u0027t touch your face with unwashed hands. Stay home as much as possible. When you need to go out, wear a cloth face cover and practice social distancing by staying at least 6 feet away from other people."
+          "speech": "Visit the CDC website to learn about how to protect yourself from respiratory illnesses, like COVID-19."
         }
       ],
       "defaultResponsePlatforms": {},
