@@ -1,10 +1,10 @@
 {
-  "id": "a30fd911-9112-4461-b475-55e4a8add086",
-  "name": "q26.hcp",
+  "id": "8aba16d4-71c6-44b1-8984-152d322dcc06",
+  "name": "q27.hemoglobin",
   "auto": true,
   "contexts": [
     "pronouns",
-    "q26-hcp"
+    "q27-hemoglobin"
   ],
   "responses": [
     {
@@ -18,7 +18,7 @@
           "lang": "en",
           "condition": "",
           "text": "",
-          "ssml": "\u003cspeak\u003eIn the last two weeks have #pronouns.pronoun1 worked or volunteered in a hospital, emergency room, clinic, medical office, ambulance service, first responder services, or any health care setting, or taken care of patients as a student as a part of #pronouns.pronoun2 work?\u003c/speak\u003e"
+          "ssml": "\u003cspeak\u003eDo #pronouns.pronoun1 have a hemoglobin disorder such as sickle cell disease (SCD) or thalassemia?\u003c/speak\u003e"
         },
         {
           "type": 4,
@@ -28,25 +28,25 @@
             "richContent": [
               [
                 {
-                  "title": "In the last two weeks have #pronouns.pronoun1 worked or volunteered in a hospital, emergency room, clinic, medical office, ambulance service, first responder services, or any health care setting, or taken care of patients as a student as a part of #pronouns.pronoun2 work?",
+                  "title": "Do #pronouns.pronoun1 have a hemoglobin disorder such as sickle cell disease (SCD) or thalassemia?",
                   "type": "description"
                 }
               ],
               [
                 {
-                  "type": "chips",
                   "options": [
                     {
-                      "text": "Yes",
+                      "image": {},
                       "link": "",
-                      "image": {}
+                      "text": "Yes"
                     },
                     {
                       "text": "No",
-                      "link": "",
-                      "image": {}
+                      "image": {},
+                      "link": ""
                     }
-                  ]
+                  ],
+                  "type": "chips"
                 }
               ]
             ]
